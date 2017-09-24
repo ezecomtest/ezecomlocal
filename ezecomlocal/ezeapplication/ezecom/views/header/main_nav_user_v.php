@@ -43,7 +43,7 @@
 <div class="t3-megamenu" data-duration="400" data-responsive="true">
 <ul class="nav navbar-nav level4">
 <li class="<?=($active=='Home')?'current active':null?>" mega-align-left sub-hidden-collapse data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
-<a class="" href="<?php echo base_url()?>?lang=en" data-target="#">Home </a>
+<a class="" href="<?php echo base_url()?>homepage?lang=en" data-target="#">Home </a>
 </li>
 <li class="<?=($active=='Our Company')?'current active':null?>" mega-align-left data-id="571" data-level="1" data-alignsub="left" data-hidesub="1">
 <a class="" href="<?php echo base_url()?>ourcompany?lang=en" data-target="#">Our Company </a>

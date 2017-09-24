@@ -645,17 +645,17 @@
 <div class="custom"  >
 	<div style="height: 20px; width: 100%;"> </div>
 <div class="container-fluid">
-<div class="col-xs-12 col-sm-6 col-md-4"><a href="<?php echo base_url();?>mediacenter">
+<div class="col-xs-12 col-sm-6 col-md-4"><a href="<?php echo base_url();?>mediacenter?lang=<?php echo $this->get_lang ?>">
 <div class="newandeventhover"> </div>
 <h3>News and Events</h3>
 <p style="font-size: 14px; color: #444;">Check this section for the latest on EZECOM events. Our sponsorship and our latest partnerships.</p></a>
 </div>
-<div class="col-xs-12 col-sm-6 col-md-4"><a href="<?php echo base_url();?>cameralive">
+<div class="col-xs-12 col-sm-6 col-md-4"><a href="<?php echo base_url();?>cameralive?lang=<?php echo $this->get_lang ?>">
 <div class="livecamerahover"> </div>
 <h3>Live Traffic Camera</h3>
 <p style="font-size: 14px; color: #444;">Always know what is happening. Thanks to EZECOM's traffic camera in Phnom Penh.</p></a>
 </div>
-<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>liveradio">
+<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>liveradio?lang=<?php echo $this->get_lang ?>">
 <div class="liveradiohover"> </div>
 <h3>Live Radio</h3>
 <p style="font-size: 14px; color: #444;">Click here to listen to your best favorite radio stations live stream in Cambodia.</p></a>
@@ -684,12 +684,12 @@
 <br />
 <div class="col-xs-12 col-sm-12 col-md-12"> 
 <div class="col-xs-12 col-sm-12 col-md-2"> </div>
-<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>ourservices">
+<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>ourservices?lang=<?php echo $this->get_lang ?>">
 <div class="ourinternethover"></div>
 <h3>Our Internet</a></h3>
 <p style="font-size: 14px; color: #444444;"> </p></a>
 </div>
-<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>enterprise_solution">
+<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>enterprise_solution?lang=<?php echo $this->get_lang ?>">
 <div class="enterprisesolutions"> </div>
 <h3>Enterprise Solutions</h3>
 <p style="font-size: 14px; color: #444444;"> </p></a>

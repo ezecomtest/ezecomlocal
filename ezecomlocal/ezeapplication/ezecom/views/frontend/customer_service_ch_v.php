@@ -87,26 +87,26 @@ var rl_tabs_use_hash = 1; var rl_tabs_reload_iframes = 0; var rl_tabs_init_timeo
 			
 
 <div class="custom">
-<?php if($this->session->userdata("language") == 1) {?>
+<?php if($this->lang == 1) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1723"><a href="<?=base_url();?>customerservice#customer-service"><div class="icon_customer_service"></div>Customer <br>Service</a></li>
-		<li class="item-1717"><a href="<?=base_url();?>customerservice#payment"><div class="icon_payment_option"></div>Payment <br>Options</a></li>
-		<li class="item-1718"><a href="<?=base_url();?>customerservice#faq"><div class="icon_faq"></div>FAQ’s</a></li>
+		<li class="item-1723"><a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#customer-service"><div class="icon_customer_service"></div>Customer <br>Service</a></li>
+		<li class="item-1717"><a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#payment"><div class="icon_payment_option"></div>Payment <br>Options</a></li>
+		<li class="item-1718"><a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#faq"><div class="icon_faq"></div>FAQ’s</a></li>
 	</ul>
 <?php } ?>
-<?php if($this->session->userdata("language") == 2) {?>
+<?php if($this->lang == 2) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1723"><a href="<?=base_url();?>customerservice#customer-service"><div class="icon_customer_service"></div>សេវា <br>អតិថិជន</a></li>
-		<li class="item-1717"><a href="<?=base_url();?>customerservice#payment"><div class="icon_payment_option"></div>ជម្រើស​ <br>ទូទាត់​វិកយបត្រ</a></li>
-		<li class="item-1718"><a href="<?=base_url();?>customerservice#faq"><div class="icon_faq"></div>FAQ’s</a></li>
+		<li class="item-1723"><a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#customer-service"><div class="icon_customer_service"></div>សេវា <br>អតិថិជន</a></li>
+		<li class="item-1717"><a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#payment"><div class="icon_payment_option"></div>ជម្រើស​ <br>ទូទាត់​វិកយបត្រ</a></li>
+		<li class="item-1718"><a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#faq"><div class="icon_faq"></div>FAQ’s</a></li>
 	</ul>
 <?php } ?>
 
-<?php if($this->session->userdata("language") == 3) {?>
+<?php if($this->lang == 3) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1723"><a href="<?=base_url();?>customerservice#customer-service"><div class="icon_customer_service"></div>Customer <br>Service</a></li>
-		<li class="item-1717"><a href="<?=base_url();?>customerservice#payment"><div class="icon_payment_option"></div>Payment <br>Options</a></li>
-		<li class="item-1718"><a href="<?=base_url();?>customerservice#faq"><div class="icon_faq"></div>FAQ’s</a></li>
+		<li class="item-1723"><a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#customer-service"><div class="icon_customer_service"></div>Customer <br>Service</a></li>
+		<li class="item-1717"><a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#payment"><div class="icon_payment_option"></div>Payment <br>Options</a></li>
+		<li class="item-1718"><a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#faq"><div class="icon_faq"></div>FAQ’s</a></li>
 	</ul>
 <?php } ?>
 </div>
@@ -153,31 +153,31 @@ var rl_tabs_use_hash = 1; var rl_tabs_reload_iframes = 0; var rl_tabs_init_timeo
 <a id="rl_tabs-scrollto_1" class="anchor rl_tabs-scroll nn_tabs-scroll"></a>
 <ul class="nav nav-tabs" id="set-rl_tabs-1" role="tablist">
 <li class="rl_tabs-tab nn_tabs-tab active payment-tap" role="presentation">
-<a href="<?=base_url();?>customerservice#payment-cellcard-counters" class="rl_tabs-toggle nn_tabs-toggle" id="tab-payment-cellcard-counters" data-toggle="tab" data-id="payment-cellcard-counters" role="tab" aria-controls="payment-cellcard-counters" aria-selected="true" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Payment Cellcard Counters</span></a>
+<a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#payment-cellcard-counters" class="rl_tabs-toggle nn_tabs-toggle" id="tab-payment-cellcard-counters" data-toggle="tab" data-id="payment-cellcard-counters" role="tab" aria-controls="payment-cellcard-counters" aria-selected="true" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Payment Cellcard Counters</span></a>
 </li>
 <li class="rl_tabs-tab nn_tabs-tab payment-tap" role="presentation">
-<a href="<?=base_url();?>customerservice#aba-atm" class="rl_tabs-toggle nn_tabs-toggle" id="tab-aba-atm" data-toggle="tab" data-id="aba-atm" role="tab" aria-controls="aba-atm" aria-selected="false" style="height: 115px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">ABA ATM</span></a>
+<a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#aba-atm" class="rl_tabs-toggle nn_tabs-toggle" id="tab-aba-atm" data-toggle="tab" data-id="aba-atm" role="tab" aria-controls="aba-atm" aria-selected="false" style="height: 115px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">ABA ATM</span></a>
 </li>
 <li class="rl_tabs-tab nn_tabs-tab payment-tap" role="presentation">
-<a href="<?=base_url();?>customerservice#aba-ibanking" class="rl_tabs-toggle nn_tabs-toggle" id="tab-aba-ibanking" data-toggle="tab" data-id="aba-ibanking" role="tab" aria-controls="aba-ibanking" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">ABA Ibanking</span></a>
+<a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#aba-ibanking" class="rl_tabs-toggle nn_tabs-toggle" id="tab-aba-ibanking" data-toggle="tab" data-id="aba-ibanking" role="tab" aria-controls="aba-ibanking" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">ABA Ibanking</span></a>
 </li>
 <li class="rl_tabs-tab nn_tabs-tab payment-tap" role="presentation">
-<a href="<?=base_url();?>customerservice#anz-royal-internet-banking" class="rl_tabs-toggle nn_tabs-toggle" id="tab-anz-royal-internet-banking" data-toggle="tab" data-id="anz-royal-internet-banking" role="tab" aria-controls="anz-royal-internet-banking" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">ANZ Royal Internet Banking</span></a>
+<a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#anz-royal-internet-banking" class="rl_tabs-toggle nn_tabs-toggle" id="tab-anz-royal-internet-banking" data-toggle="tab" data-id="anz-royal-internet-banking" role="tab" aria-controls="anz-royal-internet-banking" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">ANZ Royal Internet Banking</span></a>
 </li>
 <li class="rl_tabs-tab nn_tabs-tab payment-tap" role="presentation">
-<a href="<?=base_url();?>customerservice#anz-royal-branch-deposit" class="rl_tabs-toggle nn_tabs-toggle" id="tab-anz-royal-branch-deposit" data-toggle="tab" data-id="anz-royal-branch-deposit" role="tab" aria-controls="anz-royal-branch-deposit" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Anz Royal Branch Deposit</span></a>
+<a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#anz-royal-branch-deposit" class="rl_tabs-toggle nn_tabs-toggle" id="tab-anz-royal-branch-deposit" data-toggle="tab" data-id="anz-royal-branch-deposit" role="tab" aria-controls="anz-royal-branch-deposit" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Anz Royal Branch Deposit</span></a>
 </li>
 <li class="rl_tabs-tab nn_tabs-tab payment-tap" role="presentation">
-<a href="<?=base_url();?>customerservice#maybank-branch-deposit" class="rl_tabs-toggle nn_tabs-toggle" id="tab-maybank-branch-deposit" data-toggle="tab" data-id="maybank-branch-deposit" role="tab" aria-controls="maybank-branch-deposit" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Maybank Branch Deposit</span></a>
+<a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#maybank-branch-deposit" class="rl_tabs-toggle nn_tabs-toggle" id="tab-maybank-branch-deposit" data-toggle="tab" data-id="maybank-branch-deposit" role="tab" aria-controls="maybank-branch-deposit" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Maybank Branch Deposit</span></a>
 </li>
 <li class="rl_tabs-tab nn_tabs-tab payment-tap" role="presentation">
-<a href="<?=base_url();?>customerservice#maybank-internet-banking" class="rl_tabs-toggle nn_tabs-toggle" id="tab-maybank-internet-banking" data-toggle="tab" data-id="maybank-internet-banking" role="tab" aria-controls="maybank-internet-banking" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Maybank Internet Banking</span></a>
+<a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#maybank-internet-banking" class="rl_tabs-toggle nn_tabs-toggle" id="tab-maybank-internet-banking" data-toggle="tab" data-id="maybank-internet-banking" role="tab" aria-controls="maybank-internet-banking" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Maybank Internet Banking</span></a>
 </li>
 <li class="rl_tabs-tab nn_tabs-tab payment-tap" role="presentation">
-<a href="<?=base_url();?>customerservice#wing-bill-payment" class="rl_tabs-toggle nn_tabs-toggle" id="tab-wing-bill-payment" data-toggle="tab" data-id="wing-bill-payment" role="tab" aria-controls="wing-bill-payment" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Wing Bill Payment</span></a>
+<a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#wing-bill-payment" class="rl_tabs-toggle nn_tabs-toggle" id="tab-wing-bill-payment" data-toggle="tab" data-id="wing-bill-payment" role="tab" aria-controls="wing-bill-payment" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Wing Bill Payment</span></a>
 </li>
 <li class="rl_tabs-tab nn_tabs-tab payment-tap" role="presentation">
-<a href="<?=base_url();?>customerservice#acleda-unity" class="rl_tabs-toggle nn_tabs-toggle" id="tab-acleda-unity" data-toggle="tab" data-id="acleda-unity" role="tab" aria-controls="acleda-unity" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Acleda Unity</span></a>
+<a href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#acleda-unity" class="rl_tabs-toggle nn_tabs-toggle" id="tab-acleda-unity" data-toggle="tab" data-id="acleda-unity" role="tab" aria-controls="acleda-unity" aria-selected="false" style="height: 105px;"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Acleda Unity</span></a>
 </li>
 </ul>
 <div class="tab-content">
@@ -372,12 +372,12 @@ var rl_tabs_use_hash = 1; var rl_tabs_reload_iframes = 0; var rl_tabs_init_timeo
 <div class="col-sm-2">&nbsp;</div>
 <div class="rl_tabs nn_tabs outline_handles outline_content top align_left has_effects"><a id="rl_tabs-scrollto_2" class="anchor rl_tabs-scroll nn_tabs-scroll"></a>
 <ul id="set-rl_tabs-2" class="nav nav-tabs">
-<li class="rl_tabs-tab nn_tabs-tab active payment-tap"><a id="tab-general" class="rl_tabs-toggle nn_tabs-toggle" style="height: 112px;" href="<?=base_url();?>customerservice#general" data-toggle="tab" data-id="general"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">General</span></a></li>
-<li class="rl_tabs-tab nn_tabs-tab payment-tap"><a id="tab-ibizcloud" class="rl_tabs-toggle nn_tabs-toggle" style="height: 112px;" href="<?=base_url();?>customerservice#ibizcloud" data-toggle="tab" data-id="ibizcloud"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">ibizCloud</span></a></li>
-<li class="rl_tabs-tab nn_tabs-tab payment-tap"><a id="tab-internet-connection" class="rl_tabs-toggle nn_tabs-toggle" style="height: 102px;" href="<?=base_url();?>customerservice#internet-connection" data-toggle="tab" data-id="internet-connection"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Internet Connection</span></a></li>
-<li class="rl_tabs-tab nn_tabs-tab payment-tap"><a id="tab-email" class="rl_tabs-toggle nn_tabs-toggle" style="height: 112px;" href="<?=base_url();?>customerservice#email" data-toggle="tab" data-id="email"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Email</span></a></li>
-<li class="rl_tabs-tab nn_tabs-tab payment-tap"><a id="tab-email-problems" class="rl_tabs-toggle nn_tabs-toggle" style="height: 102px;" href="<?=base_url();?>customerservice#email-problems" data-toggle="tab" data-id="email-problems"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Email - Problems</span></a></li>
-<li class="rl_tabs-tab nn_tabs-tab payment-tap"><a id="tab-security" class="rl_tabs-toggle nn_tabs-toggle" style="height: 112px;" href="<?=base_url();?>customerservice#security" data-toggle="tab" data-id="security"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Security</span></a></li>
+<li class="rl_tabs-tab nn_tabs-tab active payment-tap"><a id="tab-general" class="rl_tabs-toggle nn_tabs-toggle" style="height: 112px;" href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#general" data-toggle="tab" data-id="general"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">General</span></a></li>
+<li class="rl_tabs-tab nn_tabs-tab payment-tap"><a id="tab-ibizcloud" class="rl_tabs-toggle nn_tabs-toggle" style="height: 112px;" href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#ibizcloud" data-toggle="tab" data-id="ibizcloud"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">ibizCloud</span></a></li>
+<li class="rl_tabs-tab nn_tabs-tab payment-tap"><a id="tab-internet-connection" class="rl_tabs-toggle nn_tabs-toggle" style="height: 102px;" href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#internet-connection" data-toggle="tab" data-id="internet-connection"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Internet Connection</span></a></li>
+<li class="rl_tabs-tab nn_tabs-tab payment-tap"><a id="tab-email" class="rl_tabs-toggle nn_tabs-toggle" style="height: 112px;" href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#email" data-toggle="tab" data-id="email"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Email</span></a></li>
+<li class="rl_tabs-tab nn_tabs-tab payment-tap"><a id="tab-email-problems" class="rl_tabs-toggle nn_tabs-toggle" style="height: 102px;" href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#email-problems" data-toggle="tab" data-id="email-problems"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Email - Problems</span></a></li>
+<li class="rl_tabs-tab nn_tabs-tab payment-tap"><a id="tab-security" class="rl_tabs-toggle nn_tabs-toggle" style="height: 112px;" href="<?=base_url();?>customerservice?lang=<?php echo $this->get_lang ?>#security" data-toggle="tab" data-id="security"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Security</span></a></li>
 </ul>
 <div class="tab-content">
 <div id="general" class="tab-pane rl_tabs-pane nn_tabs-pane active payment-tap">

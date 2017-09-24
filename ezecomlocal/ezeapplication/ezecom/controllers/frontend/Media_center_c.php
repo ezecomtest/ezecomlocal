@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Media_center_c extends CI_Controller {
+	public $lang = "";
      public function __construct()
     {
         parent::__construct();
@@ -12,6 +13,21 @@ class Media_center_c extends CI_Controller {
         $this->load->model('frontend/homepage_m');
         $this->load->helper(array('form', 'url'));
         date_default_timezone_set("Asia/Bangkok");
+		// get language from url
+		$get_lang = $this->input->get("lang");
+		  if($get_lang=="en"){
+			  $this->lang = 1;
+		  }
+		   if($get_lang=="kh"){
+			  $this->lang = 2;
+		  }
+		   if($get_lang=="ch"){
+			  $this->lang = 3;
+		  }
+		  if($get_lang==""){
+			  $this->lang = "";
+		  }
+		
     }
 
     /**
@@ -34,11 +50,11 @@ class Media_center_c extends CI_Controller {
         $this->media_center();
     }
     public function media_center(){
-
+		
         $data['title'] = "Media Center";
         $data['active']="Media Center";
 
-        if($this->session->userdata("language") == 1){
+        if($this->lang == 1){
 			
             $config['base_url'] = base_url().'media-center';
             $config['total_rows'] = $this->media_center_m->get_all_events();
@@ -73,13 +89,13 @@ class Media_center_c extends CI_Controller {
            
             $data['title_events'] = $this->media_center_m->title_events($config["per_page"],$data['page']);
             // print_r($data['title_events']);exit;
-            $lan = $this->session->userdata("language");
+            $lan = $this->lang;;
             $data['feature_content'] = $this->homepage_m->get_feature_content($lan);
             $data['pagination'] = $this->pagination->create_links();
             $this->load->view('frontend/media_center_v',$data);
         }
 
-        if($this->session->userdata("language") == 2){
+        if($this->lang == 2){
             $config['base_url'] = base_url().'media-center';
             $config['total_rows'] = $this->media_center_m->get_all_events();
 
@@ -112,13 +128,13 @@ class Media_center_c extends CI_Controller {
             $data['firsttitle_events'] = $this->media_center_m->first_title_events();
             $data['title_events'] = $this->media_center_m->title_events($config["per_page"],$data['page']);
             // print_r($data['title_events']);exit;
-            $lan = $this->session->userdata("language");
+            $lan = $this->lang;;
             $data['feature_content'] = $this->homepage_m->get_feature_content($lan);
             $data['pagination'] = $this->pagination->create_links();
             $this->load->view('frontend/media_center_v',$data);
         }
 
-        if($this->session->userdata("language") == 3){
+        if($this->lang == 3){
             $config['base_url'] = base_url().'media-center';
             $config['total_rows'] = $this->media_center_m->get_all_events();
 
@@ -151,13 +167,13 @@ class Media_center_c extends CI_Controller {
             $data['firsttitle_events'] = $this->media_center_m->first_title_events();
             $data['title_events'] = $this->media_center_m->title_events($config["per_page"],$data['page']);
             // print_r($data['title_events']);exit;
-            $lan = $this->session->userdata("language");
+            $lan = $this->lang;;
             $data['feature_content'] = $this->homepage_m->get_feature_content($lan);
             $data['pagination'] = $this->pagination->create_links();
             $this->load->view('frontend/media_center_v',$data);
         }
 
-         if($this->session->userdata("language") == ""){
+         if($this->lang == ""){
             $config['base_url'] = base_url().'media-center';
             $config['total_rows'] = $this->media_center_m->get_all_events();
 
@@ -192,7 +208,7 @@ class Media_center_c extends CI_Controller {
 
             $data['title_events'] = $this->media_center_m->title_events($config["per_page"],$data['page']);
             // print_r($data['title_events']);exit;
-            $lan = 1;
+            $lan = $this->lang;
             $data['feature_content'] = $this->homepage_m->get_feature_content($lan);
             $data['pagination'] = $this->pagination->create_links();
             $this->load->view('frontend/media_center_v',$data);
@@ -206,7 +222,10 @@ class Media_center_c extends CI_Controller {
     public function news_detail_c(){
         /*  replace (-) from url  */
         $uri_orig = explode("/",$_SERVER['REQUEST_URI']);
-        $short_url = (end($uri_orig));
+        $str_url  = (end($uri_orig));
+		$str_expl = explode("?",$str_url);
+		$short_url = $str_expl[0];
+		
         //echo urldecode($title)."<br/>";
         
         //$title_strrep = strtoupper(str_replace('-', ' ', $title));
@@ -214,7 +233,7 @@ class Media_center_c extends CI_Controller {
         
         //$data['news_events'] = $this->media_center_m->get_news_detail(urldecode($title_strrep));
 		$data['news_events'] = $this->media_center_m->get_news_detail($short_url);
-        $lan = $this->session->userdata("language");
+        $lan = $this->lang;;
         $data['feature_content'] = $this->homepage_m->get_feature_content($lan);
         $data['active']="Media Center";
         $this->load->view('frontend/news_events_detail',$data);

@@ -17,16 +17,16 @@
 
   <title>
 	<?php 
-		if($this->session->userdata("language") == 1){
+		if($this->lang == 1){
 			echo $news_events['content_title_en']; 
 		}
-		if($this->session->userdata("language") == 2){
+		if($this->lang == 2){
 			echo $news_events['content_title_kh']; 
 		}
-		if($this->session->userdata("language") == 3){
+		if($this->lang == 3){
 			echo $news_events['content_title_ch']; 
 		}
-		if($this->session->userdata("language") == ""){
+		if($this->lang == ""){
 			echo $news_events['content_title_en']; 
 		}
 	?>
@@ -104,44 +104,44 @@ jQuery(window).on('load',  function() {
 <div class="wrap t3-sl t3-sl-1 ">
 
 <div class="custom">
-	<?php if($this->session->userdata("language") == 1) {?>
+	<?php if($this->lang == 1) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=en" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>News<br>and Events</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>liveradio">
+		<li class="item-1727"><a href="<?php echo base_url();?>liveradio?lang=en">
 		<div class="icon_live_radio"></div>Radio <br>Live Stream</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>camera_live">
+		<li class="item-1728"><a href="<?php echo base_url()?>camera_live?lang=en">
 		<div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
 	</ul>
 <?php } ?>
-<?php if($this->session->userdata("language") == 2) {?>
+<?php if($this->lang == 2) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=kh" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>ព័ត៌មាន <br>និង ព្រិត្តិការណ៍</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>liveradio">
+		<li class="item-1727"><a href="<?php echo base_url();?>liveradio?lang=kh">
 		<div class="icon_live_radio"></div>វិទ្យុ <br>ផ្សាយផ្ទាល់</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>cameralive">
+		<li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=kh">
 		<div class="icon_live_traffic"></div>កាមេរ៉ា <br>ផ្សាយផ្ទាល់</a></li>
 	</ul>
 <?php } ?>
-<?php if($this->session->userdata("language") == 3) {?>
+<?php if($this->lang == 3) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=ch" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>News<br>and Events</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>live_radio">
+		<li class="item-1727"><a href="<?php echo base_url();?>live_radio?lang=ch">
 		<div class="icon_live_radio"></div>Radio <br>Live Stream</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>camera_live">
+		<li class="item-1728"><a href="<?php echo base_url()?>camera_live?lang=ch">
 		<div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
 	</ul>
 <?php } ?>
 
-<?php if($this->session->userdata("language") == "") {?>
+<?php if($this->lang == "") {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=en" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>News<br>and Events</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>live_radio">
+		<li class="item-1727"><a href="<?php echo base_url();?>live_radio?lang=en">
 		<div class="icon_live_radio"></div>Radio <br>Live Stream</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>camera_live">
+		<li class="item-1728"><a href="<?php echo base_url()?>camera_live?lang=en">
 		<div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
 	</ul>
 <?php } ?>
@@ -163,16 +163,16 @@ jQuery(window).on('load',  function() {
 
 			<h3>
 				<?php 
-					if($this->session->userdata("language") == 1){
+					if($this->lang == 1){
 						echo $news_events['content_title_en']; 
 					}
-					if($this->session->userdata("language") == 2){
+					if($this->lang == 2){
 						echo $news_events['content_title_kh']; 
 					}
-					if($this->session->userdata("language") == 3){
+					if($this->lang == 3){
 						echo $news_events['content_title_ch']; 
 					}
-					if($this->session->userdata("language") == ""){
+					if($this->lang == ""){
 						echo $news_events['content_title_en']; 
 					}
 				?>
@@ -182,16 +182,16 @@ jQuery(window).on('load',  function() {
 			<div class="row">
 			<div class="col-sm-12" itemprop="blogPost" itemscope="" style="text-align: justify;font-size: 14px;"><br/>
 					<?php 
-						if($this->session->userdata("language") == 1){
+						if($this->lang == 1){
 							echo $news_events['content_description_en']; 
 						}
-						if($this->session->userdata("language") == 2){
+						if($this->lang == 2){
 							echo $news_events['content_description_kh']; 
 						}
-						if($this->session->userdata("language") == 3){
+						if($this->lang == 3){
 							echo $news_events['content_description_ch']; 
 						}
-						if($this->session->userdata("language") == ""){
+						if($this->lang == ""){
 							echo $news_events['content_description_en']; 
 						}
 					?>

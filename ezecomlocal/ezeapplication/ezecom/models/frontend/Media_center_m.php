@@ -14,7 +14,7 @@ class Media_center_m extends CI_Model{
     public function title_events($per_page,$page){
           $first = $this->first_title_events();
           $getfirst = $first['contentid'];
-        if($this->session->userdata("language") == 1){
+        if($this->lang == 1){
             $this->db->select("*")->from("tbl_content_en con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -26,7 +26,7 @@ class Media_center_m extends CI_Model{
             $sql = $this->db->get();
             return $sql->result();
         }
-         if($this->session->userdata("language") == 2){
+         if($this->lang == 2){
             $this->db->select("*")->from("tbl_content_kh con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -38,7 +38,7 @@ class Media_center_m extends CI_Model{
             $sql = $this->db->get();
             return $sql->result();
         }
-         if($this->session->userdata("language") == 3){
+         if($this->lang == 3){
             $this->db->select("*")->from("tbl_content_ch con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -50,7 +50,7 @@ class Media_center_m extends CI_Model{
             $sql = $this->db->get();
             return $sql->result();
         }
-         if($this->session->userdata("language") == ""){
+         if($this->lang == ""){
             $this->db->select("*")->from("tbl_content_en con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -67,7 +67,7 @@ class Media_center_m extends CI_Model{
     }
 
     public function first_title_events(){
-        if($this->session->userdata("language") == 1){
+        if($this->lang == 1){
             $this->db->select("*")->from("tbl_content_en con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -78,7 +78,7 @@ class Media_center_m extends CI_Model{
             $sql = $this->db->get();
             return $sql->row_array();
         }
-        if($this->session->userdata("language") == 2){
+        if($this->lang == 2){
             $this->db->select("*")->from("tbl_content_kh con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -89,7 +89,7 @@ class Media_center_m extends CI_Model{
             $sql = $this->db->get();
             return $sql->row_array();
         }
-        if($this->session->userdata("language") == 3){
+        if($this->lang == 3){
             $this->db->select("*")->from("tbl_content_ch con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -100,7 +100,7 @@ class Media_center_m extends CI_Model{
             $sql = $this->db->get();
             return $sql->row_array();
         }
-         if($this->session->userdata("language") == ""){
+         if($this->lang == ""){
             $this->db->select("*")->from("tbl_content_en con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -118,7 +118,7 @@ class Media_center_m extends CI_Model{
 
 
     public function get_all_events(){
-        if($this->session->userdata("language") == 1){
+        if($this->lang == 1){
             $first = $this->first_title_events();
             $getfirst = $first['contentid'];
             $this->db->select("*")->from("tbl_content_en con");
@@ -132,7 +132,7 @@ class Media_center_m extends CI_Model{
             return $sql->num_rows();
         }
 
-        if($this->session->userdata("language") == 2){
+        if($this->lang == 2){
             $first = $this->first_title_events();
             $getfirst = $first['contentid'];
             $this->db->select("*")->from("tbl_content_kh con");
@@ -145,7 +145,7 @@ class Media_center_m extends CI_Model{
             $sql = $this->db->get();
             return $sql->num_rows();
         }
-        if($this->session->userdata("language") == 3){
+        if($this->lang == 3){
             $first = $this->first_title_events();
             $getfirst = $first['contentid'];
             $this->db->select("*")->from("tbl_content_ch con");
@@ -158,7 +158,7 @@ class Media_center_m extends CI_Model{
             $sql = $this->db->get();
             return $sql->num_rows();
         }
-        if($this->session->userdata("language") == ""){
+        if($this->lang == ""){
             $first = $this->first_title_events();
             $getfirst = $first['contentid'];
             $this->db->select("*")->from("tbl_content_en con");
@@ -176,7 +176,8 @@ class Media_center_m extends CI_Model{
     }
 
     public function get_news_detail($short_url){
-        if($this->session->userdata("language") == 1){
+		
+        if($this->lang == 1){
             $this->db->select("*")->from("tbl_content_en con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -186,7 +187,8 @@ class Media_center_m extends CI_Model{
             $sql = $this->db->get();
             return $sql->row_array();
         }
-        if($this->session->userdata("language") == 2){
+		
+        if($this->lang == 2){
             $this->db->select("*")->from("tbl_content_kh con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -194,9 +196,23 @@ class Media_center_m extends CI_Model{
             $this->db->where("con.short_url",$short_url);
             $this->db->where("con.content_language_id",2);
             $sql = $this->db->get();
-            return $sql->row_array();
+			
+			if($sql->row_array()!= null){
+				return $sql->row_array();
+			}else{
+				// if no kh caugh en
+				$this->db->select("*")->from("tbl_content_en con");
+				$this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
+				$this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
+				$this->db->where("con.content_published",1);
+				$this->db->where("con.short_url",$short_url);
+				$this->db->where("con.content_language_id",1);
+				$sql = $this->db->get();
+				return $sql->row_array();
+			}
         }
-        if($this->session->userdata("language") == 3){
+		
+        if($this->lang == 3){
             $this->db->select("*")->from("tbl_content_ch con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -204,9 +220,23 @@ class Media_center_m extends CI_Model{
             $this->db->where("con.short_url",$short_url);
             $this->db->where("con.content_language_id",3);
             $sql = $this->db->get();
-            return $sql->row_array();
+			
+            if($sql->row_array()!= null){
+				return $sql->row_array();
+			}else{
+				// if no kh caugh en
+				$this->db->select("*")->from("tbl_content_en con");
+				$this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
+				$this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
+				$this->db->where("con.content_published",1);
+				$this->db->where("con.short_url",$short_url);
+				$this->db->where("con.content_language_id",1);
+				$sql = $this->db->get();
+				return $sql->row_array();
+			}
         }
-        if($this->session->userdata("language") == ""){
+		
+        if($this->lang == ""){
             $this->db->select("*")->from("tbl_content_en con");
             $this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");
             $this->db->join("tbl_languages lan","con.content_language_id = lan.lang_id");
@@ -214,7 +244,8 @@ class Media_center_m extends CI_Model{
             $this->db->where("con.short_url",$short_url);
             $this->db->where("con.content_language_id",1);
             $sql = $this->db->get();
-            return $sql->row_array();
+			return $sql->row_array();
+           
         }
 
     }

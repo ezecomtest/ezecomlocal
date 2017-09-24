@@ -1,4 +1,22 @@
-
+<?php 
+  $get_lang = $this->input->get("lang");
+  if($get_lang=="en"){
+	  $lang = 1;
+	  $lang_url = "?lang=".$get_lang;
+  }
+   if($get_lang=="kh"){
+	  $lang = 2;
+	  $lang_url = "?lang=".$get_lang;
+  }
+   if($get_lang=="ch"){
+	  $lang = 3;
+	  $lang_url = "?lang=".$get_lang;
+  }
+  if($get_lang==""){
+	  $lang = "";
+	  $lang_url = "?lang=".$get_lang;
+  }
+?>
 
 <!-- saved from url=(0067)https://www.ezecom.com.kh/index.php/en/media-center/news-and-events -->
 <html lang="en-gb" dir="ltr" class="com_content view-category layout-t3_bs3_blankxblog itemid-631 j34 no-touch">
@@ -91,44 +109,44 @@ jQuery(window).on('load',  function() {
 <div class="wrap t3-sl t3-sl-1 ">
 
 <div class="custom">
-<?php if($this->session->userdata("language") == 1) {?>
+<?php if($lang == 1) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=en" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>News<br>and Events</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>liveradio">
+		<li class="item-1727"><a href="<?php echo base_url();?>liveradio?lang=en">
 		<div class="icon_live_radio"></div>Radio <br>Live Stream</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>cameralive">
+		<li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=en">
 		<div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
 	</ul>
 <?php } ?>
-<?php if($this->session->userdata("language") == 2) {?>
+<?php if($lang == 2) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=kh" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>ព័ត៌មាន <br>និង ព្រិត្តិការណ៍</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>liveradio">
+		<li class="item-1727"><a href="<?php echo base_url();?>liveradio?lang=kh">
 		<div class="icon_live_radio"></div>វិទ្យុ <br>ផ្សាយផ្ទាល់</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>cameralive">
+		<li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=kh">
 		<div class="icon_live_traffic"></div>កាមេរ៉ា <br>ផ្សាយផ្ទាល់</a></li>
 	</ul>
 <?php } ?>
-<?php if($this->session->userdata("language") == 3) {?>
+<?php if($lang == 3) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=ch" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>News<br>and Events</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>liveradio">
+		<li class="item-1727"><a href="<?php echo base_url();?>liveradio?lang=ch">
 		<div class="icon_live_radio"></div>Radio <br>Live Stream</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>cameralive">
+		<li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=ch">
 		<div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
 	</ul>
 <?php } ?>
 
-<?php if($this->session->userdata("language") == "") {?>
+<?php if($lang == "") {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=en" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>News<br>and Events</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>liveradio">
+		<li class="item-1727"><a href="<?php echo base_url();?>liveradio?lang=en">
 		<div class="icon_live_radio"></div>Radio <br>Live Stream</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>cameralive">
+		<li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=en">
 		<div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
 	</ul>
 <?php } ?>
@@ -173,7 +191,7 @@ jQuery(window).on('load',  function() {
 			<!-- <div class="col-md-1"></div> -->
 		      		<div class="col-md-6" id="firstrecord">
 		      			<div class="pull-left item-image"> 
-		      				<a href="<?php echo base_url(); ?>newsdetail/<?php echo  $firsttitle_events['short_url'];?>">
+		      				<a href="<?php echo base_url(); ?>newsdetail/<?php echo  $firsttitle_events['short_url'].$lang_url;?>">
 		      				<img src="<?php echo base_url('elFindermaster/files/post/image_feature/').$firsttitle_events['content_image_feature']?>" alt="" itemprop="thumbnailUrl"> </a>
 		      			</div>
 		      		
@@ -183,21 +201,21 @@ jQuery(window).on('load',  function() {
 		<a href="https://www.ezecom.com.kh/index.php/en/media-center/news-and-events/734-ezecom-supported-cambodia-ict-awards-2017-launching-ceremony-in-calling-for-the-best-ict-acheivement-this-year" itemprop="url">		       
 		</a>
 				<header class="article-header clearfix">
-					<a href="<?php echo base_url(); ?>newsdetail/<?php echo  $firsttitle_events['short_url'];?>">
+					<a href="<?php echo base_url(); ?>newsdetail/<?php echo  $firsttitle_events['short_url'].$lang_url;?>">
 						<!-- Lang English -->
-						<?php if($this->session->userdata("language") == 1){ ?>
+						<?php if($lang == 1){ ?>
 							<h5 class="article-title" itemprop="name"><?php echo $firsttitle_events['content_title_en']?></h5>
 						<?php } ?>
 						<!-- Lang Khmer -->
-						<?php if($this->session->userdata("language") == 2){ ?>
+						<?php if($lang == 2){ ?>
 							<h5 class="article-title" itemprop="name"><?php echo $firsttitle_events['content_title_kh']?></h5>
 						<?php } ?>
 						<!-- Lang Chinese -->
-						<?php if($this->session->userdata("language") == 3){ ?>
+						<?php if($lang == 3){ ?>
 							<h5 class="article-title" itemprop="name"><?php echo $firsttitle_events['content_title_ch']?></h5>
 						<?php } ?>
 	
-						<?php if($this->session->userdata("language") == ""){ ?>
+						<?php if($lang == ""){ ?>
 							<h5 class="article-title" itemprop="name"><?php echo $firsttitle_events['content_title_en']?></h5>
 						<?php } ?>
 					</a>
@@ -209,16 +227,16 @@ jQuery(window).on('load',  function() {
 							<p style="font-size: 14px;">
 
 							<?php
-							if($this->session->userdata("language") == 1){
+							if($lang == 1){
 								$string = strip_tags($firsttitle_events['content_description_en']);
 							}
-							if($this->session->userdata("language") == 2){
+							if($lang == 2){
 								$string = strip_tags($firsttitle_events['content_description_kh']);
 							}
-							if($this->session->userdata("language") == 3){
+							if($lang == 3){
 								$string = strip_tags($firsttitle_events['content_description_ch']);
 							}
-							if($this->session->userdata("language") == ""){
+							if($lang == ""){
 								$string = strip_tags($firsttitle_events['content_description_en']);
 							}
 							
@@ -272,7 +290,7 @@ jQuery(window).on('load',  function() {
 			<div class="row">
 		
 		      		<div class="col-md-2" id="firstrecord" style="min-width:19.66%">
-						<div class="pull-left item-image"><a href="<?php echo base_url(); ?>newsdetail/<?php echo $title->short_url;?>"> 
+						<div class="pull-left item-image"><a href="<?php echo base_url(); ?>newsdetail/<?php echo $title->short_url .$lang_url;?>"> 
 							<img src="<?php echo base_url()?>elFindermaster/files/post/image_feature/<?php echo $title->content_image_feature;  ?>" alt="" itemprop="thumbnailUrl"></a> 
 						</div>
 		      		</div> 
@@ -281,19 +299,19 @@ jQuery(window).on('load',  function() {
 		<a href="https://www.ezecom.com.kh/index.php/en/media-center/news-and-events/734-ezecom-supported-cambodia-ict-awards-2017-launching-ceremony-in-calling-for-the-best-ict-acheivement-this-year" itemprop="url">		       
 		</a>
 				<header class="article-header clearfix">
-					<a href="<?php echo base_url(); ?>newsdetail/<?php echo $title->short_url;?>">
+					<a href="<?php echo base_url(); ?>newsdetail/<?php echo $title->short_url . $lang_url;?>">
 						<h5 class="article-title" itemprop="name">
 							<?php 
-								if($this->session->userdata("language") == 1){
+								if($lang == 1){
 									echo $title->content_title_en ;
 								}
-								if($this->session->userdata("language") == 2){
+								if($lang == 2){
 									echo $title->content_title_kh ;
 								}
-								if($this->session->userdata("language") == 3){
+								if($lang == 3){
 									echo $title->content_title_ch ;
 								}
-								if($this->session->userdata("language") == ""){
+								if($lang == ""){
 									echo $title->content_title_en ;
 								}
 								
@@ -308,16 +326,16 @@ jQuery(window).on('load',  function() {
 							<p style="font-size: 14px;">
 
 							<?php
-							if($this->session->userdata("language") == 1){
+							if($lang == 1){
 								$string = strip_tags($firsttitle_events['content_description_en']);
 							}
-							if($this->session->userdata("language") == 2){
+							if($lang == 2){
 								$string = strip_tags($firsttitle_events['content_description_kh']);
 							}
-							if($this->session->userdata("language") == 3){
+							if($lang == 3){
 								$string = strip_tags($firsttitle_events['content_description_ch']);
 							}
-							if($this->session->userdata("language") == ""){
+							if($lang == ""){
 								$string = strip_tags($firsttitle_events['content_description_en']);
 							}
 							

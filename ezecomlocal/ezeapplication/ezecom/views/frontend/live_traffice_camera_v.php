@@ -111,27 +111,27 @@
 
 			<!-- HOME SL 1 -->
 		<div class="wrap t3-sl t3-sl-1 ">
-    <?php if($this->session->userdata("language") == 1) {?>
+    <?php if($this->lang == 1) {?>
      <ul class="nav  nav-pills nav-stacked ">
-        <li class="item-1726"><a href="<?php echo base_url()?>mediacenter"><div class="icon_news_even"></div>News<br>and Events</a></li><li class="item-1727"><a href="<?php echo base_url()?>liveradio"><div class="icon_live_radio"></div>Radio <br>Live Stream</a></li><li class="item-1728"><a href="<?php echo base_url()?>cameralive"><div class="icon_live_traffic <?php if($this->uri->segment(1) == "cameralive"){echo "icon_live_traffic_active";}else{echo "inactive";} ?>"></div><span id="<?php if($this->uri->segment(1) == "cameralive"){echo "active";}else{echo "inactive";} ?>">Traffic <br>Live Camera</a></span></li>
+        <li class="item-1726"><a href="<?php echo base_url()?>mediacenter?lang=<?php echo $this->get_lang ?>"><div class="icon_news_even"></div>News<br>and Events</a></li><li class="item-1727"><a href="<?php echo base_url()?>liveradio?lang=<?php echo $this->get_lang ?>"><div class="icon_live_radio"></div>Radio <br>Live Stream</a></li><li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=<?php echo $this->get_lang ?>"><div class="icon_live_traffic <?php if($this->uri->segment(1) == "cameralive"){echo "icon_live_traffic_active";}else{echo "inactive";} ?>"></div><span id="<?php if($this->uri->segment(1) == "cameralive"){echo "active";}else{echo "inactive";} ?>">Traffic <br>Live Camera</a></span></li>
     </ul>
     
 			
   <?php } ?>
-  <?php if($this->session->userdata("language") == 2) {?>
+  <?php if($this->lang == 2) {?>
      <ul class="nav  nav-pills nav-stacked ">
-        <li class="item-1726"><a href="<?php echo base_url()?>mediacenter"><div class="icon_news_even"></div>ព័ត៌មាន <br>និង ព្រិត្តិការណ៍</a></li><li class="item-1727"><a href="<?php echo base_url()?>liveradio"><div class="icon_live_radio"></div>វិទ្យុ <br>ផ្សាយផ្ទាល់</a></li><li class="item-1728"><a href="<?php echo base_url()?>cameralive"><div class="icon_live_traffic <?php if($this->uri->segment(1) == "cameralive"){echo "icon_live_traffic_active";}else{echo "inactive";} ?>"></div><span id="<?php if($this->uri->segment(1) == "cameralive"){echo "active";}else{echo "inactive";} ?>">កាមេរ៉ា <br>ផ្សាយផ្ទាល់</a></span></li>
+        <li class="item-1726"><a href="<?php echo base_url()?>mediacenter?lang=<?php echo $this->get_lang ?>"><div class="icon_news_even"></div>ព័ត៌មាន <br>និង ព្រិត្តិការណ៍</a></li><li class="item-1727"><a href="<?php echo base_url()?>liveradio?lang=<?php echo $this->get_lang ?>"><div class="icon_live_radio"></div>វិទ្យុ <br>ផ្សាយផ្ទាល់</a></li><li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=<?php echo $this->get_lang ?>"><div class="icon_live_traffic <?php if($this->uri->segment(1) == "cameralive"){echo "icon_live_traffic_active";}else{echo "inactive";} ?>"></div><span id="<?php if($this->uri->segment(1) == "cameralive"){echo "active";}else{echo "inactive";} ?>">កាមេរ៉ា <br>ផ្សាយផ្ទាល់</a></span></li>
     </ul>
   <?php } ?>
-   <?php if($this->session->userdata("language") == 3) {?>
+   <?php if($this->lang == 3) {?>
       <ul class="nav  nav-pills nav-stacked ">
-        <li class="item-1726"><a href="<?php echo base_url()?>mediacenter"><div class="icon_news_even"></div>News<br>and Events</a></li><li class="item-1727"><a href="<?php echo base_url()?>liveradio"><div class="icon_live_radio"></div>Radio <br>Live Stream</a></li><li class="item-1728"><a href="<?php echo base_url()?>cameralive"><div class="icon_live_traffic <?php if($this->uri->segment(1) == "cameralive"){echo "icon_live_traffic_active";}else{echo "inactive";} ?>"></div><span id="<?php if($this->uri->segment(1) == "cameralive"){echo "active";}else{echo "inactive";} ?>">Traffic <br>Live Camera</a></span></li>
+        <li class="item-1726"><a href="<?php echo base_url()?>mediacenter?lang=<?php echo $this->get_lang ?>"><div class="icon_news_even"></div>News<br>and Events</a></li><li class="item-1727"><a href="<?php echo base_url()?>liveradio?lang=<?php echo $this->get_lang ?>"><div class="icon_live_radio"></div>Radio <br>Live Stream</a></li><li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=<?php echo $this->get_lang ?>"><div class="icon_live_traffic <?php if($this->uri->segment(1) == "cameralive"){echo "icon_live_traffic_active";}else{echo "inactive";} ?>"></div><span id="<?php if($this->uri->segment(1) == "cameralive"){echo "active";}else{echo "inactive";} ?>">Traffic <br>Live Camera</a></span></li>
     </ul>
   <?php } ?>
 
-  <?php if($this->session->userdata("language") == "") {?>
+  <?php if($this->lang == "") {?>
       <ul class="nav  nav-pills nav-stacked ">
-        <li class="item-1726"><a href="<?php echo base_url()?>mediacenter"><div class="icon_news_even"></div>News<br>and Events</a></li><li class="item-1727"><a href="<?php echo base_url()?>liveradio"><div class="icon_live_radio"></div>Radio <br>Live Stream</a></li><li class="item-1728"><a href="<?php echo base_url()?>cameralive"><div class="icon_live_traffic <?php if($this->uri->segment(1) == "cameralive"){echo "icon_live_traffic_active";}else{echo "inactive";} ?>"></div><span id="<?php if($this->uri->segment(1) == "cameralive"){echo "active";}else{echo "inactive";} ?>">Traffic <br>Live Camera</a></span></li>
+        <li class="item-1726"><a href="<?php echo base_url()?>mediacenter?lang=<?php echo $this->get_lang ?>"><div class="icon_news_even"></div>News<br>and Events</a></li><li class="item-1727"><a href="<?php echo base_url()?>liveradio?lang=<?php echo $this->get_lang ?>"><div class="icon_live_radio"></div>Radio <br>Live Stream</a></li><li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=<?php echo $this->get_lang ?>"><div class="icon_live_traffic <?php if($this->uri->segment(1) == "cameralive"){echo "icon_live_traffic_active";}else{echo "inactive";} ?>"></div><span id="<?php if($this->uri->segment(1) == "cameralive"){echo "active";}else{echo "inactive";} ?>">Traffic <br>Live Camera</a></span></li>
     </ul>
   <?php } ?>
 

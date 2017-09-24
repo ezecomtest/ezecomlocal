@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Live_traffice_camera_c extends CI_Controller {
+	 public $lang="", $get_lang ="";
 	 public function __construct()
     {
         parent::__construct();
@@ -12,6 +13,20 @@ class Live_traffice_camera_c extends CI_Controller {
         $this->load->model('frontend/homepage_m');
         $this->load->model('frontend/live_camera_m');
         date_default_timezone_set("Asia/Bangkok");
+		// get language from url
+		$this->get_lang = $this->input->get("lang");
+		  if($this->get_lang=="en"){
+			  $this->lang = 1;
+		  }
+		   if($this->get_lang=="kh"){
+			  $this->lang = 2;
+		  }
+		   if($this->get_lang=="ch"){
+			  $this->lang = 3;
+		  }
+		  if($this->get_lang==""){
+			  $this->lang = "";
+		  }
     }
 
 	/**

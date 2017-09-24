@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Live_radio_c extends CI_Controller {
+	 public $lang="", $get_lang ="";
 	 public function __construct()
     {
         parent::__construct();
@@ -12,6 +13,20 @@ class Live_radio_c extends CI_Controller {
         $this->load->model('frontend/live_radio_m');
         $this->load->helper(array('form', 'url'));
         date_default_timezone_set("Asia/Bangkok");
+		// get language from url
+		$this->get_lang = $this->input->get("lang");
+		  if($this->get_lang=="en"){
+			  $this->lang = 1;
+		  }
+		   if($this->get_lang=="kh"){
+			  $this->lang = 2;
+		  }
+		   if($this->get_lang=="ch"){
+			  $this->lang = 3;
+		  }
+		  if($this->get_lang==""){
+			  $this->lang = "";
+		  }
         
     }
 
@@ -37,7 +52,7 @@ class Live_radio_c extends CI_Controller {
 	public function live_radio()
 	{
 		$data['active']='Live Radio';
-		$lan = $this->session->userdata("language");
+		$lan = $this->lang;
 		$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
 		$data['schedules']=$this->live_radio_m->get_all_schedules();
 		$data['radio_group']=$this->live_radio_m->get_radio_group();

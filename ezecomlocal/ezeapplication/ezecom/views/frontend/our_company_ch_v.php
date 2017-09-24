@@ -88,19 +88,19 @@ jQuery(document).ready(function(){
 	<div id="myNavbar" class="wrap t3-sl t3-sl-1 " data-duration="400" data-responsive="true">
 <ul class="nav  nav-pills nav-stacked col-sm-12">
 <li class="item-1723">
-<a href="<?php echo base_url();?>ourcompany#company-profile"><div class="company_profile"></div>Profile</a></li>
+<a href="<?php echo base_url();?>ourcompany?lang=<?php echo $this->get_lang ?>#company-profile"><div class="company_profile"></div>Profile</a></li>
 <li class="item-1717">
-<a href="<?php echo base_url();?>ourcompany#qms"><div class="quality-management"> </div>QMS</a></li>
+<a href="<?php echo base_url();?>ourcompany?lang=<?php echo $this->get_lang ?>#qms"><div class="quality-management"> </div>QMS</a></li>
 <li class="item-1718">
-<a href="<?php echo base_url();?>ourcompany#childsafe-certification"><div class="childsafe"> </div>Childsafe</a></li>
+<a href="<?php echo base_url();?>ourcompany?lang=<?php echo $this->get_lang ?>#childsafe-certification"><div class="childsafe"> </div>Childsafe</a></li>
 <li class="item-1715">
-<a href="<?php echo base_url();?>ourpartnership#our-partnerships"><div class="our-partnerships"> </div>Partnerships</a></li>
+<a href="<?php echo base_url();?>ourpartnership?lang=<?php echo $this->get_lang ?>#our-partnerships"><div class="our-partnerships"> </div>Partnerships</a></li>
 <li class="item-1720">
-<a href="<?php echo base_url();?>ourcompany#csr"><div class="corporate-social-responsibility"></div>CSR</a></li>
+<a href="<?php echo base_url();?>ourcompany?lang=<?php echo $this->get_lang ?>#csr"><div class="corporate-social-responsibility"></div>CSR</a></li>
 <li class="item-1721">
-<a href="<?php echo base_url();?>ourcompany#community"><div class="community"> </div>Community</a></li>
+<a href="<?php echo base_url();?>ourcompany?lang=<?php echo $this->get_lang ?>#community"><div class="community"> </div>Community</a></li>
 <li class="item-1722">
-<a href="<?php echo base_url();?>ourcompany#career-opportunities"><div class="career"> </div>Carreer</a></li>
+<a href="<?php echo base_url();?>ourcompany?lang=<?php echo $this->get_lang ?>#career-opportunities"><div class="career"> </div>Carreer</a></li>
 </ul>
 <div style="height: 30px; width: 100%;"> </div>
 </div></div>
@@ -827,9 +827,9 @@ jQuery(document).ready(function(){
 	<div id="our-partnership" class="container-fluid bg-color-gray">
 <div class="container module-content-container">
 <h2 style="font-family: 'Bayon', cursive;">我们的合作关系</h2>
-<p style="text-align: center;"><a href="<?php echo base_url();?>ourpartnership#goodwill-partners">商誉合伙人</a></p>
-<p style="text-align: center;"><a href="<?php echo base_url();?>ourpartnership#ezeCampus">EZECOM Campus</a></p>
-<p style="text-align: center;"><a href="<?php echo base_url();?>ourpartnership#student-discount">Student Discount</a></p>
+<p style="text-align: center;"><a href="<?php echo base_url();?>ourpartnership?lang=<?php echo $this->get_lang ?>#goodwill-partners">商誉合伙人</a></p>
+<p style="text-align: center;"><a href="<?php echo base_url();?>ourpartnership?lang=<?php echo $this->get_lang ?>#ezeCampus">EZECOM Campus</a></p>
+<p style="text-align: center;"><a href="<?php echo base_url();?>ourpartnership?lang=<?php echo $this->get_lang ?>#student-discount">Student Discount</a></p>
 <h3 style="text-align: center;"> </h3>
 </div>
 </div></div>

@@ -83,25 +83,25 @@ jQuery(document).ready(function(){
 <!-- HOME SL 1 -->
 <div class="wrap t3-sl t3-sl-1 ">
 <ul class="nav  nav-pills nav-stacked " id="our_service">
-<li class="item-1724"><a href="<?php echo base_url()?>ourservices"><div class="our_internet"></div>Our<br>Internet</a></li>
-<li class="item-1725 current active"><a href="<?php echo base_url()?>enterprisesolution">
+<li class="item-1724"><a href="<?php echo base_url()?>ourservices?lang=<?php echo $this->get_lang ?>"><div class="our_internet"></div>Our<br>Internet</a></li>
+<li class="item-1725 current active"><a href="<?php echo base_url()?>enterprisesolution?lang=<?php echo $this->get_lang ?>">
 <div class="enterprise_solution enterprise_solutionactive"></div>Enterprise <br>Solutions</a></li>
 </ul>
 
 <div class="custom">
 	<div id="myNavbar" class="custom">
 <ul class="nav  nav-pills nav-stacked " style="background: #E7E7E8;">
-<li class="item-1723"><a href="<?php echo base_url()?>enterprisesolution#dedicated -package"><div class="icon_dedicated"></div>Dedicate</a></li>
-<li class="item-1717"><a href="<?php echo base_url()?>enterprisesolution#DPLC"><div class="icon_dplc"></div>DPLC</a></li>
-<li class="item-1718"><a href="<?php echo base_url()?>enterprisesolution#iplc"><div class="icon_iplc"></div>IPLC</a></li>
-<li class="item-1719"><a href="<?php echo base_url()?>enterprisesolution#mpls"><div class="icon_mpls"></div>MPLS</a></li>
-<li class="item-1720"><a href="<?php echo base_url()?>enterprisesolution#vpn"><div class="icon_vpn"></div>VPN</a></li>
-<li class="item-1721"><a href="<?php echo base_url()?>enterprisesolution#data-location"><div class="icon_data_co_location"></div>Co-location</a></li>
+<li class="item-1723"><a href="<?php echo base_url()?>enterprisesolution?lang=<?php echo $this->get_lang ?>#dedicated -package"><div class="icon_dedicated"></div>Dedicate</a></li>
+<li class="item-1717"><a href="<?php echo base_url()?>enterprisesolution?lang=<?php echo $this->get_lang ?>#DPLC"><div class="icon_dplc"></div>DPLC</a></li>
+<li class="item-1718"><a href="<?php echo base_url()?>enterprisesolution?lang=<?php echo $this->get_lang ?>#iplc"><div class="icon_iplc"></div>IPLC</a></li>
+<li class="item-1719"><a href="<?php echo base_url()?>enterprisesolution?lang=<?php echo $this->get_lang ?>#mpls"><div class="icon_mpls"></div>MPLS</a></li>
+<li class="item-1720"><a href="<?php echo base_url()?>enterprisesolution?lang=<?php echo $this->get_lang ?>#vpn"><div class="icon_vpn"></div>VPN</a></li>
+<li class="item-1721"><a href="<?php echo base_url()?>enterprisesolution?lang=<?php echo $this->get_lang ?>#data-location"><div class="icon_data_co_location"></div>Co-location</a></li>
 <!-- <li class="item-1718"><a href="<?php echo base_url()?>enterprisesolution#365"><div class="icon_office"></div> 365 </a></li> -->
 <li class="item-1745"><a href="<?php echo base_url()?>ibiz-cloud-service/"><div class="icon_ibizcloud"></div> ibizCloud </a></li>
 <!-- <li class="item-1726"><a href="<?php echo base_url()?>enterprisesolution#BeeDoo"><div class="icon_BeeDoo"></div> BeeDoo </a></li> -->
-<li class="item-1728"><a href="<?php echo base_url()?>enterprisesolution#web-hosting"><div class="icon_web_hosting"></div>Hosting </a></li>
-<li class="item-1729"><a href="<?php echo base_url()?>ddos-mitigation-service/"><div class="icon_ddos"></div>DDos Mitigation</a></li>
+<li class="item-1728"><a href="<?php echo base_url()?>enterprisesolution?lang=<?php echo $this->get_lang ?>#web-hosting"><div class="icon_web_hosting"></div>Hosting </a></li>
+<li class="item-1729"><a href="<?php echo base_url()?>ddos-mitigation-service?lang=<?php echo $this->get_lang ?>"><div class="icon_ddos"></div>DDos Mitigation</a></li>
 </ul>
 </div></div>
 

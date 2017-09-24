@@ -84,16 +84,16 @@ var rl_tabs_use_hash = 1; var rl_tabs_reload_iframes = 0; var rl_tabs_init_timeo
 			<!-- HOME SL 1 -->
 <div class="wrap t3-sl t3-sl-1 ">
 <ul class="nav  nav-pills nav-stacked " id="our_service">
-<li class="item-1724 active"><a href="<?php echo base_url()?>ourservices"><div class="our_internet our_internetactive"></div>Our <br>Internet</a></li><li class="item-1725"><a href="<?php echo base_url()?>enterprisesolution"><div class="enterprise_solution"></div>Enterprise <br>Solutions</a></li></ul>
+<li class="item-1724 active"><a href="<?php echo base_url()?>ourservices?lang=<?php echo $this->get_lang ?>"><div class="our_internet our_internetactive"></div>Our <br>Internet</a></li><li class="item-1725"><a href="<?php echo base_url()?>enterprisesolution?lang=<?php echo $this->get_lang ?>"><div class="enterprise_solution"></div>Enterprise <br>Solutions</a></li></ul>
 
 
 <div class="custom">
 	<div id="myNavbar" class="custom">
 <ul class="nav  nav-pills nav-stacked " style="background: #E7E7E8;">
-<li class="our-service-item-1727"><a href="<?php echo base_url()?>ourservices#corporate-package"><div class="coporate_package"></div>Corporate</a></li>
-<li class="our-service-item-1728"><a href="<?php echo base_url()?>ourservices#premium-package"><div class="premium_package"></div>Premium</a></li>
-<li class="our-service-item-1729"><a href="<?php echo base_url()?>ourservices#voip"><div class="voip"></div>VoIP</a></li>
-<li class="our-service-item-1730"><a href="<?php echo base_url()?>ourservices#exlusive"><div class="borey-icon"></div>Exclusive</a></li>
+<li class="our-service-item-1727"><a href="<?php echo base_url()?>ourservices?lang=<?php echo $this->get_lang ?>#corporate-package"><div class="coporate_package"></div>Corporate</a></li>
+<li class="our-service-item-1728"><a href="<?php echo base_url()?>ourservices?lang=<?php echo $this->get_lang ?>#premium-package"><div class="premium_package"></div>Premium</a></li>
+<li class="our-service-item-1729"><a href="<?php echo base_url()?>ourservices?lang=<?php echo $this->get_lang ?>#voip"><div class="voip"></div>VoIP</a></li>
+<li class="our-service-item-1730"><a href="<?php echo base_url()?>ourservices?lang=<?php echo $this->get_lang ?>#exlusive"><div class="borey-icon"></div>Exclusive</a></li>
 </ul>
 </div></div>
 

@@ -2,10 +2,25 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Our_services_c extends CI_Controller {
+	 public $lang="", $get_lang ="";
 	 public function __construct()
     {
         parent::__construct();
         $this->load->model('frontend/homepage_m');
+		// get language from url
+		$this->get_lang = $this->input->get("lang");
+		  if($this->get_lang=="en"){
+			  $this->lang = 1;
+		  }
+		   if($this->get_lang=="kh"){
+			  $this->lang = 2;
+		  }
+		   if($this->get_lang=="ch"){
+			  $this->lang = 3;
+		  }
+		  if($this->get_lang==""){
+			  $this->lang = "";
+		  }
     }
 
 	/**
@@ -29,29 +44,29 @@ class Our_services_c extends CI_Controller {
 	}
 
 	public function our_services(){
-		if($this->session->userdata("language")==1){
+		if($this->lang==1){
 		$data['title'] = "Our Services";
 		$data['active'] = "Our Services";
-		$lan = $this->session->userdata("language");
+		$lan = $this->lang;
 		$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
 		$this->load->view('frontend/our_services_v',$data);
 		}
-		if($this->session->userdata("language")==2){
+		if($this->lang==2){
 		$data['title'] = "អាជីវកម្ម";
 		$data['active'] = "Our Services";
-		$lan = $this->session->userdata("language");
+		$lan = $this->lang;
 		$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
 		$this->load->view('frontend/our_services_kh_v',$data);
 		}
-		if($this->session->userdata("language")==3){
+		if($this->lang==3){
 		$data['title'] = "Our Services";
 		$data['active'] = "Our Services";
-		$lan = $this->session->userdata("language");
+		$lan = $this->lang;
 		$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
 		$this->load->view('frontend/our_services_ch_v',$data);
 		}
 
-		if($this->session->userdata("language")== ""){
+		if($this->lang== ""){
 		$data['title'] = "Our Services";
 		$data['active'] = "Our Services";
 		$lan = 1;
@@ -61,28 +76,28 @@ class Our_services_c extends CI_Controller {
 	}
 
 	public function enterprise_solutions(){
-		if($this->session->userdata("language") ==1){
+		if($this->lang ==1){
 		$data['title'] = "Enterprise Solutions";
 		$data['active'] = "Our Services";
-		$lan = $this->session->userdata("language");
+		$lan = $this->lang;
 		$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
 		$this->load->view('frontend/enterprise_solutions_v',$data);
 	}
-	if($this->session->userdata("language")==2){
+	if($this->lang==2){
 		$data['title'] = "Enterprise Solutions";
 		$data['active'] = "Our Services";
-		$lan = $this->session->userdata("language");
+		$lan = $this->lang;
 		$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
 		$this->load->view('frontend/enterprise_solutions_kh_v',$data);
 		}
-	if($this->session->userdata("language")==3){
+	if($this->lang==3){
 		$data['title'] = "Enterprise Solutions";
 		$data['active'] = "Our Services";
-		$lan = $this->session->userdata("language");
+		$lan = $this->lang;
 		$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
 		$this->load->view('frontend/enterprise_solutions_ch_v',$data);
 		}
-	if($this->session->userdata("language") == ""){
+	if($this->lang == ""){
 		$data['title'] = "Enterprise Solutions";
 		$data['active'] = "Our Services";
 		$lan = 1;

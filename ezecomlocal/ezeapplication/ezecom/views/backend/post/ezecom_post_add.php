@@ -291,7 +291,7 @@
                                         <div class="form-group">
                                             <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                                                 <button type="reset" class="btn btn-primary">Cancel</button>
-                                                <button type="submit" class="btn btn-success">Add</button>
+                                                <button type="submit" id="Add" class="btn btn-success">Add</button>
                                             </div>
                                         </div>
 									
@@ -324,8 +324,11 @@ document.getElementById("result").style.display = "none";
 function check_short_url(){
 	var base_url= "<?php echo base_url()?>";
 	var string_val = document.getElementById("permalink").value;
+	var replaced = string_val.split(' ').join('-');
+	
 	var re = new RegExp("^[a-z0-9 -]*$");
 	if (re.test(string_val)) {
+		document.getElementById("permalink").value = replaced;
 		$.ajax({
                 type:"POST",
                 url: base_url+"shortUrlCheck",
@@ -348,9 +351,11 @@ function check_short_url(){
 		document.getElementById("permalink").style.borderColor = "";
 		document.getElementById("result").style.display = "none";
 		document.getElementById("permalink").style.borderColor = "";
+		document.getElementById('Add').disabled = false;
 		
 	}else{
 		// not accept reqular expression
+		document.getElementById('Add').disabled = true;
 		document.getElementById("permalink").style.borderColor = "red";
 		document.getElementById("result").style.display = "block";
 		$("#result").html("Accept only hyphen, characters and number ");

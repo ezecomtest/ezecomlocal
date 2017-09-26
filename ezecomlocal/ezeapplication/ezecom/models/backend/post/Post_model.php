@@ -187,6 +187,11 @@ class Post_model extends CI_Model {
 		}
 		
     }
+	
+	public function short_url_search($short_url){
+			$query = $this->db->get_where('tbl_content_en',array('short_url'=>$short_url));
+			return $query->num_rows();
+	}
 
     
 }

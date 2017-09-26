@@ -131,7 +131,7 @@ class Eze_post extends CI_Controller {
 						'content_categories_id'=>$this->input->post('content_categories_id'),
 						'content_date'=>$this->input->post('content_date'),
 						'content_description_en'=>$this->input->post('content_description'),
-						'short_url'=> $this->input->post('permalink')
+						'short_url'=> trim($this->input->post('permalink'))
 						);
 						
 						// data Khmer
@@ -143,7 +143,7 @@ class Eze_post extends CI_Controller {
 						'content_categories_id'=>$this->input->post('content_categories_kh'),
 						'content_date'=>$this->input->post('content_date_kh'),
 						'content_description_kh'=>$this->input->post('content_description_kh'),
-						'short_url'=> $this->input->post('permalink')
+						'short_url'=> trim($this->input->post('permalink'))
 						);
 						
 						// data Chinese
@@ -155,7 +155,7 @@ class Eze_post extends CI_Controller {
 						'content_categories_id'=>$this->input->post('content_categories_ch'),
 						'content_date'=>$this->input->post('content_date_kh'),
 						'content_description_ch'=>$this->input->post('content_description_ch'),
-						'short_url'=> $this->input->post('permalink')
+						'short_url'=> trim($this->input->post('permalink'))
 						);
 						
                         $result = $this->post_model->do_saving_content($alldata_en,$alldata_khmer,$alldata_chinese);
@@ -215,7 +215,7 @@ class Eze_post extends CI_Controller {
 								'content_categories_id'=>$this->input->post('content_categories_id'),
 								'content_date'=>$this->input->post('content_date'),
 								'content_description_en'=>$this->input->post('content_description_en'),
-								'short_url'=>$this->input->post('permalink')
+								'short_url'=> trim($this->input->post('permalink'))
 								);
 								
                         $result = $this->post_model->do_update_content($alldata_en,$id,$img,$shurl_be_update);
@@ -256,7 +256,7 @@ class Eze_post extends CI_Controller {
 								'content_categories_id'=>$this->input->post('content_categories_id'),
 								'content_date'=>$this->input->post('content_date'),
 								'content_description_en'=>$this->input->post('content_description_en'),
-								'short_url'=>$this->input->post('permalink')
+								'short_url'=> trim($this->input->post('permalink'))
 								);
 								
                         $result = $this->post_model->do_update_content($alldata_en,$id,$img,$shurl_be_update);
@@ -311,7 +311,7 @@ class Eze_post extends CI_Controller {
 										'content_categories_id'=>$this->input->post('content_categories_id'),
 										'content_date'=>$this->input->post('content_date'),
 										'content_description_en'=>$this->input->post('content_description_en'),
-										'short_url'=>$this->input->post('permalink')
+										'short_url'=> trim($this->input->post('permalink'))
 										);
 							
 							$result = $this->post_model->do_update_content($alldata_en,$id,$img,$shurl_be_update);
@@ -354,7 +354,7 @@ class Eze_post extends CI_Controller {
 										'content_categories_id'=>$this->input->post('content_categories_id'),
 										'content_date'=>$this->input->post('content_date'),
 										'content_description_en'=>$this->input->post('content_description_en'),
-										'short_url'=>$this->input->post('permalink')
+										'short_url'=> trim($this->input->post('permalink'))
 										);
 							
 							$result = $this->post_model->do_update_content($alldata_en,$id,$img,$shurl_be_update);
@@ -400,6 +400,12 @@ class Eze_post extends CI_Controller {
 
 		$data['title'] = "COPY POST";
 		$this->load->view('backend/post/ezecom_post_copy',$data);
+	}
+	
+	public function check_short_url(){
+		$short_url= trim($this->input->post("string_val"));
+		$result= $this->post_model->short_url_search($short_url);
+		echo $result;
 	}
 
 

@@ -117,6 +117,7 @@ $route['media'] = '/backend/eze_media/media';
 $route['listpost'] = '/backend/eze_post/lists_content';
 $route['deletepost/(:num)'] = '/backend/eze_post/delete_content/$1';
 $route['addpost'] = '/backend/eze_post/add_content';
+$route['shortUrlCheck'] = '/backend/eze_post/check_short_url';
 $route['saving_post'] = '/backend/eze_post/saving_content';
 $route['editpost/(:num)'] = '/backend/eze_post/edit_content/$1';
 $route['updatepost'] = '/backend/eze_post/update_content';

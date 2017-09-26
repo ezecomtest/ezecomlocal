@@ -3,6 +3,8 @@
 <head>
     <title><?php echo $title; ?></title>
     <?php $this->load->view("header/header_link");?>
+	<link href="<?php echo base_url() ?>css/formValidation.css" rel="stylesheet">
+
 </head>
 <body class="nav-md">
     <div class="container body">
@@ -31,13 +33,14 @@
                                 </div>
                                 <div class="x_content">
                                     <br>
-                                    <form class="form-horizontal form-label-left" action="<?php echo site_url('saving_post'); ?>" method="POST" enctype="multipart/form-data">
+                                    <form id="addPost" class="form-horizontal form-label-left" action="<?php echo site_url('saving_post'); ?>" method="POST" enctype="multipart/form-data">
 									<h2>Global Setting</h2>
 										<div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="user_name">Short url<span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" name="permalink" required="required" placeholder="<?php echo base_url()."newsdetail/"?>"class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
+                                                <input type="text" class="form-control border" name="permalink" id="permalink" required="required" placeholder="<?php echo base_url()."newsdetail/"?>" oninput="check_short_url()">
+												<label id="result"></label>
                                             </div>
                                         </div>
 										
@@ -306,5 +309,53 @@
         </div>
     </div>
     <?php $this->load->view("header/script");?>
+	
 </body>
 </html>
+
+<!--<script src="<?php echo base_url()?>js/jquery-1.12.3.js"></script>
+<script src="<?php echo base_url()?>js/bootstrap.min.js"></script>
+<script src="<?php echo base_url()?>js/formValidation.js"></script>
+<script src="<?php echo base_url()?>js/bootstrapValidator.js"></script>
+<script src="<?php echo base_url()?>js/common.js"></script> -->
+
+<script type="text/javascript">
+document.getElementById("result").style.display = "none";
+function check_short_url(){
+	var base_url= "<?php echo base_url()?>";
+	var string_val = document.getElementById("permalink").value;
+	var re = new RegExp("^[a-z0-9 -]*$");
+	if (re.test(string_val)) {
+		$.ajax({
+                type:"POST",
+                url: base_url+"shortUrlCheck",
+                data:({string_val:string_val}),
+                success:function(data)
+                {
+					if(data == true){
+						document.getElementById("permalink").style.borderColor = "red";
+						document.getElementById("result").style.display = "block";
+						$("#result").html("Short url already exist");
+						document.getElementById("result").style.color = "red";
+						
+					}else{
+						document.getElementById("permalink").style.borderColor = "";
+						document.getElementById("result").style.display = "none";
+					}
+                }
+            });
+		// accept reqular expression	
+		document.getElementById("permalink").style.borderColor = "";
+		document.getElementById("result").style.display = "none";
+		document.getElementById("permalink").style.borderColor = "";
+		
+	}else{
+		// not accept reqular expression
+		document.getElementById("permalink").style.borderColor = "red";
+		document.getElementById("result").style.display = "block";
+		$("#result").html("Accept only hyphen, characters and number ");
+		document.getElementById("result").style.color = "red";
+	}
+}
+	
+</script>

@@ -142,7 +142,7 @@ $route['updateslide'] = '/backend/eze_slide/update_slide';
 
 // start homepage
 
-$route['homepage'] = 'frontend/home_c/homepage';
+$route['home-page'] = 'frontend/home_c/homepage';
 
 // end homepage
 
@@ -161,25 +161,29 @@ $route['career/(:num)'] = 'frontend/career_detail_c/career/$1';
 
 // start our partnership
 
-$route['ourpartnership'] = 'frontend/our_partnership_c/our_partnership';
+$route['our-partnership'] = 'frontend/our_partnership_c/our_partnership';
 
 // end our partnership
 
 // start sitemap
 
-$route['sitemap'] = 'frontend/site_map_c/site_map';
+$route['site-map'] = 'frontend/site_map_c/site_map';
 
 // end sitemap
 
 // start media center
 
-$route['mediacenter/(:num)'] = 'frontend/media_center_c/media_center/$1';
-$route['mediacenter'] = 'frontend/media_center_c/media_center/';
+$route['media-center/(:num)'] = 'frontend/media_center_c/media_center/$1';
+$route['media-center'] = 'frontend/media_center_c/media_center/';
+
+// DDos
+$route['ddos-mitigation-service'] = 'frontend/ddos/ddos_mitigation/';
+
 //end media center
 
 // start liveradio
 
-$route['liveradio'] = 'frontend/live_radio_c/live_radio';
+$route['live-radio-cambodia'] = 'frontend/live_radio_c/live_radio';
 
 // start liveradio
 
@@ -192,31 +196,31 @@ $route['cameralive'] = 'frontend/live_traffice_camera_c/live_traffice_camera';
 
 // start contact us
 
-$route['contactus'] = 'frontend/contact_us_c/contact_us';
+$route['contact-us'] = 'frontend/contact_us_c/contact_us';
 
 // end contact us
 
 // start our services
 
-$route['ourservices'] = 'frontend/our_services_c/our_services';
+$route['our-services'] = 'frontend/our_services_c/our_services';
 
 // end our services
 
 // start customer service
 
-$route['customerservice'] = 'frontend/customer_service_c/customer_services';
+$route['customer-service'] = 'frontend/customer_service_c/customer_services';
 
 // end customer service
 
 // start set up email
 
-$route['setup_email'] = 'frontend/set_up_email_c/set_up_email';
+$route['setup-email'] = 'frontend/set_up_email_c/set_up_email';
 
 // end set up email
 
 // start enterprise solution
 
-$route['enterprisesolution'] = 'frontend/our_services_c/enterprise_solutions';
+$route['enterprise-solution'] = 'frontend/our_services_c/enterprise_solution';
 
 // end enterprise solution
 
@@ -228,7 +232,7 @@ $route['beedoo'] = 'frontend/our_services_c/beedoo_could_service_by_ezecom';
 
 // Start career
 
-$route['career'] = 'frontend/career_detail_c/career';
+$route['career/(:any)'] = 'frontend/career_detail_c/career/$1';
 
 // End career
 

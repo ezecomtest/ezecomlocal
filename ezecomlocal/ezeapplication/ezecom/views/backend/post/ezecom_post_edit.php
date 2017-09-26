@@ -50,14 +50,17 @@
 										<div class="form-group">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12">Link News & Event:</label>
 											<label class="col-md-6 col-sm-6 col-xs-12" style="padding-top:10px;">
-												<?php echo base_url()."newsdetail/".$editpost['short_url'] ?>
+												<?php echo base_url()."newsdetail/" ?>
+												<label id="link_url"><?php echo $editpost['short_url'] ?></label>
 											</label>
+											
 										</div>
 										<div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="user_name">Short url<span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-												<input type="text" name="permalink" required="required" value="<?php echo $editpost['short_url'] ?>" placeholder="<?php echo base_url()."newsdetail/"?>"class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
+												<input type="text" class="form-control border" name="permalink" id="permalink" required="required" value="<?php echo $editpost['short_url'] ?>" placeholder="<?php echo base_url()."newsdetail/"?>" oninput="check_short_url()">
+												<label id="result"></label>
 												<input type="hidden" name="short-url-before-update" value="<?php echo $editpost['short_url'] ?>">
                                             </div>
                                         </div>
@@ -178,7 +181,7 @@
                                         <div class="form-group">
                                             <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                                                 <button type="reset" class="btn btn-primary">Cancel</button>
-                                                <button type="submit" class="btn btn-success">Update</button>
+                                                <button type="submit" id="Add" class="btn btn-success">Add</button>
                                             </div>
                                         </div>
 
@@ -198,3 +201,54 @@
     <?php $this->load->view("header/script");?>
 </body>
 </html>
+<script type="text/javascript">
+document.getElementById("result").style.display = "none";
+function check_short_url(){
+	var base_url= "<?php echo base_url()?>";
+	var string_val = document.getElementById("permalink").value;
+	var replaced = string_val.split(' ').join('-');
+	var re = new RegExp("^[a-z0-9 -]*$");
+	if (re.test(string_val)) {
+		// add string after replaced space with hyphen.
+		document.getElementById("permalink").value = replaced;
+		//add string shourt url to label Link news and Event.
+		document.getElementById("link_url").innerHTML = "";
+		document.getElementById("link_url").innerHTML = replaced;
+		
+		$.ajax({
+                type:"POST",
+                url: base_url+"shortUrlCheck",
+                data:({string_val:string_val}),
+                success:function(data)
+                {
+					if(data == true){
+						document.getElementById("permalink").style.borderColor = "red";
+						document.getElementById("result").style.display = "block";
+						$("#result").html("Short url already exist");
+						document.getElementById("result").style.color = "red";
+						document.getElementById('Add').disabled = true;
+						
+					}else{
+						document.getElementById("permalink").style.borderColor = "";
+						document.getElementById("result").style.display = "none";
+						document.getElementById('Add').disabled = false;
+					}
+                }
+            });
+		// accept reqular expression	
+		document.getElementById("permalink").style.borderColor = "";
+		document.getElementById("result").style.display = "none";
+		document.getElementById("permalink").style.borderColor = "";
+		document.getElementById('Add').disabled = false;
+		
+	}else{
+		// not accept reqular expression
+		document.getElementById('Add').disabled = true;
+		document.getElementById("permalink").style.borderColor = "red";
+		document.getElementById("result").style.display = "block";
+		$("#result").html("Accept only hyphen, characters and number ");
+		document.getElementById("result").style.color = "red";
+	}
+}
+	
+</script>

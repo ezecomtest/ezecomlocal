@@ -228,7 +228,7 @@ $route['beedoo'] = 'frontend/our_services_c/beedoo_could_service_by_ezecom';
 
 // Start career
 
-$route['career'] = 'frontend/career_detail_c/career';
+$route['career/(:any)'] = 'frontend/career_detail_c/career';
 
 // End career
 

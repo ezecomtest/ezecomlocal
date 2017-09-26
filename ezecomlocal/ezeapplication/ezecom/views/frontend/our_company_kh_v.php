@@ -918,14 +918,12 @@ jQuery(document).ready(function(){
 		  <tbody>
           <?php
             foreach ($career as $careers) {?>
-              <div class="evofp-table-row" style="display:table-row;width:100%">
                 <tr>
-                  <td><a href="<?php echo base_url()?>career/<?php echo $careers->career_id;?>" target="_new"><div class="title">
-                  <?php echo $careers->career_title;?></div></a></td>
+                  <td><a href="<?php echo base_url()?>career/<?php echo strtolower( str_replace(' ', '-', $careers->career_title));?>?lang=<?php echo $this->get_lang ?>" target="_new"><div class="title">
+                  <?php echo ucwords(strtolower($careers->career_title));?></div></a></td>
                   <td><?php echo $careers->career_end_date;?></td>
-                  <td><a class="btn-xs" href="<?php echo base_url()?>career/<?php echo $careers->career_id;?>" target="_new">Read more</a></td>
-                </tr>                   
-              </div>                                   
+                  <td><a class="btn-xs" href="<?php echo base_url()?>career/<?php echo strtolower( str_replace(' ', '-', $careers->career_title));?>?lang=<?php echo $this->get_lang ?>" target="_new">Read more</a></td>
+                </tr>                                                     
           <?php }?>
           <input type="hidden" value="<?php echo $careers->career_id;?>" name="career_id">
         </tr>

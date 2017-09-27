@@ -85,7 +85,7 @@ var rl_tabs_use_hash = 1; var rl_tabs_reload_iframes = 0; var rl_tabs_init_timeo
 			<!-- HOME SL 1 -->
 <div class="wrap t3-sl t3-sl-1 ">
 <ul class="nav  nav-pills nav-stacked " id="our_service">
-<li class="item-1724 active"><a href="<?php echo base_url()?>ourservices?lang=<?php echo $this->get_lang ?>"><div class="our_internet our_internetactive"></div>Our <br>Internet</a></li><li class="item-1725"><a href="<?php echo base_url()?>enterprisesolution?lang=<?php echo $this->get_lang ?>"><div class="enterprise_solution"></div>Enterprise <br>Solutions</a></li></ul>
+<li class="item-1724 active"><a href="<?php echo base_url()?>ourservices?lang=<?php echo $this->get_lang ?>"><div class="our_internet our_internetactive"></div>Our <br>Internet</a></li><li class="item-1725"><a href="<?php echo base_url()?>enterprise-solution?lang=<?php echo $this->get_lang ?>"><div class="enterprise_solution"></div>Enterprise <br>Solutions</a></li></ul>
 
 
 <div class="custom">

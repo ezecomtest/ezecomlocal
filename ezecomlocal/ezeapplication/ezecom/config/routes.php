@@ -216,7 +216,7 @@ $route['setup_email'] = 'frontend/set_up_email_c/set_up_email';
 
 // start enterprise solution
 
-$route['enterprisesolution'] = 'frontend/our_services_c/enterprise_solutions';
+$route['enterprise-solution'] = 'frontend/our_services_c/enterprise_solutions';
 
 // end enterprise solution
 

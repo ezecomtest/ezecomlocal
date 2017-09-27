@@ -160,8 +160,7 @@
                 "sSearch": "Search all columns:"
             },
             'iDisplayLength': 8,
-            "sPaginationType": "full_numbers",
-			"order": [[ 1, "desc" ]]
+            "sPaginationType": "full_numbers"
         });
         $("tfoot input").keyup(function () {
             /* Filter on the column based on the index of this element's parent <th> */

@@ -36,10 +36,18 @@
                                     <form id="addPost" class="form-horizontal form-label-left" action="<?php echo site_url('saving_post'); ?>" method="POST" enctype="multipart/form-data">
 									<h2>Global Setting</h2>
 										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12">Link News & Event:</label>
+											<label class="col-md-6 col-sm-6 col-xs-12" style="padding-top:10px;">
+												<?php echo base_url()."newsdetail/" ?>
+												<label id="link_url"></label>
+											</label>
+											
+										</div>
+										<div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="user_name">Short url<span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" class="form-control border" name="permalink" id="permalink" required="required" placeholder="<?php echo base_url()."newsdetail/"?>" oninput="check_short_url()">
+                                                <input type="text" class="form-control border" name="permalink" id="permalink" required="required" oninput="check_short_url()">
 												<label id="result"></label>
                                             </div>
                                         </div>
@@ -329,6 +337,9 @@ function check_short_url(){
 	var re = new RegExp("^[a-z0-9 -]*$");
 	if (re.test(string_val)) {
 		document.getElementById("permalink").value = replaced;
+		//add string shourt url to label Link news and Event.
+		document.getElementById("link_url").innerHTML = "";
+		document.getElementById("link_url").innerHTML = replaced;
 		$.ajax({
                 type:"POST",
                 url: base_url+"shortUrlCheck",

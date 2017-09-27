@@ -229,7 +229,8 @@ class Eze_post extends CI_Controller {
 								'content_language_id'=>$this->input->post('content_language_id'),
 								'content_categories_id'=>$this->input->post('content_categories_id'),
 								'content_date'=>$this->input->post('content_date'),
-								'content_description_kh'=>$this->input->post('content_description_kh')
+								'content_description_kh'=>$this->input->post('content_description_kh'),
+								'short_url'=> trim($this->input->post('permalink'))
 								);
 								
                         $result = $this->post_model->do_update_content($alldata_kh,$id,$img,$shurl_be_update);
@@ -242,7 +243,8 @@ class Eze_post extends CI_Controller {
 								'content_language_id'=>$this->input->post('content_language_id'),
 								'content_categories_id'=>$this->input->post('content_categories_id'),
 								'content_date'=>$this->input->post('content_date'),
-								'content_description_ch'=>$this->input->post('content_description_ch')
+								'content_description_ch'=>$this->input->post('content_description_ch'),
+								'short_url'=> trim($this->input->post('permalink'))
 								);
 								
                         $result = $this->post_model->do_update_content($alldata_ch,$id,$img,$shurl_be_update);
@@ -326,6 +328,7 @@ class Eze_post extends CI_Controller {
 										'content_categories_id'=>$this->input->post('content_categories_id'),
 										'content_date'=>$this->input->post('content_date'),
 										'content_description_kh'=>$this->input->post('content_description_kh'),
+										'short_url'=> trim($this->input->post('permalink'))
 										);
 							
 							$result = $this->post_model->do_update_content($alldata_kh,$id,$img,$shurl_be_update);
@@ -340,6 +343,7 @@ class Eze_post extends CI_Controller {
 										'content_categories_id'=>$this->input->post('content_categories_id'),
 										'content_date'=>$this->input->post('content_date'),
 										'content_description_ch'=>$this->input->post('content_description_ch'),
+										'short_url'=> trim($this->input->post('permalink'))
 										);
 							
 							$result = $this->post_model->do_update_content($alldata_ch,$id,$img,$shurl_be_update);

@@ -128,12 +128,22 @@ class Post_model extends CI_Model {
 		}
 		
 		if($this->session->userdata("language")==2){
+			$original_url = $shurl_be_update;
+			$update_url = $alldata['short_url'];
+			$this->update_short_url_en($original_url,$update_url);
+			$this->update_short_url_ch($original_url,$update_url);
+			
 			$this->db->where('contentid', $id);
 			$this->db->update('tbl_content_kh', $alldata);
 			$result = $this->db->affected_rows();
 		}
 		
 		if($this->session->userdata("language")==3){
+			$original_url = $shurl_be_update;
+			$update_url = $alldata['short_url'];
+			$this->update_short_url_kh($original_url,$update_url);
+			$this->update_short_url_en($original_url,$update_url);
+			
 			$this->db->where('contentid', $id);
 			$this->db->update('tbl_content_ch', $alldata);
 			$result = $this->db->affected_rows();
@@ -151,6 +161,14 @@ class Post_model extends CI_Model {
 		}
 		return $result;
     }
+	
+	// function update short url en
+	public function update_short_url_en($original_url,$update_url){
+			$data_short_url = array('short_url'=>$update_url);
+			$this->db->where('short_url', $original_url);
+			$this->db->update('tbl_content_en', $data_short_url);
+			$this->db->affected_rows();
+	}
 	
 	// function update short url kh
 	public function update_short_url_kh($original_url,$update_url){

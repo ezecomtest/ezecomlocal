@@ -46,7 +46,11 @@
                                     <br>
                                     <form class="form-horizontal form-label-left" action="<?php echo site_url('updatepost'); ?>" method="POST" enctype="multipart/form-data">
                                         <input type="hidden" name="contentid" value="<?php echo $editpost['contentid']; ?>">
-										<?php if($this->session->userdata("language") == 1 OR $this->session->userdata("language")== ""){ ?>
+										<?php if($this->session->userdata("language") == 1 OR 
+												$this->session->userdata("language") == 2 OR 
+												$this->session->userdata("language") == 3 OR
+												$this->session->userdata("language")== "" 
+										){ ?>
 										<div class="form-group">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12">Link News & Event:</label>
 											<label class="col-md-6 col-sm-6 col-xs-12" style="padding-top:10px;">

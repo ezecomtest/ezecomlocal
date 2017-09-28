@@ -166,7 +166,7 @@ jQuery(window).on('load',  function() {
 
 
 			
-		<?php if($this->uri->segment(2) == NULL){ ?>
+		<?php if($this->uri->segment(3) == NULL){ ?>
 
 
 			<!-- MAIN CONTENT -->

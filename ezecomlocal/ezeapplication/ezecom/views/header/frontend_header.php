@@ -78,7 +78,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!-- End Homepage -->
 
 <!-- Start Our Company -->
-<?php if($this->uri->segment(1) == 'ourcompany'){?>
+<?php if($this->uri->segment(1) == 'our-company'){?>
 	<!-- CSS -->
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/soytry.css" type="text/css" />
@@ -442,8 +442,53 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <?php }?>
 <!-- End Beedoo -->
 
-<!-- start News&events -->
-<?php if($this->uri->segment(1) == 'mediacenter'){?>
+<!-- start Media Center -->
+<?php if($this->uri->segment(1) == 'media-center'){?>
+<!-- css -->
+<link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/soytry.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/system.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/plugins.system.t3.base-bs3.less.legacy-grid.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/font-awesome/css/font-awesome.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/plugins.system.t3.base-bs3.less.t3.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.core.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.typography.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.forms.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.navigation.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.navbar.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.modules.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.joomla.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.components.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.style.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.template.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/plugins.system.t3.base-bs3.less.megamenu.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.megamenu.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/font-awesome/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/css.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/custom.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.home.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.layouts.blog.less.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/default.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/template.css" type="text/css">
+<!-- js -->
+<script src="<?php echo base_url()?>assets/js/jquery.min.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/jquery-noconflict.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/caption.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/mootools-core.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/core.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/bootstrap.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/chhenghong.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/jquery.tap.min.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/script.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/menu.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/nav-collapse.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>assets/js/jquery.marquee.js" type="text/javascript"></script>
+<?php }?>
+<!-- End Media Center -->
+
+<!-- News&events -->
+<?php if($this->uri->segment(2) == 'news-events'){?>
 <!-- css -->
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/soytry.css" type="text/css">
@@ -488,7 +533,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!-- End News&events -->
 
 <!-- start radio live stream -->
- <?php if($this->uri->segment(1) == 'liveradio'){?>
+ <?php if($this->uri->segment(2) == 'live-cambodia-radio'){?>
 <!-- css -->
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css">
   <link rel="stylesheet" href="<?php echo base_url()?>assets/css/liveradio.css" type="text/css">
@@ -537,7 +582,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <?php }?>
 
 <!-- Start live camera -->
- <?php if($this->uri->segment(1) == 'cameralive'){?>
+ <?php if($this->uri->segment(2) == 'live-traffic-camera'){?>
 <!-- css -->
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css">
   <link rel="stylesheet" href="<?php echo base_url()?>assets/css/css.css" type="text/css" media="screen">

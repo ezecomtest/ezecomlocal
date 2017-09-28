@@ -148,7 +148,7 @@ $route['homepage'] = 'frontend/home_c/homepage';
 
 // start our company
 
-$route['ourcompany'] = 'frontend/our_company_c/our_company';
+$route['our-company'] = 'frontend/our_company_c/our_company';
 
 // end our company
 
@@ -174,18 +174,21 @@ $route['sitemap'] = 'frontend/site_map_c/site_map';
 // start media center
 
 $route['mediacenter/(:num)'] = 'frontend/media_center_c/media_center/$1';
-$route['mediacenter'] = 'frontend/media_center_c/media_center/';
+$route['media-center'] = 'frontend/media_center_c/media_center/';
 //end media center
+
+// News And Event
+$route['media-center/news-events'] = 'frontend/media_center_c/media_center/';
 
 // start liveradio
 
-$route['liveradio'] = 'frontend/live_radio_c/live_radio';
+$route['media-center/live-cambodia-radio'] = 'frontend/live_radio_c/live_radio';
 
 // start liveradio
 
 // start live camera
 
-$route['cameralive'] = 'frontend/live_traffice_camera_c/live_traffice_camera';
+$route['media-center/live-traffic-camera'] = 'frontend/live_traffice_camera_c/live_traffice_camera';
 
 // end live camera
 

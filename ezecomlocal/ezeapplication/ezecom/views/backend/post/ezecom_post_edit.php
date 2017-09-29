@@ -30,27 +30,11 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
-									<?php if($this->session->userdata("language") == 1){?>
-										<h2>English Content</h2>
-									<?php }?>
-									<?php if($this->session->userdata("language") == 2){?>
-										<h2>Khmer Content</h2>
-									<?php }?>
-									<?php if($this->session->userdata("language") == 3){?>
-										<h2>Chinese Content</h2>
-									<?php }?>
-									<?php if($this->session->userdata("language") == ""){?>
-										<h2>English Content</h2>
-									<?php }?>
+								<form class="form-horizontal form-label-left" action="<?php echo site_url('updatepost'); ?>" method="POST" enctype="multipart/form-data">
+                                    <input type="hidden" name="contentid" value="<?php echo $editpost['contentid']; ?>">
 									
-                                    <br>
-                                    <form class="form-horizontal form-label-left" action="<?php echo site_url('updatepost'); ?>" method="POST" enctype="multipart/form-data">
-                                        <input type="hidden" name="contentid" value="<?php echo $editpost['contentid']; ?>">
-										<?php if($this->session->userdata("language") == 1 OR 
-												$this->session->userdata("language") == 2 OR 
-												$this->session->userdata("language") == 3 OR
-												$this->session->userdata("language")== "" 
-										){ ?>
+									<!-- block global -->
+									<h2>Global Setting</h2>
 										<div class="form-group">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12">Link News & Event:</label>
 											<label class="col-md-6 col-sm-6 col-xs-12" style="padding-top:10px;">
@@ -68,25 +52,36 @@
 												<input type="hidden" name="short-url-before-update" value="<?php echo $editpost['short_url'] ?>">
                                             </div>
                                         </div>
-										<?php } ?>
+										
+										<div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="con_password">Post Date</span>
+                                            </label>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input type="date" class="form-control col-md-7 col-xs-12 parsley-success" name="content_date" value="<?php echo $editpost['content_date']; ?>">
+                                            </div>
+											<input type="hidden" name="content_modified_date" value="<?php echo date("Y-m-d"); ?>">
+                                        </div>
+										
+										 <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="password">Image Feature <span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input type="file" style="line-height: 1px" name="content_image_feature" class="form-control">
+                                            </div>
+                                        </div>	
+
+									<!-- End block global -->
+
+									
+									
+										<h2>English Content</h2>
 										
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="user_name">Content Title <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-												<?php if($this->session->userdata("language")==1){?>
-													<input type="text" name="content_title_en" required="required" value="<?= $editpost['content_title_en'] ?>" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
-												<?php } ?>	
-												<?php if($this->session->userdata("language")==2){?>
-													<input type="text" name="content_title_kh" required="required" value="<?= $editpost['content_title_kh'] ?>" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
-												<?php } ?>	
-												<?php if($this->session->userdata("language")==3){?>
-													<input type="text" name="content_title_ch" required="required" value="<?= $editpost['content_title_ch'] ?>" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
-												<?php } ?>	
-												<?php if($this->session->userdata("language")==""){?>
-													<input type="text" name="content_title_en" required="required" value="<?= $editpost['content_title_en'] ?>" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
-												<?php } ?>	
-												
+												<input type="text" name="content_title_en" required="required" value="<?= $editpost['content_title_en'] ?>" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
                                             </div>
                                         </div>
 
@@ -97,33 +92,12 @@
                                             <div class="col-md-6 col-sm-6 col-xs-12">
                          
 											   <?php
-													if($this->session->userdata("language")==1){
-														$content_intro_en = $editpost['content_intro_en'];
-														echo $this->ckeditor->editor("content_intro_en",$content_intro_en);
-													}
-													if($this->session->userdata("language")==2){
-														$content_intro_kh = $editpost['content_intro_kh'];
-														echo $this->ckeditor->editor("content_intro_kh",$content_intro_kh);
-													}
-													if($this->session->userdata("language")==3){
-														$content_intro_ch = $editpost['content_intro_ch'];
-														echo $this->ckeditor->editor("content_intro_ch",$content_intro_ch);
-													}
-													if($this->session->userdata("language")==""){
-														$content_intro_en = $editpost['content_intro_en'];
-														echo $this->ckeditor->editor("content_intro_en",$content_intro_en);
-													}
+													$content_intro_en = $editpost['content_intro_en'];
+													echo $this->ckeditor->editor("content_intro_en",$content_intro_en);
 											   ?>
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="password">Image Feature <span class="required">*</span>
-                                            </label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="file" style="line-height: 1px" name="content_image_feature" class="form-control">
-                                            </div>
-                                        </div>
                                           <?php foreach($language as $rowlan){ ?>
                                             <?php if($editpost['content_language_id'] == $rowlan->lang_id){ ?>
                                                
@@ -143,40 +117,117 @@
                                           
 										
                                         <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="con_password">Post Date</span>
-                                            </label>
-
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="date" class="form-control col-md-7 col-xs-12 parsley-success" name="content_date" value="<?php echo $editpost['content_date']; ?>">
-                                            </div>
-                                        </div>
-                                        
-                                        <input type="hidden" name="content_modified_date" value="<?php echo date("Y-m-d"); ?>">
-                                        
-                                        <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="con_password">Content Description <span class="required" id="message">*</span>
                                             </label>
 
                                             <div class="col-md-12 col-sm-12 col-xs-12">
 												
 												<?php
-													if($this->session->userdata("language")==1){
-														$description_en = $editpost['content_description_en'];
-														echo $this->ckeditor->editor("content_description_en",$description_en);
-													}
-													if($this->session->userdata("language")==2){
-														$description_kh = $editpost['content_description_kh'];
-														echo $this->ckeditor->editor("content_description_kh",$description_kh);
-													}
-													if($this->session->userdata("language")==3){
-														$description_ch = $editpost['content_description_ch'];
-														echo $this->ckeditor->editor("content_description_ch",$description_ch);
-													}
-													if($this->session->userdata("language")==""){
-														$description_en = $editpost['content_description_en'];
-														echo $this->ckeditor->editor("content_description_en",$description_en);
-													}
-													
+													$description_en = $editpost['content_description_en'];
+													echo $this->ckeditor->editor("content_description_en",$description_en);
+												?>
+                                            </div>
+                                        </div>
+										
+										<h2>Khmer Content</h2>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="user_name">Content Title <span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" name="content_title_kh" required="required" value="<?= $editpostkh['content_title_kh'] ?>" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="con_password">Content Introduction <span class="required" id="message">*</span>
+                                            </label>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                         
+											   <?php	
+												 $content_intro_kh = $editpostkh['content_intro_kh'];
+												 echo $this->ckeditor->editor("content_intro_kh",$content_intro_kh);
+											   ?>
+                                            </div>
+                                        </div>
+
+                                          <?php foreach($language as $rowlan){ ?>
+                                            <?php if($editpostkh['content_language_id'] == $rowlan->lang_id){ ?>
+                                               
+												<input type="hidden" name="content_language_id" value="<?php echo $rowlan->lang_id ?>">
+											
+											<?php }
+											  }
+											?>
+                                        
+                                       
+                                        
+                                                
+										<?php foreach($categories as $rowcat){ ?>
+											<input type="hidden" name="content_categories_id" value="<?php echo $rowcat->categoriesid ?>">
+										
+										<?php }?>
+                                          
+										
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="con_password">Content Description <span class="required" id="message">*</span>
+                                            </label>
+
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+												<?php
+													$description_kh = $editpostkh['content_description_kh'];
+													echo $this->ckeditor->editor("content_description_kh",$description_kh);
+												?>
+                                            </div>
+                                        </div>
+										
+										<h2>Chinese Content</h2>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="user_name">Content Title <span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" name="content_title_ch" required="required" value="<?= $editpostch['content_title_ch'] ?>" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="con_password">Content Introduction <span class="required" id="message">*</span>
+                                            </label>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+											   <?php
+													$content_intro_ch = $editpostch['content_intro_ch'];
+													echo $this->ckeditor->editor("content_intro_ch",$content_intro_ch);
+											   ?>
+                                            </div>
+                                        </div>
+
+                                          <?php foreach($language as $rowlan){ ?>
+                                            <?php if($editpostch['content_language_id'] == $rowlan->lang_id){ ?>
+                                               
+												<input type="hidden" name="content_language_id" value="<?php echo $rowlan->lang_id ?>">
+											
+											<?php }
+											  }
+											?>
+                                        
+                                       
+                                        
+                                                
+										<?php foreach($categories as $rowcat){ ?>
+											<input type="hidden" name="content_categories_id" value="<?php echo $rowcat->categoriesid ?>">
+										
+										<?php }?>
+                                          
+										
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="con_password">Content Description <span class="required" id="message">*</span>
+                                            </label>
+
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+												<?php
+													$description_ch = $editpostch['content_description_ch'];
+													echo $this->ckeditor->editor("content_description_ch",$description_ch);
 												?>
                                             </div>
                                         </div>

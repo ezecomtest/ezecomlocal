@@ -193,7 +193,12 @@ class Eze_post extends CI_Controller {
 	    $this->ckeditor->config['language'] = 'en';
 	    $this->ckeditor->config['width'] = '100%;';
 	    $this->ckeditor->config['height'] = '450px';
+		//en
 		$data['editpost'] = $this->post_model->do_edit_content($id);
+		//kh
+		$data['editpostkh'] = $this->post_model->do_edit_content_kh($id);
+		//ch
+		$data['editpostch'] = $this->post_model->do_edit_content_ch($id);
 		$data['language'] = $this->post_model->get_language();
 		$data['categories'] = $this->post_model->get_categories();
 		$data['title'] = "EDIT POST";
@@ -206,8 +211,6 @@ class Eze_post extends CI_Controller {
 		
 		if (empty($_FILES['content_image_feature']['name'])) {
 					$img = FALSE;
-					if($this->session->userdata("language")==1){
-	
 					$alldata_en = array(
 								'content_title_en'=>$this->input->post('content_title_en'),
 								'content_intro_en'=>$this->input->post('content_intro_en'),
@@ -218,11 +221,8 @@ class Eze_post extends CI_Controller {
 								'short_url'=> trim($this->input->post('permalink'))
 								);
 								
-                        $result = $this->post_model->do_update_content($alldata_en,$id,$img,$shurl_be_update);
+                    $result_en = $this->post_model->do_update_content_en($alldata_en,$id,$img,$shurl_be_update);
 		
-					}
-					
-					if($this->session->userdata("language")==2){
 					$alldata_kh = array(
 								'content_title_kh'=>$this->input->post('content_title_kh'),
 								'content_intro_kh'=>$this->input->post('content_intro_kh'),
@@ -233,10 +233,8 @@ class Eze_post extends CI_Controller {
 								'short_url'=> trim($this->input->post('permalink'))
 								);
 								
-                        $result = $this->post_model->do_update_content($alldata_kh,$id,$img,$shurl_be_update);
-					}
+                    $result_kh = $this->post_model->do_update_content_kh($alldata_kh,$id,$img,$shurl_be_update);
 					
-					if($this->session->userdata("language")==3){
 					$alldata_ch = array(
 								'content_title_ch'=>$this->input->post('content_title_ch'),
 								'content_intro_ch'=>$this->input->post('content_intro_ch'),
@@ -247,26 +245,10 @@ class Eze_post extends CI_Controller {
 								'short_url'=> trim($this->input->post('permalink'))
 								);
 								
-                        $result = $this->post_model->do_update_content($alldata_ch,$id,$img,$shurl_be_update);
-					}
-					
-					if($this->session->userdata("language")==""){
-					$alldata_en = array(
-								'content_title_en'=>$this->input->post('content_title_en'),
-								'content_intro_en'=>$this->input->post('content_intro_en'),
-								'content_language_id'=>$this->input->post('content_language_id'),
-								'content_categories_id'=>$this->input->post('content_categories_id'),
-								'content_date'=>$this->input->post('content_date'),
-								'content_description_en'=>$this->input->post('content_description_en'),
-								'short_url'=> trim($this->input->post('permalink'))
-								);
-								
-                        $result = $this->post_model->do_update_content($alldata_en,$id,$img,$shurl_be_update);
-					}
-					
-					
-
-                        if($result == true){
+                    $result_ch = $this->post_model->do_update_content_ch($alldata_ch,$id,$img,$shurl_be_update);
+				
+		
+                        if($result_en == true AND $result_kh == true AND $result_ch == true){
 							$message = "<div class='alert alert-info alert-dismissible fade in' role='alert'>
 				                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>×</span>
 				                                    </button>
@@ -304,7 +286,7 @@ class Eze_post extends CI_Controller {
                 {
                         $data = $this->upload->data();
                         $img = TRUE;
-						if($this->session->userdata("language")==1){
+						
 							$alldata_en = array(
 										'content_title_en'=>$this->input->post('content_title_en'),
 										'content_intro_en'=>$this->input->post('content_intro_en'),
@@ -316,10 +298,8 @@ class Eze_post extends CI_Controller {
 										'short_url'=> trim($this->input->post('permalink'))
 										);
 							
-							$result = $this->post_model->do_update_content($alldata_en,$id,$img,$shurl_be_update);
-						}
+							$result_en = $this->post_model->do_update_content_en($alldata_en,$id,$img,$shurl_be_update);
 						
-						if($this->session->userdata("language")==2){
 							$alldata_kh = array(
 										'content_title_kh'=>$this->input->post('content_title_kh'),
 										'content_intro_kh'=>$this->input->post('content_intro_kh'),
@@ -331,10 +311,8 @@ class Eze_post extends CI_Controller {
 										'short_url'=> trim($this->input->post('permalink'))
 										);
 							
-							$result = $this->post_model->do_update_content($alldata_kh,$id,$img,$shurl_be_update);
-						}
+							$result_kh = $this->post_model->do_update_content_kh($alldata_kh,$id,$img,$shurl_be_update);
 						
-						if($this->session->userdata("language")==3){
 							$alldata_ch = array(
 										'content_title_ch'=>$this->input->post('content_title_ch'),
 										'content_intro_ch'=>$this->input->post('content_intro_ch'),
@@ -346,25 +324,11 @@ class Eze_post extends CI_Controller {
 										'short_url'=> trim($this->input->post('permalink'))
 										);
 							
-							$result = $this->post_model->do_update_content($alldata_ch,$id,$img,$shurl_be_update);
+							$result_ch = $this->post_model->do_update_content_ch($alldata_ch,$id,$img,$shurl_be_update);
 						}
 						
-						if($this->session->userdata("language")==""){
-							$alldata_en = array(
-										'content_title_en'=>$this->input->post('content_title_en'),
-										'content_intro_en'=>$this->input->post('content_intro_en'),
-										'content_image_feature'=>$data['file_name'],
-										'content_language_id'=>$this->input->post('content_language_id'),
-										'content_categories_id'=>$this->input->post('content_categories_id'),
-										'content_date'=>$this->input->post('content_date'),
-										'content_description_en'=>$this->input->post('content_description_en'),
-										'short_url'=> trim($this->input->post('permalink'))
-										);
-							
-							$result = $this->post_model->do_update_content($alldata_en,$id,$img,$shurl_be_update);
-						}
-
-                        if($result == true){
+					
+                        if($result_en == true AND $result_kh == true AND $result_ch == true){
 							$message = "<div class='alert alert-info alert-dismissible fade in' role='alert'>
 				                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>×</span>
 				                                    </button>

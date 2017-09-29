@@ -94,73 +94,69 @@ class Post_model extends CI_Model {
     }
 
     public function do_edit_content($id){
-		if($this->session->userdata("language")==1){
-			$query = $this->db->get_where('tbl_content_en',array('contentid'=>$id));
-		}
-		if($this->session->userdata("language")==2){
-			$query = $this->db->get_where('tbl_content_kh',array('contentid'=>$id));
-		}
-		if($this->session->userdata("language")==3){
-			$query = $this->db->get_where('tbl_content_ch',array('contentid'=>$id));
-		}
-		if($this->session->userdata("language")==""){
-			$query = $this->db->get_where('tbl_content_en',array('contentid'=>$id));
-		}
-    	return $query->row_array();
+		$query = $this->db->get_where('tbl_content_en',array('contentid'=>$id));
+		return $query->row_array();
     }
+	public function do_edit_content_kh($id){
+		$query = $this->db->get_where('tbl_content_kh',array('contentid'=>$id));
+		return $query->row_array();
+	}
+	public function do_edit_content_ch($id){
+		$query = $this->db->get_where('tbl_content_ch',array('contentid'=>$id));
+		return $query->row_array();
+	}
 
 	
-    public function do_update_content($alldata,$id,$img,$shurl_be_update){
+    public function do_update_content_en($alldata,$id,$img,$shurl_be_update){
     	if($img == TRUE){
     		$delete_img = $this->do_delete_content_image_feature($id);
     		unlink('/elFindermaster/files/post/'.$delete_img['content_image_feature']);
     	}
 		
-    	if($this->session->userdata("language")==1){
-			$original_url = $shurl_be_update;
-			$update_url = $alldata['short_url'];
-			$this->update_short_url_kh($original_url,$update_url);
-			$this->update_short_url_ch($original_url,$update_url);
-			
-			$this->db->where('contentid', $id);
-			$this->db->update('tbl_content_en', $alldata);
-			$result = $this->db->affected_rows();
-		}
+		$original_url = $shurl_be_update;
+		$update_url = $alldata['short_url'];
+		$this->update_short_url_kh($original_url,$update_url);
+		$this->update_short_url_ch($original_url,$update_url);
 		
-		if($this->session->userdata("language")==2){
-			$original_url = $shurl_be_update;
-			$update_url = $alldata['short_url'];
-			$this->update_short_url_en($original_url,$update_url);
-			$this->update_short_url_ch($original_url,$update_url);
-			
-			$this->db->where('contentid', $id);
-			$this->db->update('tbl_content_kh', $alldata);
-			$result = $this->db->affected_rows();
-		}
-		
-		if($this->session->userdata("language")==3){
-			$original_url = $shurl_be_update;
-			$update_url = $alldata['short_url'];
-			$this->update_short_url_kh($original_url,$update_url);
-			$this->update_short_url_en($original_url,$update_url);
-			
-			$this->db->where('contentid', $id);
-			$this->db->update('tbl_content_ch', $alldata);
-			$result = $this->db->affected_rows();
-		}
-		
-		if($this->session->userdata("language")==""){
-			$original_url = $shurl_be_update;
-			$update_url = $alldata['short_url'];
-			$this->update_short_url_kh($original_url,$update_url);
-			$this->update_short_url_ch($original_url,$update_url);
-			
-			$this->db->where('contentid', $id);
-			$this->db->update('tbl_content_en', $alldata);
-			$result = $this->db->affected_rows();
-		}
+		$this->db->where('contentid', $id);
+		$this->db->update('tbl_content_en', $alldata);
+		$result = $this->db->affected_rows();
 		return $result;
     }
+	
+	public function do_update_content_kh($alldata,$id,$img,$shurl_be_update){
+		if($img == TRUE){
+    		$delete_img = $this->do_delete_content_image_feature($id);
+    		unlink('/elFindermaster/files/post/'.$delete_img['content_image_feature']);
+    	}
+		
+		$original_url = $shurl_be_update;
+		$update_url = $alldata['short_url'];
+		$this->update_short_url_en($original_url,$update_url);
+		$this->update_short_url_ch($original_url,$update_url);
+		
+		$this->db->where('contentid', $id);
+		$this->db->update('tbl_content_kh', $alldata);
+		$result = $this->db->affected_rows();
+		return $result;
+	}
+	
+	public function do_update_content_ch($alldata,$id,$img,$shurl_be_update){
+		if($img == TRUE){
+    		$delete_img = $this->do_delete_content_image_feature($id);
+    		unlink('/elFindermaster/files/post/'.$delete_img['content_image_feature']);
+    	}
+		
+		$original_url = $shurl_be_update;
+		$update_url = $alldata['short_url'];
+		$this->update_short_url_kh($original_url,$update_url);
+		$this->update_short_url_en($original_url,$update_url);
+		
+		$this->db->where('contentid', $id);
+		$this->db->update('tbl_content_ch', $alldata);
+		$result = $this->db->affected_rows();
+		return $result;
+	}
 	
 	// function update short url en
 	public function update_short_url_en($original_url,$update_url){

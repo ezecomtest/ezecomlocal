@@ -135,6 +135,12 @@ class Eze_post extends CI_Controller {
 						);
 						
 						// data Khmer
+						$kh_title = $this->input->post('content_title_kh');
+						if($kh_title==""){
+							$content_publish = 0;
+						}else{
+							$content_publish = 1;
+						}
 						$alldata_khmer = array(
 						'content_title_kh'=>$this->input->post('content_title_kh'),
 						'content_intro_kh'=>$this->input->post('content_intro_kh'),
@@ -143,10 +149,17 @@ class Eze_post extends CI_Controller {
 						'content_categories_id'=>$this->input->post('content_categories_kh'),
 						'content_date'=>$this->input->post('content_date_kh'),
 						'content_description_kh'=>$this->input->post('content_description_kh'),
+						'content_published' => $content_publish,
 						'short_url'=> trim($this->input->post('permalink'))
 						);
 						
 						// data Chinese
+						$ch_title = $this->input->post('content_title_ch');
+						if($ch_title==""){
+							$content_publish = 0;
+						}else{
+							$content_publish = 1;
+						}
 						$alldata_chinese = array(
 						'content_title_ch'=>$this->input->post('content_title_ch'),
 						'content_intro_ch'=>$this->input->post('content_intro_ch'),
@@ -155,6 +168,7 @@ class Eze_post extends CI_Controller {
 						'content_categories_id'=>$this->input->post('content_categories_ch'),
 						'content_date'=>$this->input->post('content_date_kh'),
 						'content_description_ch'=>$this->input->post('content_description_ch'),
+						'content_published' => $content_publish,
 						'short_url'=> trim($this->input->post('permalink'))
 						);
 						
@@ -222,26 +236,41 @@ class Eze_post extends CI_Controller {
 								);
 								
                     $result_en = $this->post_model->do_update_content_en($alldata_en,$id,$img,$shurl_be_update);
-		
+					
+					$kh_title = $this->input->post('content_title_kh');
+					if($kh_title==""){
+						$content_published = 0;
+					}else{
+						$content_published = 1;
+					}
 					$alldata_kh = array(
 								'content_title_kh'=>$this->input->post('content_title_kh'),
 								'content_intro_kh'=>$this->input->post('content_intro_kh'),
-								'content_language_id'=>$this->input->post('content_language_id'),
+								'content_language_id'=>$this->input->post('content_language_kh'),
 								'content_categories_id'=>$this->input->post('content_categories_id'),
 								'content_date'=>$this->input->post('content_date'),
 								'content_description_kh'=>$this->input->post('content_description_kh'),
+								'content_published' => $content_published,
 								'short_url'=> trim($this->input->post('permalink'))
 								);
 								
                     $result_kh = $this->post_model->do_update_content_kh($alldata_kh,$id,$img,$shurl_be_update);
 					
+					$ch_title = $this->input->post('content_title_ch');
+					if($ch_title==""){
+						$content_published = 0;
+					}else{
+						$content_published = 1;
+					}
+					
 					$alldata_ch = array(
 								'content_title_ch'=>$this->input->post('content_title_ch'),
 								'content_intro_ch'=>$this->input->post('content_intro_ch'),
-								'content_language_id'=>$this->input->post('content_language_id'),
+								'content_language_id'=>$this->input->post('content_language_ch'),
 								'content_categories_id'=>$this->input->post('content_categories_id'),
 								'content_date'=>$this->input->post('content_date'),
 								'content_description_ch'=>$this->input->post('content_description_ch'),
+								'content_published' => $content_published,
 								'short_url'=> trim($this->input->post('permalink'))
 								);
 								
@@ -299,28 +328,42 @@ class Eze_post extends CI_Controller {
 										);
 							
 							$result_en = $this->post_model->do_update_content_en($alldata_en,$id,$img,$shurl_be_update);
-						
+							
+							$kh_title = $this->input->post('content_title_kh');
+							if($kh_title==""){
+								$content_published = 0;
+							}else{
+								$content_published = 1;
+							}
 							$alldata_kh = array(
 										'content_title_kh'=>$this->input->post('content_title_kh'),
 										'content_intro_kh'=>$this->input->post('content_intro_kh'),
 										'content_image_feature'=>$data['file_name'],
-										'content_language_id'=>$this->input->post('content_language_id'),
+										'content_language_id'=>$this->input->post('content_language_kh'),
 										'content_categories_id'=>$this->input->post('content_categories_id'),
 										'content_date'=>$this->input->post('content_date'),
 										'content_description_kh'=>$this->input->post('content_description_kh'),
+										'content_published' => $content_published,
 										'short_url'=> trim($this->input->post('permalink'))
 										);
 							
 							$result_kh = $this->post_model->do_update_content_kh($alldata_kh,$id,$img,$shurl_be_update);
-						
+							
+							$ch_title = $this->input->post('content_title_ch');
+							if($ch_title==""){
+								$content_published = 0;
+							}else{
+								$content_published = 1;
+							}
 							$alldata_ch = array(
 										'content_title_ch'=>$this->input->post('content_title_ch'),
 										'content_intro_ch'=>$this->input->post('content_intro_ch'),
 										'content_image_feature'=>$data['file_name'],
-										'content_language_id'=>$this->input->post('content_language_id'),
+										'content_language_id'=>$this->input->post('content_language_ch'),
 										'content_categories_id'=>$this->input->post('content_categories_id'),
 										'content_date'=>$this->input->post('content_date'),
 										'content_description_ch'=>$this->input->post('content_description_ch'),
+										'content_published' => $content_published,
 										'short_url'=> trim($this->input->post('permalink'))
 										);
 							
@@ -350,7 +393,7 @@ class Eze_post extends CI_Controller {
                 }
 
 		}
-	}
+	
 
 
 

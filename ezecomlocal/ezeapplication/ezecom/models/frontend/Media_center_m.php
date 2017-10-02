@@ -200,6 +200,7 @@ class Media_center_m extends CI_Model{
 			if($sql->row_array()!= null){
 				return $sql->row_array();
 			}else{
+				
 				// if no kh caugh en
 				$this->db->select("*")->from("tbl_content_en con");
 				$this->db->join("tbl_categories cat","con.content_categories_id = cat.categoriesid");

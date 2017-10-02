@@ -134,7 +134,7 @@
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="user_name">Content Title <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-												<input type="text" name="content_title_kh" required="required" value="<?= $editpostkh['content_title_kh'] ?>" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
+												<input type="text" name="content_title_kh"  value="<?= $editpostkh['content_title_kh'] ?>" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
                                             </div>
                                         </div>
 
@@ -154,7 +154,7 @@
                                           <?php foreach($language as $rowlan){ ?>
                                             <?php if($editpostkh['content_language_id'] == $rowlan->lang_id){ ?>
                                                
-												<input type="hidden" name="content_language_id" value="<?php echo $rowlan->lang_id ?>">
+												<input type="hidden" name="content_language_kh" value="<?php echo $rowlan->lang_id ?>">
 											
 											<?php }
 											  }
@@ -186,7 +186,7 @@
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="user_name">Content Title <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-												<input type="text" name="content_title_ch" required="required" value="<?= $editpostch['content_title_ch'] ?>" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
+												<input type="text" name="content_title_ch"  value="<?= $editpostch['content_title_ch'] ?>" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
                                             </div>
                                         </div>
 
@@ -205,7 +205,7 @@
                                           <?php foreach($language as $rowlan){ ?>
                                             <?php if($editpostch['content_language_id'] == $rowlan->lang_id){ ?>
                                                
-												<input type="hidden" name="content_language_id" value="<?php echo $rowlan->lang_id ?>">
+												<input type="hidden" name="content_language_ch" value="<?php echo $rowlan->lang_id ?>">
 											
 											<?php }
 											  }

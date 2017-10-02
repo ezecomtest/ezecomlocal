@@ -17,19 +17,31 @@
 
   <title>
 	<?php 
+				   
 		if($this->lang == 1){
 			echo $news_events['content_title_en']; 
 		}
 		if($this->lang == 2){
-			echo $news_events['content_title_kh']; 
+			if(isset($news_events['content_title_kh'])){
+				echo $news_events['content_title_kh'];
+			}else{
+				echo $news_events['content_title_en'];
+			}
 		}
 		if($this->lang == 3){
-			echo $news_events['content_title_ch']; 
+			if(isset($news_events['content_title_ch'])){
+				echo $news_events['content_title_ch'];
+			}else{
+				echo $news_events['content_title_en']; 
+			}
+			
 		}
 		if($this->lang == ""){
 			echo $news_events['content_title_en']; 
 		}
+				
 	?>
+
 	</title>
   <link href="https://www.ezecom.com.kh/index.php/en/media-center/news-and-events?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
   <link href="https://www.ezecom.com.kh/index.php/en/media-center/news-and-events?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0">
@@ -163,14 +175,24 @@ jQuery(window).on('load',  function() {
 
 			<h3>
 				<?php 
+				   
 					if($this->lang == 1){
 						echo $news_events['content_title_en']; 
 					}
 					if($this->lang == 2){
-						echo $news_events['content_title_kh']; 
+						if(isset($news_events['content_title_kh'])){
+							echo $news_events['content_title_kh'];
+						}else{
+							echo $news_events['content_title_en'];
+						}
 					}
 					if($this->lang == 3){
-						echo $news_events['content_title_ch']; 
+						if(isset($news_events['content_title_ch'])){
+							echo $news_events['content_title_ch'];
+						}else{
+							echo $news_events['content_title_en']; 
+						}
+						
 					}
 					if($this->lang == ""){
 						echo $news_events['content_title_en']; 
@@ -186,10 +208,21 @@ jQuery(window).on('load',  function() {
 							echo $news_events['content_description_en']; 
 						}
 						if($this->lang == 2){
-							echo $news_events['content_description_kh']; 
+							if(isset($news_events['content_description_kh'])){
+								echo $news_events['content_description_kh'];
+							}else{
+								echo $news_events['content_description_en'];
+							}
+							
 						}
 						if($this->lang == 3){
-							echo $news_events['content_description_ch']; 
+							if(isset($news_events['content_description_ch'])){
+								echo $news_events['content_description_ch'];
+							}else{
+								echo $news_events['content_description_en'];
+							}
+							
+							
 						}
 						if($this->lang == ""){
 							echo $news_events['content_description_en']; 

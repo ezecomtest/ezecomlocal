@@ -152,7 +152,7 @@
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="user_name">Content Title Khmer<span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" name="content_title_kh" required="required" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
+                                                <input type="text" name="content_title_kh"  class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
                                             </div>
                                         </div>
 
@@ -226,7 +226,7 @@
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="user_name">Content Title Chinese<span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" name="content_title_ch" required="required" class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
+                                                <input type="text" name="content_title_ch"  class="form-control col-md-7 col-xs-12 parsley-success" data-parsley-id="6073"><ul class="parsley-errors-list" id="parsley-id-6073"></ul>
                                             </div>
                                         </div>
 

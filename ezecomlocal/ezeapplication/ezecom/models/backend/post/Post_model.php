@@ -50,10 +50,12 @@ class Post_model extends CI_Model {
     }
 
     public function do_delete_content($id){
-    	$delete_img = $this->do_delete_content_image_feature($id);
-    	unlink('upload/post/'.$delete_img['content_image_feature']);
-    	$this->db->where('contentid', $id);
-   		$this->db->delete('tbl_content');
+		
+		$delete_img = $this->do_delete_content_image_feature($id);
+		//unlink('upload/post/'.$delete_img['content_image_feature']);
+		$this->db->delete('tbl_content_en', array('contentid' => $id));
+		$this->db->delete('tbl_content_kh', array('contentid' => $id));
+		$this->db->delete('tbl_content_ch', array('contentid' => $id));
    		$result = $this->db->affected_rows();
    		return $result;
     }

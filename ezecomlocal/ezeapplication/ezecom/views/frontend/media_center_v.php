@@ -111,42 +111,42 @@ jQuery(window).on('load',  function() {
 <div class="custom">
 <?php if($lang == 1) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=en" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>media-center?lang=en" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>News<br>and Events</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>liveradio?lang=en">
+		<li class="item-1727"><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=en">
 		<div class="icon_live_radio"></div>Radio <br>Live Stream</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=en">
+		<li class="item-1728"><a href="<?php echo base_url()?>media-center/live-traffic-camera?lang=en">
 		<div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
 	</ul>
 <?php } ?>
 <?php if($lang == 2) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=kh" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>media-center?lang=kh" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>ព័ត៌មាន <br>និង ព្រិត្តិការណ៍</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>liveradio?lang=kh">
+		<li class="item-1727"><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=kh">
 		<div class="icon_live_radio"></div>វិទ្យុ <br>ផ្សាយផ្ទាល់</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=kh">
+		<li class="item-1728"><a href="<?php echo base_url()?>media-center/live-traffic-camera?lang=kh">
 		<div class="icon_live_traffic"></div>កាមេរ៉ា <br>ផ្សាយផ្ទាល់</a></li>
 	</ul>
 <?php } ?>
 <?php if($lang == 3) {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=ch" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>media-center?lang=ch" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>News<br>and Events</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>liveradio?lang=ch">
+		<li class="item-1727"><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=ch">
 		<div class="icon_live_radio"></div>Radio <br>Live Stream</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=ch">
+		<li class="item-1728"><a href="<?php echo base_url()?>media-center/live-traffic-camera?lang=ch">
 		<div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
 	</ul>
 <?php } ?>
 
 <?php if($lang == "") {?>
 	<ul class="nav  nav-pills nav-stacked ">
-		<li class="item-1726 "><a href="<?php echo base_url();?>mediacenter?lang=en" style="color:#7961a9">
+		<li class="item-1726 "><a href="<?php echo base_url();?>media-center?lang=en" style="color:#7961a9">
 		<div class="icon_news_even  icon_news_even_active"></div>News<br>and Events</a></li>
-		<li class="item-1727"><a href="<?php echo base_url();?>liveradio?lang=en">
+		<li class="item-1727"><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=en">
 		<div class="icon_live_radio"></div>Radio <br>Live Stream</a></li>
-		<li class="item-1728"><a href="<?php echo base_url()?>cameralive?lang=en">
+		<li class="item-1728"><a href="<?php echo base_url()?>media-center/live-traffic-camera?lang=en">
 		<div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
 	</ul>
 <?php } ?>

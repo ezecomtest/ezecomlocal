@@ -195,7 +195,7 @@ $route['media-center/live-traffic-camera'] = 'frontend/live_traffice_camera_c/li
 
 // start contact us
 
-$route['contactus'] = 'frontend/contact_us_c/contact_us';
+$route['contact-us'] = 'frontend/contact_us_c/contact_us';
 
 // end contact us
 

@@ -30,11 +30,11 @@
 
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
-<a href="<?php echo base_url();?>mediacenter?lang=en">Media Center</a>
+<a href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
 
 </li>
 <li>
-<a href="<?php echo base_url();?>contactus?lang=en">Contact Us </a>
+<a href="<?php echo base_url();?>contact-us?lang=en">Contact Us </a>
 
 </li>
 </ul></div>
@@ -57,11 +57,11 @@
 
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>mediacenter?lang=en" data-target="#">Media Center</a>
+<a class="" href="<?php echo base_url();?>media-center?lang=en" data-target="#">Media Center</a>
 
 </li>
 <li class="<?=($active=='Contact Us')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>contactus?lang=en" data-target="#">Contact Us </a>
+<a class="" href="<?php echo base_url();?>contact-us?lang=en" data-target="#">Contact Us </a>
 
 </li>
 </ul>
@@ -102,11 +102,11 @@
 
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
-<a href="<?php echo base_url();?>mediacenter?lang=kh">ទំព័រព័ត៌មាន</a>
+<a href="<?php echo base_url();?>media-center?lang=kh">ទំព័រព័ត៌មាន</a>
 
 </li>
 <li>
-<a href="<?php echo base_url();?>contactus?lang=kh">ទំនាក់ទំនង </a>
+<a href="<?php echo base_url();?>contact-us?lang=kh">ទំនាក់ទំនង </a>
 
 </li>
 </ul></div>
@@ -129,11 +129,11 @@
 
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>mediacenter?lang=kh" data-target="#">ទំព័រព័ត៌មាន</a>
+<a class="" href="<?php echo base_url();?>media-center?lang=kh" data-target="#">ទំព័រព័ត៌មាន</a>
 
 </li>
 <li class="<?=($active=='Contact Us')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>contactus?lang=kh" data-target="#">ទំនាក់ទំនង </a>
+<a class="" href="<?php echo base_url();?>contact-us?lang=kh" data-target="#">ទំនាក់ទំនង </a>
 
 </li>
 </ul>
@@ -173,11 +173,11 @@
 
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
-<a href="<?php echo base_url();?>mediacenter?lang=ch">Media Center</a>
+<a href="<?php echo base_url();?>media-center?lang=ch">Media Center</a>
 
 </li>
 <li>
-<a href="<?php echo base_url();?>contactus?lang=ch">Contact Us </a>
+<a href="<?php echo base_url();?>contact-us?lang=ch">Contact Us </a>
 
 </li>
 </ul></div>
@@ -200,11 +200,11 @@
 
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>mediacenter?lang=ch" data-target="#">Media Center</a>
+<a class="" href="<?php echo base_url();?>media-center?lang=ch" data-target="#">Media Center</a>
 
 </li>
 <li class="<?=($active=='Contact Us')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>contactus?lang=ch" data-target="#">Contact Us </a>
+<a class="" href="<?php echo base_url();?>contact-us?lang=ch" data-target="#">Contact Us </a>
 
 </li>
 </ul>
@@ -244,11 +244,11 @@
 
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
-<a href="<?php echo base_url();?>mediacenter?lang=en">Media Center</a>
+<a href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
 
 </li>
 <li>
-<a href="<?php echo base_url();?>contactus?lang=en">Contact Us </a>
+<a href="<?php echo base_url();?>contact-us?lang=en">Contact Us </a>
 
 </li>
 </ul></div>
@@ -271,11 +271,11 @@
 
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>mediacenter?lang=en" data-target="#">Media Center</a>
+<a class="" href="<?php echo base_url();?>media-center?lang=en" data-target="#">Media Center</a>
 
 </li>
 <li class="<?=($active=='Contact Us')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>contactus?lang=en" data-target="#">Contact Us </a>
+<a class="" href="<?php echo base_url();?>contact-us?lang=en" data-target="#">Contact Us </a>
 
 </li>
 </ul>

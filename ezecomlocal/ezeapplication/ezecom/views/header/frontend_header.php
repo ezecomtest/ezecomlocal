@@ -52,7 +52,6 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	  	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/template.css" type="text/css" />
 	  	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/nextend-frontend.css?1489112974" media="screen, print" />
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/n2-ss-6.css?1489541255" media="screen, print" />
-
 	<!-- JS -->
 
 		<script src="<?php echo base_url();?>assets/js/jquery.min.js" type="text/javascript"></script>
@@ -78,7 +77,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!-- End Homepage -->
 
 <!-- Start Our Company -->
-<?php if($this->uri->segment(1) == 'our-company'){?>
+<?php if($this->uri->segment(1) == 'ourcompany'){?>
 	<!-- CSS -->
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/soytry.css" type="text/css" />
@@ -205,7 +204,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.layouts.blog.less.css" type="text/css">
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/default.css" type="text/css">
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/template.css" type="text/css">
-
+	 
 <!-- JS -->
 	  <script src="<?php echo base_url()?>assets/js/jquery.min.js" type="text/javascript"></script>
 	  <script src="<?php echo base_url()?>assets/js/jquery-noconflict.js" type="text/javascript"></script>
@@ -253,7 +252,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.home.less.css" type="text/css">
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/default.css" type="text/css">
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/template.css" type="text/css">
-
+	  
 	<!-- JS -->
 	  <script src="<?php echo base_url()?>assets/js/jquery.min.js" type="text/javascript"></script>
 	  <script src="<?php echo base_url()?>assets/js/jquery-noconflict.js" type="text/javascript"></script>
@@ -395,7 +394,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.layouts.blog.less.css" type="text/css">
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/default.css" type="text/css">
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/template.css" type="text/css">
-
+	 
 <!-- JS -->
 	  <script src="<?php echo base_url()?>assets/css/inc_setupemailaccount.js.download" type="text/javascript"></script>
 	  <script src="<?php echo base_url()?>assets/css/jquery.min1.js" type="text/javascript"></script>
@@ -629,7 +628,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!-- End live camera -->
 
 <!-- Contact Us -->
- <?php if($this->uri->segment(1) == 'contactus'){?>
+ <?php if($this->uri->segment(1) == 'contact-us'){?>
 <!-- css -->
 <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css">
   <link rel="stylesheet" href="<?php echo base_url()?>assets/css/style.min.css" type="text/css">

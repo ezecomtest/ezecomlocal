@@ -30,7 +30,14 @@
 
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
-<a href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+<li class="dropdown1">
+	  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+	  </ul>
+</li>
 
 </li>
 <li>
@@ -57,7 +64,14 @@
 
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>media-center?lang=en" data-target="#">Media Center</a>
+<li class="dropdown1">
+	  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+	  </ul>
+</li>
 
 </li>
 <li class="<?=($active=='Contact Us')?'current active':null?>">
@@ -102,7 +116,14 @@
 
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
-<a href="<?php echo base_url();?>media-center?lang=kh">ទំព័រព័ត៌មាន</a>
+<li class="dropdown1">
+  <a class="" href="<?php echo base_url();?>media-center?lang=kh" data-target="#">ទំព័រព័ត៌មាន</a>
+  <ul class="dropdown-menu">
+	<li><a href="<?php echo base_url();?>media-center/news-events">ព័ត៌មាន  និង ព្រិត្តិការណ៍</a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">វិទ្យុ  ផ្សាយផ្ទាល់ </a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">កាមេរ៉ា  ផ្សាយផ្ទាល់ </a></li>
+  </ul>
+</li>
 
 </li>
 <li>
@@ -129,7 +150,14 @@
 
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>media-center?lang=kh" data-target="#">ទំព័រព័ត៌មាន</a>
+<li class="dropdown1">
+  <a class="" href="<?php echo base_url();?>media-center?lang=kh" data-target="#">ទំព័រព័ត៌មាន</a>
+  <ul class="dropdown-menu">
+	<li><a href="<?php echo base_url();?>media-center/news-events">ព័ត៌មាន  និង ព្រិត្តិការណ៍</a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">វិទ្យុ  ផ្សាយផ្ទាល់ </a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">កាមេរ៉ា  ផ្សាយផ្ទាល់ </a></li>
+  </ul>
+</li>
 
 </li>
 <li class="<?=($active=='Contact Us')?'current active':null?>">
@@ -173,7 +201,14 @@
 
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
-<a href="<?php echo base_url();?>media-center?lang=ch">Media Center</a>
+<li class="dropdown1">
+	  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+	  </ul>
+</li>
 
 </li>
 <li>
@@ -200,7 +235,14 @@
 
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>media-center?lang=ch" data-target="#">Media Center</a>
+<li class="dropdown1">
+	  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+	  </ul>
+</li>
 
 </li>
 <li class="<?=($active=='Contact Us')?'current active':null?>">
@@ -244,7 +286,14 @@
 
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
-<a href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+<li class="dropdown1">
+  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+  <ul class="dropdown-menu">
+	<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+  </ul>
+</li>
 
 </li>
 <li>
@@ -271,8 +320,14 @@
 
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>media-center?lang=en" data-target="#">Media Center</a>
-
+	<li class="dropdown1">
+		  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+		  <ul class="dropdown-menu">
+			<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
+			<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
+			<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+		  </ul>
+	</li>
 </li>
 <li class="<?=($active=='Contact Us')?'current active':null?>">
 <a class="" href="<?php echo base_url();?>contact-us?lang=en" data-target="#">Contact Us </a>
@@ -289,3 +344,18 @@
 
 
 <?php } ?>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+    $(".dropdown1").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>

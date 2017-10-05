@@ -69,6 +69,9 @@ var rl_tabs_use_hash = 1; var rl_tabs_reload_iframes = 0; var rl_tabs_init_timeo
 
 <div class="t3-wrapper"> <!-- Need this wrapper for off-canvas menu. Remove if you don't use of-canvas -->
 
+<!-- HEADER -->
+<?php $this->load->view("header/header_all");?> 
+<!-- //HEADER -->
 
 <!-- MAIN NAVIGATION -->
 <?php $this->load->view("header/main_nav_user_v")?> 

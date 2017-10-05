@@ -207,13 +207,22 @@ $route['ourservices'] = 'frontend/our_services_c/our_services';
 
 // start customer service
 
-$route['customerservice'] = 'frontend/customer_service_c/customer_services';
+$route['support/customer-service'] = 'frontend/customer_service_c/customer_services';
 
 // end customer service
 
+/* start faq */
+$route['support/faq'] = 'frontend/customer_service_c/service_faq';
+/* End faq */
+
+/* start payment */
+$route['support/payment'] = 'frontend/customer_service_c/service_payment_options';
+/* End payment */
+
+
 // start set up email
 
-$route['setup_email'] = 'frontend/set_up_email_c/set_up_email';
+$route['setup-email'] = 'frontend/set_up_email_c/set_up_email';
 
 // end set up email
 

@@ -224,6 +224,107 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <?php }?>
 <!-- End Customer Service -->
 
+<!-- Start faq -->
+<?php if($this->uri->segment(1) == 'faq'){?>
+	<!-- CSS -->
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/style.min.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/soytry.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/system.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/plugins.system.t3.base-bs3.less.legacy-grid.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>fonts/css/font-awesome.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/plugins.system.t3.base-bs3.less.t3.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.core.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.typography.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.forms.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.navigation.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.navbar.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.modules.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.joomla.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.components.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.style.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.template.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/plugins.system.t3.base-bs3.less.megamenu.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.megamenu.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>fonts/css/font-awesome.min.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/css1.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/custom.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.home.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.layouts.blog.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/default.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/template.css" type="text/css">
+
+	  <!-- JS -->
+	  <script src="<?php echo base_url()?>assets/js/jquery.min.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/jquery-noconflict.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/jquery-migrate.min.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/caption.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/bootstrap.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/script.min.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/chhenghong.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/jquery.tap.min.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/script.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/menu.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/nav-collapse.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/mootools-core.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/core.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/jquery.marquee.js" type="text/javascript"></script>
+	
+<?php }?>
+<!-- End faq -->
+
+<!-- Start Payment Options -->
+<?php if($this->uri->segment(1) == 'payment'){?>
+	<!-- CSS -->
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/style.min.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/soytry.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/system.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/plugins.system.t3.base-bs3.less.legacy-grid.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>fonts/css/font-awesome.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/plugins.system.t3.base-bs3.less.t3.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.core.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.typography.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.forms.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.navigation.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.navbar.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.modules.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.joomla.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.components.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.style.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.template.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/plugins.system.t3.base-bs3.less.megamenu.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.megamenu.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>fonts/css/font-awesome.min.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/css1.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/custom.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.home.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.layouts.blog.less.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/default.css" type="text/css">
+	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/template.css" type="text/css">
+	  
+	   <!-- JS -->
+	  <script src="<?php echo base_url()?>assets/js/jquery.min.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/jquery-noconflict.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/jquery-migrate.min.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/caption.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/bootstrap.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/script.min.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/chhenghong.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/jquery.tap.min.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/script.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/menu.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/nav-collapse.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/mootools-core.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/core.js" type="text/javascript"></script>
+	  <script src="<?php echo base_url()?>assets/js/jquery.marquee.js" type="text/javascript"></script>
+<?php }?>
+<!-- End Payment Options -->
+
+
+
+
+
 <!-- Start Our Services -->
 <?php if($this->uri->segment(1) == 'ourservices') {?>
 	<!-- CSS -->
@@ -366,7 +467,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!-- End Site Map -->
 
 <!-- Start Setup Email -->
-<?php if($this->uri->segment(1) == 'setup_email'){?>
+<?php if($this->uri->segment(1) == 'setup-email'){?>
 <!-- CSS -->
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css">
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/style.css" type="text/css">

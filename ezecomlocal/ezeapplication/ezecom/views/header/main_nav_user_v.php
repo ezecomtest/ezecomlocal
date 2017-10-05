@@ -26,16 +26,27 @@
 
 </li>
 <li class="current active">
-<a href="<?php echo base_url();?>customerservice?lang=en">Customer Service  </a>
-
+<li class="dropdown1">
+	  <a href="<?php echo base_url();?>customerservice?lang=en">Support</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>support/faq?lang=en">FAQ'S</a></li>
+		<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Customer Service</a></li>
+		<li><a href="<?php echo base_url();?>support/payment?lang=en">Payment Options</a></li>
+		<li><a href="<?php echo base_url();?>setup-email?lang=en">EzeMail Setup</a></li>
+		<li><a href="https://webmail.ezecom.com.kh/">EzeMail</a></li>
+		<li><a href="http://ezecom.speedtest.net/">Speed Test</a></li>
+		<li><a href="https://csm.ezecom.com.kh/uam/">User Account Management</a></li>
+	  </ul>
 </li>
+</li>
+
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
 <li class="dropdown1">
 	  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
 	  <ul class="dropdown-menu">
-		<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
-		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
-		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+		<li><a href="<?php echo base_url();?>media-center/news-events?lang=en">News and Events</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=en">Radio Live Stream</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera?lang=en">Traffic Live Camera</a></li>
 	  </ul>
 </li>
 
@@ -59,10 +70,21 @@
 <a class="" href="<?php echo base_url();?>ourservices?lang=en" data-target="#">Our Services </a>
 
 </li>
-<li class="<?=($active=='Customer Service')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
-<a class="" href="<?php echo base_url()?>customerservice?lang=en" data-target="#">Customer Service  </a>
-
+<li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
+<li class="dropdown1">
+	  <a href="<?php echo base_url();?>customerservice?lang=en">Support</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>support/faq?lang=en">FAQ'S</a></li>
+		<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Customer Service</a></li>
+		<li><a href="<?php echo base_url();?>support/payment?lang=en">Payment Options</a></li>
+		<li><a href="<?php echo base_url();?>setup-email?lang=en">EzeMail Setup</a></li>
+		<li><a href="https://webmail.ezecom.com.kh/">EzeMail</a></li>
+		<li><a href="http://ezecom.speedtest.net/">Speed Test</a></li>
+		<li><a href="https://csm.ezecom.com.kh/uam/">User Account Management</a></li>
+	  </ul>
 </li>
+</li>
+
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
 <li class="dropdown1">
 	  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
@@ -112,7 +134,18 @@
 
 </li>
 <li class="current active">
-<a href="<?php echo base_url();?>customerservice?lang=kh">សេវា​អតិថិជន   </a>
+<li class="dropdown1">
+	  <a href="<?php echo base_url();?>customerservice?lang=kh">សេវា​អតិថិជន  </a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>support/faq?lang=kh">FAQ'S</a></li>
+		<li><a href="<?php echo base_url();?>support/customer-service?lang=kh">Customer Service</a></li>
+		<li><a href="<?php echo base_url();?>support/payment?lang=kh">Payment Options</a></li>
+		<li><a href="<?php echo base_url();?>setup-email?lang=kh">EzeMail Setup</a></li>
+		<li><a href="https://webmail.ezecom.com.kh/">EzeMail</a></li>
+		<li><a href="http://ezecom.speedtest.net/">Speed Test</a></li>
+		<li><a href="https://csm.ezecom.com.kh/uam/">User Account Management</a></li>
+	  </ul>
+</li>
 
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
@@ -145,17 +178,28 @@
 <a class="" href="<?php echo base_url();?>ourservices?lang=kh" data-target="#">អាជីវកម្ម </a>
 
 </li>
-<li class="<?=($active=='Customer Service')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
-<a class="" href="<?php echo base_url()?>customerservice?lang=kh" data-target="#">សេវា​អតិថិជន  </a>
+<li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
+<li class="dropdown1">
+	  <a href="<?php echo base_url();?>customerservice?lang=kh">សេវា​អតិថិជន  </a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>support/faq?lang=kh">FAQ'S</a></li>
+		<li><a href="<?php echo base_url();?>support/customer-service?lang=kh">Customer Service</a></li>
+		<li><a href="<?php echo base_url();?>support/payment?lang=kh">Payment Options</a></li>
+		<li><a href="<?php echo base_url();?>setup-email?lang=kh">EzeMail Setup</a></li>
+		<li><a href="https://webmail.ezecom.com.kh/">EzeMail</a></li>
+		<li><a href="http://ezecom.speedtest.net/">Speed Test</a></li>
+		<li><a href="https://csm.ezecom.com.kh/uam/">User Account Management</a></li>
+	  </ul>
+</li>
 
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
 <li class="dropdown1">
   <a class="" href="<?php echo base_url();?>media-center?lang=kh" data-target="#">ទំព័រព័ត៌មាន</a>
   <ul class="dropdown-menu">
-	<li><a href="<?php echo base_url();?>media-center/news-events">ព័ត៌មាន  និង ព្រិត្តិការណ៍</a></li>
-	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">វិទ្យុ  ផ្សាយផ្ទាល់ </a></li>
-	<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">កាមេរ៉ា  ផ្សាយផ្ទាល់ </a></li>
+	<li><a href="<?php echo base_url();?>media-center/news-events?lang=kh">ព័ត៌មាន  និង ព្រិត្តិការណ៍</a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=kh">វិទ្យុ  ផ្សាយផ្ទាល់ </a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-traffic-camera?lang=kh">កាមេរ៉ា  ផ្សាយផ្ទាល់ </a></li>
   </ul>
 </li>
 
@@ -197,7 +241,18 @@
 
 </li>
 <li class="current active">
-<a href="<?php echo base_url();?>customerservice?lang=ch">Customer Service  </a>
+<li class="dropdown1">
+	 <a class="" href="<?php echo base_url()?>customerservice?lang=en" data-target="#">Support</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>support/faq?lang=ch">FAQ'S</a></li>
+		<li><a href="<?php echo base_url();?>support/customer-service?lang=ch">Customer Service</a></li>
+		<li><a href="<?php echo base_url();?>support/payment?lang=ch">Payment Options</a></li>
+		<li><a href="<?php echo base_url();?>setup-email?lang=en">EzeMail Setup</a></li>
+		<li><a href="https://webmail.ezecom.com.kh/">EzeMail</a></li>
+		<li><a href="http://ezecom.speedtest.net/">Speed Test</a></li>
+		<li><a href="https://csm.ezecom.com.kh/uam/">User Account Management</a></li>
+	  </ul>
+</li>
 
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
@@ -230,8 +285,19 @@
 <a class="" href="<?php echo base_url();?>ourservices?lang=ch" data-target="#">Our Services </a>
 
 </li>
-<li class="<?=($active=='Customer Service')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
-<a class="" href="<?php echo base_url()?>customerservice?lang=ch" data-target="#">Customer Service  </a>
+<li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
+<li class="dropdown1">
+	 <a class="" href="<?php echo base_url()?>customerservice?lang=en" data-target="#">Support</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>support/faq?lang=ch">FAQ'S</a></li>
+		<li><a href="<?php echo base_url();?>support/customer-service?lang=ch">Customer Service</a></li>
+		<li><a href="<?php echo base_url();?>support/payment?lang=ch">Payment Options</a></li>
+		<li><a href="<?php echo base_url();?>setup-email?lang=en">EzeMail Setup</a></li>
+		<li><a href="https://webmail.ezecom.com.kh/">EzeMail</a></li>
+		<li><a href="http://ezecom.speedtest.net/">Speed Test</a></li>
+		<li><a href="https://csm.ezecom.com.kh/uam/">User Account Management</a></li>
+	  </ul>
+</li>
 
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
@@ -282,16 +348,27 @@
 
 </li>
 <li class="current active">
-<a href="<?php echo base_url();?>customerservice?lang=en">Customer Service  </a>
+<li class="dropdown1">
+	  <a href="<?php echo base_url();?>customerservice?lang=en">Support</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>support/faq?lang=en">FAQ'S</a></li>
+		<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Customer Service</a></li>
+		<li><a href="<?php echo base_url();?>support/payment?lang=en">Payment Options</a></li>
+		<li><a href="<?php echo base_url();?>setup-email?lang=en">EzeMail Setup</a></li>
+		<li><a href="https://webmail.ezecom.com.kh/">EzeMail</a></li>
+		<li><a href="http://ezecom.speedtest.net/">Speed Test</a></li>
+		<li><a href="https://csm.ezecom.com.kh/uam/">User Account Management</a></li>
+	  </ul>
+</li>
 
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
 <li class="dropdown1">
   <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
   <ul class="dropdown-menu">
-	<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
-	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
-	<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+	<li><a href="<?php echo base_url();?>media-center/news-events?lang=en">News and Events</a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=en">Radio Live Stream</a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-traffic-camera?lang=en">Traffic Live Camera</a></li>
   </ul>
 </li>
 
@@ -315,17 +392,27 @@
 <a class="" href="<?php echo base_url();?>ourservices?lang=en" data-target="#">Our Services </a>
 
 </li>
-<li class="<?=($active=='Customer Service')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
-<a class="" href="<?php echo base_url()?>customerservice?lang=en" data-target="#">Customer Service  </a>
-
+<li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
+	<li class="dropdown1">
+		 <a class="" href="<?php echo base_url()?>customerservice?lang=en" data-target="#">Support</a>
+		  <ul class="dropdown-menu">
+			<li><a href="<?php echo base_url();?>support/faq?lang=en">FAQ'S</a></li>
+			<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Customer Service</a></li>
+			<li><a href="<?php echo base_url();?>support/payment?lang=en">Payment Options</a></li>
+			<li><a href="<?php echo base_url();?>setup-email?lang=en">EzeMail Setup</a></li>
+			<li><a href="https://webmail.ezecom.com.kh/">EzeMail</a></li>
+			<li><a href="http://ezecom.speedtest.net/">Speed Test</a></li>
+			<li><a href="https://csm.ezecom.com.kh/uam/">User Account Management</a></li>
+		  </ul>
+	</li>
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
 	<li class="dropdown1">
 		  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
 		  <ul class="dropdown-menu">
-			<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
-			<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
-			<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+			<li><a href="<?php echo base_url();?>media-center/news-events?lang=en">News and Events</a></li>
+			<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=en">Radio Live Stream</a></li>
+			<li><a href="<?php echo base_url();?>media-center/live-traffic-camera?lang=en">Traffic Live Camera</a></li>
 		  </ul>
 	</li>
 </li>

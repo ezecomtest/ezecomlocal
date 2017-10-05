@@ -27,7 +27,7 @@
 </li>
 <li class="current active">
 <li class="dropdown1">
-	  <a href="<?php echo base_url();?>customerservice?lang=en">Support</a>
+	  <a href="<?php echo base_url();?>support/customer-service?lang=en">Support</a>
 	  <ul class="dropdown-menu">
 		<li><a href="<?php echo base_url();?>support/faq?lang=en">FAQ'S</a></li>
 		<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Customer Service</a></li>
@@ -42,7 +42,7 @@
 
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
 <li class="dropdown1">
-	  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+	  <a class="" href="<?php echo base_url();?>media-center/news-events?lang=en">Media Center</a>
 	  <ul class="dropdown-menu">
 		<li><a href="<?php echo base_url();?>media-center/news-events?lang=en">News and Events</a></li>
 		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=en">Radio Live Stream</a></li>
@@ -72,7 +72,7 @@
 </li>
 <li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
 <li class="dropdown1">
-	  <a href="<?php echo base_url();?>customerservice?lang=en">Support</a>
+	  <a href="<?php echo base_url();?>support/customer-service?lang=en">Support</a>
 	  <ul class="dropdown-menu">
 		<li><a href="<?php echo base_url();?>support/faq?lang=en">FAQ'S</a></li>
 		<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Customer Service</a></li>
@@ -87,7 +87,7 @@
 
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
 <li class="dropdown1">
-	  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+	  <a class="" href="<?php echo base_url();?>media-center/news-events?lang=en">Media Center</a>
 	  <ul class="dropdown-menu">
 		<li><a href="<?php echo base_url();?>media-center/news-events?lang=en">News and Events</a></li>
 		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=en">Radio Live Stream</a></li>
@@ -135,7 +135,7 @@
 </li>
 <li class="current active">
 <li class="dropdown1">
-	  <a href="<?php echo base_url();?>customerservice?lang=kh">សេវា​អតិថិជន  </a>
+	  <a href="<?php echo base_url();?>support/customer-service?lang=kh">សេវា​អតិថិជន  </a>
 	  <ul class="dropdown-menu">
 		<li><a href="<?php echo base_url();?>support/faq?lang=kh">FAQ'S</a></li>
 		<li><a href="<?php echo base_url();?>support/customer-service?lang=kh">Customer Service</a></li>
@@ -150,7 +150,7 @@
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
 <li class="dropdown1">
-  <a class="" href="<?php echo base_url();?>media-center?lang=kh" data-target="#">ទំព័រព័ត៌មាន</a>
+  <a class="" href="<?php echo base_url();?>media-center/news-events?lang=kh" data-target="#">ទំព័រព័ត៌មាន</a>
   <ul class="dropdown-menu">
 	<li><a href="<?php echo base_url();?>media-center/news-events?lang=kh">ព័ត៌មាន  និង ព្រិត្តិការណ៍</a></li>
 	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=kh">វិទ្យុ  ផ្សាយផ្ទាល់ </a></li>
@@ -180,7 +180,7 @@
 </li>
 <li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
 <li class="dropdown1">
-	  <a href="<?php echo base_url();?>customerservice?lang=kh">សេវា​អតិថិជន  </a>
+	  <a href="<?php echo base_url();?>support/customer-service?lang=kh">សេវា​អតិថិជន  </a>
 	  <ul class="dropdown-menu">
 		<li><a href="<?php echo base_url();?>support/faq?lang=kh">FAQ'S</a></li>
 		<li><a href="<?php echo base_url();?>support/customer-service?lang=kh">Customer Service</a></li>
@@ -195,7 +195,7 @@
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
 <li class="dropdown1">
-  <a class="" href="<?php echo base_url();?>media-center?lang=kh" data-target="#">ទំព័រព័ត៌មាន</a>
+  <a class="" href="<?php echo base_url();?>media-center/news-events?lang=kh" data-target="#">ទំព័រព័ត៌មាន</a>
   <ul class="dropdown-menu">
 	<li><a href="<?php echo base_url();?>media-center/news-events?lang=kh">ព័ត៌មាន  និង ព្រិត្តិការណ៍</a></li>
 	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=kh">វិទ្យុ  ផ្សាយផ្ទាល់ </a></li>
@@ -242,7 +242,7 @@
 </li>
 <li class="current active">
 <li class="dropdown1">
-	 <a class="" href="<?php echo base_url()?>customerservice?lang=en" data-target="#">Support</a>
+	 <a class="" href="<?php echo base_url()?>support/customer-service?lang=ch" data-target="#">Support</a>
 	  <ul class="dropdown-menu">
 		<li><a href="<?php echo base_url();?>support/faq?lang=ch">FAQ'S</a></li>
 		<li><a href="<?php echo base_url();?>support/customer-service?lang=ch">Customer Service</a></li>
@@ -257,7 +257,7 @@
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
 <li class="dropdown1">
-	  <a class="" href="<?php echo base_url();?>media-center?lang=ch">Media Center</a>
+	  <a class="" href="<?php echo base_url();?>media-center/news-events?lang=ch">Media Center</a>
 	  <ul class="dropdown-menu">
 		<li><a href="<?php echo base_url();?>media-center/news-events?lang=ch">News and Events</a></li>
 		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=ch">Radio Live Stream</a></li>
@@ -287,7 +287,7 @@
 </li>
 <li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
 <li class="dropdown1">
-	 <a class="" href="<?php echo base_url()?>customerservice?lang=en" data-target="#">Support</a>
+	 <a class="" href="<?php echo base_url()?>support/customer-service?lang=ch" data-target="#">Support</a>
 	  <ul class="dropdown-menu">
 		<li><a href="<?php echo base_url();?>support/faq?lang=ch">FAQ'S</a></li>
 		<li><a href="<?php echo base_url();?>support/customer-service?lang=ch">Customer Service</a></li>
@@ -302,7 +302,7 @@
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
 <li class="dropdown1">
-	  <a class="" href="<?php echo base_url();?>media-center?lang=ch">Media Center</a>
+	  <a class="" href="<?php echo base_url();?>media-center/news-events?lang=ch">Media Center</a>
 	  <ul class="dropdown-menu">
 		<li><a href="<?php echo base_url();?>media-center/news-events?lang=ch">News and Events</a></li>
 		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=ch">Radio Live Stream</a></li>
@@ -349,7 +349,7 @@
 </li>
 <li class="current active">
 <li class="dropdown1">
-	  <a href="<?php echo base_url();?>customerservice?lang=en">Support</a>
+	  <a href="<?php echo base_url();?>support/customer-service?lang=en">Support</a>
 	  <ul class="dropdown-menu">
 		<li><a href="<?php echo base_url();?>support/faq?lang=en">FAQ'S</a></li>
 		<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Customer Service</a></li>
@@ -364,7 +364,7 @@
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
 <li class="dropdown1">
-  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+  <a class="" href="<?php echo base_url();?>media-center/news-events?lang=en">Media Center</a>
   <ul class="dropdown-menu">
 	<li><a href="<?php echo base_url();?>media-center/news-events?lang=en">News and Events</a></li>
 	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=en">Radio Live Stream</a></li>
@@ -394,7 +394,7 @@
 </li>
 <li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
 	<li class="dropdown1">
-		 <a class="" href="<?php echo base_url()?>customerservice?lang=en" data-target="#">Support</a>
+		 <a class="" href="<?php echo base_url()?>support/customer-service?lang=en" data-target="#">Support</a>
 		  <ul class="dropdown-menu">
 			<li><a href="<?php echo base_url();?>support/faq?lang=en">FAQ'S</a></li>
 			<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Customer Service</a></li>
@@ -408,7 +408,7 @@
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
 	<li class="dropdown1">
-		  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+		  <a class="" href="<?php echo base_url();?>media-center/news-events?lang=en">Media Center</a>
 		  <ul class="dropdown-menu">
 			<li><a href="<?php echo base_url();?>media-center/news-events?lang=en">News and Events</a></li>
 			<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=en">Radio Live Stream</a></li>

@@ -89,9 +89,9 @@
 <li class="dropdown1">
 	  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
 	  <ul class="dropdown-menu">
-		<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
-		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
-		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+		<li><a href="<?php echo base_url();?>media-center/news-events?lang=en">News and Events</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=en">Radio Live Stream</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera?lang=en">Traffic Live Camera</a></li>
 	  </ul>
 </li>
 
@@ -152,9 +152,9 @@
 <li class="dropdown1">
   <a class="" href="<?php echo base_url();?>media-center?lang=kh" data-target="#">ទំព័រព័ត៌មាន</a>
   <ul class="dropdown-menu">
-	<li><a href="<?php echo base_url();?>media-center/news-events">ព័ត៌មាន  និង ព្រិត្តិការណ៍</a></li>
-	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">វិទ្យុ  ផ្សាយផ្ទាល់ </a></li>
-	<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">កាមេរ៉ា  ផ្សាយផ្ទាល់ </a></li>
+	<li><a href="<?php echo base_url();?>media-center/news-events?lang=kh">ព័ត៌មាន  និង ព្រិត្តិការណ៍</a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=kh">វិទ្យុ  ផ្សាយផ្ទាល់ </a></li>
+	<li><a href="<?php echo base_url();?>media-center/live-traffic-camera?lang=kh">កាមេរ៉ា  ផ្សាយផ្ទាល់ </a></li>
   </ul>
 </li>
 
@@ -247,7 +247,7 @@
 		<li><a href="<?php echo base_url();?>support/faq?lang=ch">FAQ'S</a></li>
 		<li><a href="<?php echo base_url();?>support/customer-service?lang=ch">Customer Service</a></li>
 		<li><a href="<?php echo base_url();?>support/payment?lang=ch">Payment Options</a></li>
-		<li><a href="<?php echo base_url();?>setup-email?lang=en">EzeMail Setup</a></li>
+		<li><a href="<?php echo base_url();?>setup-email?lang=ch">EzeMail Setup</a></li>
 		<li><a href="https://webmail.ezecom.com.kh/">EzeMail</a></li>
 		<li><a href="http://ezecom.speedtest.net/">Speed Test</a></li>
 		<li><a href="https://csm.ezecom.com.kh/uam/">User Account Management</a></li>
@@ -257,11 +257,11 @@
 </li>
 <li class="<?php if($this->uri->segment(1) == 'cameralive'){echo 'current active';}else{echo 'inactive';} ?>">
 <li class="dropdown1">
-	  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+	  <a class="" href="<?php echo base_url();?>media-center?lang=ch">Media Center</a>
 	  <ul class="dropdown-menu">
-		<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
-		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
-		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+		<li><a href="<?php echo base_url();?>media-center/news-events?lang=ch">News and Events</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=ch">Radio Live Stream</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera?lang=ch">Traffic Live Camera</a></li>
 	  </ul>
 </li>
 
@@ -292,7 +292,7 @@
 		<li><a href="<?php echo base_url();?>support/faq?lang=ch">FAQ'S</a></li>
 		<li><a href="<?php echo base_url();?>support/customer-service?lang=ch">Customer Service</a></li>
 		<li><a href="<?php echo base_url();?>support/payment?lang=ch">Payment Options</a></li>
-		<li><a href="<?php echo base_url();?>setup-email?lang=en">EzeMail Setup</a></li>
+		<li><a href="<?php echo base_url();?>setup-email?lang=ch">EzeMail Setup</a></li>
 		<li><a href="https://webmail.ezecom.com.kh/">EzeMail</a></li>
 		<li><a href="http://ezecom.speedtest.net/">Speed Test</a></li>
 		<li><a href="https://csm.ezecom.com.kh/uam/">User Account Management</a></li>
@@ -302,11 +302,11 @@
 </li>
 <li class="<?=($active=='Media Center' || $this->uri->segment(1) == 'cameralive' || $this->uri->segment(1) == 'live_radio')?'current active':null?>">
 <li class="dropdown1">
-	  <a class="" href="<?php echo base_url();?>media-center?lang=en">Media Center</a>
+	  <a class="" href="<?php echo base_url();?>media-center?lang=ch">Media Center</a>
 	  <ul class="dropdown-menu">
-		<li><a href="<?php echo base_url();?>media-center/news-events">News and Events</a></li>
-		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio">Radio Live Stream</a></li>
-		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera">Traffic Live Camera</a></li>
+		<li><a href="<?php echo base_url();?>media-center/news-events?lang=ch">News and Events</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=ch">Radio Live Stream</a></li>
+		<li><a href="<?php echo base_url();?>media-center/live-traffic-camera?lang=ch">Traffic Live Camera</a></li>
 	  </ul>
 </li>
 

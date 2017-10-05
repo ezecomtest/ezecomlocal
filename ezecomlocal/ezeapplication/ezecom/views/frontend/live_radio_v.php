@@ -14,7 +14,7 @@
     <!--<base href="https://www.ezecom.com.kh/index.php/en/media-center/live-radio">-->
     <base href=".">
 
-    <title>Live Radio</title>
+    <title>Live Cambodia Radio</title>
     <link href="<?php echo base_url();?>images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
 	<?php
@@ -107,59 +107,7 @@
     <?php
     $lan = $this->lang;
     ?>
-          <!-- HOME SL 1 -->
-      <div class="wrap t3-sl t3-sl-1 ">
-       <?php if($lan == 1) {?>
-        <ul class="nav  nav-pills nav-stacked ">
-        <li class="item-1726">
-        <a href="<?php echo base_url()?>media-center?lang=<?php echo $this->get_lang ?>">
-            <div class="icon_news_even"></div>News<br>and Events</a></li>
-            <li class="item-1727"><a href="<?php echo base_url()?>media-center/live-cambodia-radio?lang=<?php echo $this->get_lang ?>" style="color:#7961a9">
-            <div class="icon_live_radio icon_live_radio_active"></div>Radio <br>Live Stream</a></li>
-            <li class="item-1728"><a href="<?php echo base_url()?>media-center/live-traffic-camera?lang=<?php echo $this->get_lang ?>">
-            <div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
-        </ul>
-      <?php } ?>
-      <?php if($lan == 2) {?>
-        <ul class="nav  nav-pills nav-stacked ">
-        <li class="item-1726">
-        <a href="<?php echo base_url()?>media-center?lang=<?php echo $this->get_lang ?>">
-            <div class="icon_news_even"></div>ព័ត៌មាន <br>និង ព្រិត្តិការណ៍</a></li>
-            <li class="item-1727"><a href="<?php echo base_url()?>media-center/live-cambodia-radio?lang=<?php echo $this->get_lang ?>" style="color:#7961a9">
-            <div class="icon_live_radio icon_live_radio_active"></div>វិទ្យុ <br>ផ្សាយផ្ទាល់</a></li>
-            <li class="item-1728"><a href="<?php echo base_url()?>media-center/live-traffic-camera?lang=<?php echo $this->get_lang ?>">
-            <div class="icon_live_traffic"></div>កាមេរ៉ា <br>ផ្សាយផ្ទាល់</a></li>
-        </ul>
-      <?php } ?>
-    
-      <?php if($lan == 3) {?>
-        <ul class="nav  nav-pills nav-stacked ">
-        <li class="item-1726">
-        <a href="<?php echo base_url()?>media-center?lang=<?php echo $this->get_lang ?>">
-            <div class="icon_news_even"></div>News<br>and Events</a></li>
-            <li class="item-1727"><a href="<?php echo base_url()?>media-center/live-cambodia-radio?lang=<?php echo $this->get_lang ?>" style="color:#7961a9">
-            <div class="icon_live_radio icon_live_radio_active"></div>Radio <br>Live Stream</a></li>
-            <li class="item-1728"><a href="<?php echo base_url()?>media-center/live-traffic-camera?lang=<?php echo $this->get_lang ?>">
-            <div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
-        </ul>
-      <?php } ?>
-
-        <?php if($lan == "") {?>
-        <ul class="nav  nav-pills nav-stacked ">
-        <li class="item-1726">
-        <a href="<?php echo base_url()?>media-center?lang=<?php echo $this->get_lang ?>">
-            <div class="icon_news_even"></div>News<br>and Events</a></li>
-            <li class="item-1727"><a href="<?php echo base_url()?>media-center/live-cambodia-radio?lang=<?php echo $this->get_lang ?>" style="color:#7961a9">
-            <div class="icon_live_radio icon_live_radio_active"></div>Radio <br>Live Stream</a></li>
-            <li class="item-1728"><a href="<?php echo base_url()?>media-center/live-traffic-camera?lang=<?php echo $this->get_lang ?>">
-            <div class="icon_live_traffic"></div>Traffic <br>Live Camera</a></li>
-        </ul>
-      <?php } ?>
-    
-      </div>
-        <!-- //HOME SL 1 -->
-
-
+        
         <div id="t3-mainbody" class="container t3-mainbody">
             <div class="row">
 

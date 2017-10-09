@@ -77,7 +77,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!-- End Homepage -->
 
 <!-- Start Our Company -->
-<?php if($this->uri->segment(1) == 'ourcompany'){?>
+<?php if($this->uri->segment(1) == 'our-company'){?>
 	<!-- CSS -->
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/soytry.css" type="text/css" />

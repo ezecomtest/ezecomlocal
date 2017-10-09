@@ -339,8 +339,28 @@
 <li >
 <a href="<?php echo base_url();?>homepage?lang=en">Home</a>
 </li>
-<li class="">
-<a href="<?php echo base_url();?>ourcompany?lang=en">Our Company</a>
+<li>
+<li class="dropdown1">
+	  <a href="<?php echo base_url();?>our-company?lang=en">Our Company</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>support/faq?lang=en">Company Profile</a></li>
+		<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Quality Management System</a></li>
+		<li><a href="<?php echo base_url();?>support/payment?lang=en">Childsafe Certification</a></li>
+		<li>
+			<li class="partnerships_mobile">
+			<a href="#">Our Partnerships</a>
+				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
+					<li><a href="#">Good Will Partners</a></li>
+					<li><a href="#">EzeCampus</a></li>
+					<li><a href="#">Student Discount</a></li>
+				</ul>
+			</li>
+		</li>
+		<li><a href="https://webmail.ezecom.com.kh/">Corporate Social Responsibility</a></li>
+		<li><a href="http://ezecom.speedtest.net/">Community</a></li>
+		<li><a href="https://csm.ezecom.com.kh/uam/">Career Opportunities</a></li>
+	  </ul>
+</li>
  
 </li>
 <li class="sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
@@ -386,7 +406,27 @@
 <a class="" href="<?php echo base_url()?>homepage?lang=en" data-target="#">Home </a>
 </li>
 <li class="<?=($active=='Our Company')?'current active':null?>" mega-align-left data-id="571" data-level="1" data-alignsub="left" data-hidesub="1">
-<a class="" href="<?php echo base_url()?>ourcompany?lang=en" data-target="#">Our Company </a>
+<li class="dropdown1">
+	 <a href="<?php echo base_url();?>our-company?lang=en" data-target="#">Our Company </a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>support/faq?lang=en">Company Profile</a></li>
+		<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Quality Management System</a></li>
+		<li><a href="<?php echo base_url();?>support/payment?lang=en">Childsafe Certification</a></li>
+		<li>
+			<li class="partnerships">
+			<a href="#">Our Partnerships</a>
+				<ul id="partnerships_id" class="dropdown-menu-partnerships">
+					<li><a href="#">Good Will Partners</a></li>
+					<li><a href="#">EzeCampus</a></li>
+					<li><a href="#">Student Discount</a></li>
+				</ul>
+			</li>
+		</li>
+		<li><a href="https://webmail.ezecom.com.kh/">Corporate Social Responsibility</a></li>
+		<li><a href="http://ezecom.speedtest.net/">Community</a></li>
+		<li><a href="https://csm.ezecom.com.kh/uam/">Career Opportunities</a></li>
+	  </ul>
+</li>
 </li>
 <li class="<?=($active=='Our Services')?'current active':null?> mega-align-left sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 <a class="" href="<?php echo base_url();?>ourservices?lang=en" data-target="#">Our Services </a>
@@ -433,8 +473,8 @@
 <?php } ?>
 
 <script type="text/javascript">
-	$(document).ready(function(){
-    $(".dropdown1").hover(            
+$(document).ready(function(){
+$(".dropdown1").hover(
         function() {
             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
             $(this).toggleClass('open');        
@@ -444,5 +484,58 @@
             $(this).toggleClass('open');       
         }
     );
+	
+});
+
+
+$(document).ready(function(){	
+document.getElementById('partnerships_id').style.display = 'none';
+/*document.getElementById('partnerships_mobile').style.display = 'none';*/
+
+$(".partnerships").hover(
+        function() {
+            $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        },
+		function() {
+            $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');       
+        }
+    );
+	
+	/* -------------------*/
+	$(".partnerships_mobile").click(
+        function() {
+			document.getElementById('partnerships_mobile').style.display = 'block';
+            $('.dropdown-menu-partnerships-mobile', this).not('.in .dropdown-menu-partnerships-mobile').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        }
+    );
+	
+	
+	
 });
 </script>
+
+<style type="text/css">
+	#partnerships_id li{
+		list-style-type:none;
+		color:#444;
+	}
+	#partnerships_id li a{
+		color:#444;
+		font-size:15px;
+	}
+	#partnerships_id li a:hover{
+		color:#7961a9;
+	}
+	.dropdown-menu li a:hover{
+		color:#7961a9;
+	}
+	
+	#partnerships_mobile li{
+		list-style-type:none;
+		color:#444;
+	}		
+	
+</style>

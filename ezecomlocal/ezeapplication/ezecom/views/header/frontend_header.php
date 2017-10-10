@@ -127,6 +127,60 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <?php }?>
 <!-- End Our Company -->
 
+<!-- Start Company Profile -->
+<?php if($this->uri->segment(2) == 'company-profile' OR $this->uri->segment(2) == 'quality-management-system'
+OR $this->uri->segment(2) == 'childsafe-certification' OR $this->uri->segment(2) == 'our-partnerships'
+OR $this->uri->segment(2) == 'corporate-social-responsibility'
+){?>
+	<!-- CSS -->
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/soytry.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/system.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/plugins.system.t3.base-bs3.less.legacy-grid.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/font-awesome/css/font-awesome.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/plugins.system.t3.base-bs3.less.t3.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.core.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.typography.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.forms.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.navigation.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.navbar.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.modules.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.joomla.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.components.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.style.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.template.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/plugins.system.t3.base-bs3.less.megamenu.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.megamenu.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/font-awesome/css/font-awesome.min.css" type="text/css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/custom.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.home.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.layouts.blog.less.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/default.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/style2.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/template.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/dataTables.bootstrap.min.css">
+	<!-- JS -->
+		<script src="<?php echo base_url();?>assets/js/jquery.min.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery-noconflict.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery-migrate.min.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/caption.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/bootstrap.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/chhenghong.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.tap.min.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/menu.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/nav-collapse.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/mootools-core.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/core.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.marquee.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/jquery/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/script.js" type="text/javascript"></script>
+		<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-1.12.3.js"></script>
+		<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="<?php echo base_url();?>assets/js/dataTables.bootstrap.min.js"></script>
+<?php }?>
+<!-- End Company Profile -->
+
 <!-- Start Our Partnership -->
 <?php if($this->uri->segment(1) == 'ourpartnership') {?>
 <!-- CSS -->

@@ -17,9 +17,26 @@
 <li >
 <a href="<?php echo base_url();?>homepage?lang=en">Home</a>
 </li>
-<li class="">
-<a href="<?php echo base_url();?>ourcompany?lang=en">Our Company</a>
- 
+<li class="dropdown1">
+	  <a href="<?php echo base_url();?>our-company?lang=en">Our Company</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>our-company/company-profile?lang=en">Company Profile</a></li>
+		<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=en">Quality Management System</a></li>
+		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
+		<li>
+			<li class="partnerships_mobile">
+			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
+				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
+					<li><a href="#">Good Will Partners</a></li>
+					<li><a href="#">EzeCampus</a></li>
+					<li><a href="#">Student Discount</a></li>
+				</ul>
+			</li>
+		</li>
+		<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=en">Corporate Social Responsibility</a></li>
+		<li><a href="<?php echo base_url();?>our-company/community?lang=en">Community</a></li>
+		<li><a href="<?php echo base_url();?>our-company/career-opportunities?lang=en">Career Opportunities</a></li>
+	  </ul>
 </li>
 <li class="sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 <a class="" href="<?php echo base_url();?>ourservices?lang=en" data-target="#">Our Services </a>
@@ -63,8 +80,26 @@
 <li class="<?=($active=='Home')?'current active':null?>" mega-align-left sub-hidden-collapse data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 <a class="" href="<?php echo base_url()?>homepage?lang=en" data-target="#">Home </a>
 </li>
-<li class="<?=($active=='Our Company')?'current active':null?>" mega-align-left data-id="571" data-level="1" data-alignsub="left" data-hidesub="1">
-<a class="" href="<?php echo base_url()?>ourcompany?lang=en" data-target="#">Our Company </a>
+<li class="dropdown1">
+	 <a href="<?php echo base_url();?>our-company?lang=en" data-target="#">Our Company </a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>our-company/company-profile?lang=en">Company Profile</a></li>
+		<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=en">Quality Management System</a></li>
+		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
+		<li>
+			<li class="partnerships">
+			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
+				<ul id="partnerships_id" class="dropdown-menu-partnerships">
+					<li><a href="#">Good Will Partners</a></li>
+					<li><a href="#">EzeCampus</a></li>
+					<li><a href="#">Student Discount</a></li>
+				</ul>
+			</li>
+		</li>
+		<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=en">Corporate Social Responsibility</a></li>
+		<li><a href="<?php echo base_url();?>our-company/community?lang=en">Community</a></li>
+		<li><a href="<?php echo base_url();?>our-company/career-opportunities?lang=en">Career Opportunities</a></li>
+	  </ul>
 </li>
 <li class="<?=($active=='Our Services')?'current active':null?> mega-align-left sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 <a class="" href="<?php echo base_url();?>ourservices?lang=en" data-target="#">Our Services </a>
@@ -125,10 +160,28 @@
 <li >
 <a href="<?php echo base_url();?>homepage?lang=kh">ទំព័រដើម</a>
 </li>
-<li class="">
-<a href="<?php echo base_url();?>ourcompany?lang=kh">អំពីក្រុមហ៊ុន </a>
- 
+<li class="dropdown1">
+	  <a href="<?php echo base_url();?>our-company?lang=kh">អំពីក្រុមហ៊ុន</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>our-company/company-profile?lang=kh">Company Profile</a></li>
+		<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=kh">Quality Management System</a></li>
+		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=kh">Childsafe Certification</a></li>
+		<li>
+			<li class="partnerships_mobile">
+			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=kh">Our Partnerships</a>
+				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
+					<li><a href="#">Good Will Partners</a></li>
+					<li><a href="#">EzeCampus</a></li>
+					<li><a href="#">Student Discount</a></li>
+				</ul>
+			</li>
+		</li>
+		<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=kh">Corporate Social Responsibility</a></li>
+		<li><a href="<?php echo base_url();?>our-company/community?lang=kh">Community</a></li>
+		<li><a href="<?php echo base_url();?>our-company/career-opportunities?lang=kh">Career Opportunities</a></li>
+	  </ul>
 </li>
+
 <li class="sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 <a class="" href="<?php echo base_url();?>ourservices?lang=kh" data-target="#">អាជីវកម្ម  </a>
 
@@ -171,9 +224,28 @@
 <li class="<?=($active=='Home')?'current active':null?>" mega-align-left sub-hidden-collapse data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 <a class="" href="<?php echo base_url()?>homepage?lang=kh" data-target="#">ទំព័រដើម </a>
 </li>
-<li class="<?=($active=='Our Company')?'current active':null?>" mega-align-left data-id="571" data-level="1" data-alignsub="left" data-hidesub="1">
-<a class="" href="<?php echo base_url()?>ourcompany?lang=kh" data-target="#">អំពីក្រុមហ៊ុន </a>
+<li class="dropdown1">
+	 <a href="<?php echo base_url();?>our-company?lang=kh" data-target="#">អំពីក្រុមហ៊ុន</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>our-company/company-profile?lang=kh">Company Profile</a></li>
+		<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=kh">Quality Management System</a></li>
+		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=kh">Childsafe Certification</a></li>
+		<li>
+			<li class="partnerships">
+			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=kh">Our Partnerships</a>
+				<ul id="partnerships_id" class="dropdown-menu-partnerships">
+					<li><a href="#">Good Will Partners</a></li>
+					<li><a href="#">EzeCampus</a></li>
+					<li><a href="#">Student Discount</a></li>
+				</ul>
+			</li>
+		</li>
+		<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=kh">Corporate Social Responsibility</a></li>
+		<li><a href="<?php echo base_url();?>our-company/community?lang=kh">Community</a></li>
+		<li><a href="<?php echo base_url();?>our-company/career-opportunities?lang=kh">Career Opportunities</a></li>
+	  </ul>
 </li>
+
 <li class="<?=($active=='Our Services')?'current active':null?> mega-align-left sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 <a class="" href="<?php echo base_url();?>ourservices?lang=kh" data-target="#">អាជីវកម្ម </a>
 
@@ -232,9 +304,26 @@
 <li >
 <a href="<?php echo base_url();?>homepage?lang=ch">Home</a>
 </li>
-<li class="">
-<a href="<?php echo base_url();?>ourcompany?lang=ch">Our Company</a>
- 
+<li class="dropdown1">
+	  <a href="<?php echo base_url();?>our-company?lang=ch">Our Company</a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>our-company/company-profile?lang=ch">Company Profile</a></li>
+		<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=ch">Quality Management System</a></li>
+		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=ch">Childsafe Certification</a></li>
+		<li>
+			<li class="partnerships_mobile">
+			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=ch">Our Partnerships</a>
+				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
+					<li><a href="#">Good Will Partners</a></li>
+					<li><a href="#">EzeCampus</a></li>
+					<li><a href="#">Student Discount</a></li>
+				</ul>
+			</li>
+		</li>
+		<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=ch">Corporate Social Responsibility</a></li>
+		<li><a href="<?php echo base_url();?>our-company/community?lang=ch">Community</a></li>
+		<li><a href="<?php echo base_url();?>our-company/career-opportunities?lang=ch">Career Opportunities</a></li>
+	  </ul>
 </li>
 <li class="sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 <a class="" href="<?php echo base_url();?>ourservices?lang=ch" data-target="#">Our Services </a>
@@ -278,8 +367,26 @@
 <li class="<?=($active=='Home')?'current active':null?>" mega-align-left sub-hidden-collapse data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 <a class="" href="<?php echo base_url()?>homepage?lang=ch" data-target="#">Home </a>
 </li>
-<li class="<?=($active=='Our Company')?'current active':null?>" mega-align-left data-id="571" data-level="1" data-alignsub="left" data-hidesub="1">
-<a class="" href="<?php echo base_url()?>ourcompany?lang=ch" data-target="#">Our Company </a>
+<li class="dropdown1">
+	 <a href="<?php echo base_url();?>our-company?lang=ch" data-target="#">Our Company </a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>our-company/company-profile?lang=ch">Company Profile</a></li>
+		<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=ch">Quality Management System</a></li>
+		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=ch">Childsafe Certification</a></li>
+		<li>
+			<li class="partnerships">
+			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=ch">Our Partnerships</a>
+				<ul id="partnerships_id" class="dropdown-menu-partnerships">
+					<li><a href="#">Good Will Partners</a></li>
+					<li><a href="#">EzeCampus</a></li>
+					<li><a href="#">Student Discount</a></li>
+				</ul>
+			</li>
+		</li>
+		<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=ch">Corporate Social Responsibility</a></li>
+		<li><a href="<?php echo base_url();?>our-company/community?lang=ch">Community</a></li>
+		<li><a href="<?php echo base_url();?>our-company/career-opportunities?lang=ch">Career Opportunities</a></li>
+	  </ul>
 </li>
 <li class="<?=($active=='Our Services')?'current active':null?> mega-align-left sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 <a class="" href="<?php echo base_url();?>ourservices?lang=ch" data-target="#">Our Services </a>
@@ -343,12 +450,12 @@
 <li class="dropdown1">
 	  <a href="<?php echo base_url();?>our-company?lang=en">Our Company</a>
 	  <ul class="dropdown-menu">
-		<li><a href="<?php echo base_url();?>support/faq?lang=en">Company Profile</a></li>
-		<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Quality Management System</a></li>
-		<li><a href="<?php echo base_url();?>support/payment?lang=en">Childsafe Certification</a></li>
+		<li><a href="<?php echo base_url();?>our-company/company-profile?lang=en">Company Profile</a></li>
+		<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=en">Quality Management System</a></li>
+		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
 		<li>
 			<li class="partnerships_mobile">
-			<a href="#">Our Partnerships</a>
+			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
 				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
 					<li><a href="#">Good Will Partners</a></li>
 					<li><a href="#">EzeCampus</a></li>
@@ -356,9 +463,9 @@
 				</ul>
 			</li>
 		</li>
-		<li><a href="https://webmail.ezecom.com.kh/">Corporate Social Responsibility</a></li>
-		<li><a href="http://ezecom.speedtest.net/">Community</a></li>
-		<li><a href="https://csm.ezecom.com.kh/uam/">Career Opportunities</a></li>
+		<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=en">Corporate Social Responsibility</a></li>
+		<li><a href="<?php echo base_url();?>our-company/community?lang=en">Community</a></li>
+		<li><a href="<?php echo base_url();?>our-company/career-opportunities?lang=en">Career Opportunities</a></li>
 	  </ul>
 </li>
  
@@ -409,12 +516,12 @@
 <li class="dropdown1">
 	 <a href="<?php echo base_url();?>our-company?lang=en" data-target="#">Our Company </a>
 	  <ul class="dropdown-menu">
-		<li><a href="<?php echo base_url();?>support/faq?lang=en">Company Profile</a></li>
-		<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Quality Management System</a></li>
-		<li><a href="<?php echo base_url();?>support/payment?lang=en">Childsafe Certification</a></li>
+		<li><a href="<?php echo base_url();?>our-company/company-profile?lang=en">Company Profile</a></li>
+		<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=en">Quality Management System</a></li>
+		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
 		<li>
 			<li class="partnerships">
-			<a href="#">Our Partnerships</a>
+			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
 				<ul id="partnerships_id" class="dropdown-menu-partnerships">
 					<li><a href="#">Good Will Partners</a></li>
 					<li><a href="#">EzeCampus</a></li>
@@ -422,9 +529,9 @@
 				</ul>
 			</li>
 		</li>
-		<li><a href="https://webmail.ezecom.com.kh/">Corporate Social Responsibility</a></li>
-		<li><a href="http://ezecom.speedtest.net/">Community</a></li>
-		<li><a href="https://csm.ezecom.com.kh/uam/">Career Opportunities</a></li>
+		<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=en">Corporate Social Responsibility</a></li>
+		<li><a href="<?php echo base_url();?>our-company/community?lang=en">Community</a></li>
+		<li><a href="<?php echo base_url();?>our-company/career-opportunities?lang=en">Career Opportunities</a></li>
 	  </ul>
 </li>
 </li>
@@ -476,11 +583,11 @@
 $(document).ready(function(){
 $(".dropdown1").hover(
         function() {
-            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("2000");
             $(this).toggleClass('open');        
         },
         function() {
-            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("2000");
             $(this).toggleClass('open');       
         }
     );
@@ -494,11 +601,11 @@ document.getElementById('partnerships_id').style.display = 'none';
 
 $(".partnerships").hover(
         function() {
-            $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideDown("400");
+            $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideDown("2000");
             $(this).toggleClass('open');        
         },
 		function() {
-            $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideUp("400");
+            $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideUp("2000");
             $(this).toggleClass('open');       
         }
     );
@@ -507,7 +614,7 @@ $(".partnerships").hover(
 	$(".partnerships_mobile").click(
         function() {
 			document.getElementById('partnerships_mobile').style.display = 'block';
-            $('.dropdown-menu-partnerships-mobile', this).not('.in .dropdown-menu-partnerships-mobile').stop(true,true).slideDown("400");
+            $('.dropdown-menu-partnerships-mobile', this).not('.in .dropdown-menu-partnerships-mobile').stop(true,true).slideDown("2000");
             $(this).toggleClass('open');        
         }
     );

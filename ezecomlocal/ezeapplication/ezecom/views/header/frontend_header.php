@@ -131,7 +131,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <?php if($this->uri->segment(2) == 'company-profile' OR $this->uri->segment(2) == 'quality-management-system'
 OR $this->uri->segment(2) == 'childsafe-certification' OR $this->uri->segment(2) == 'our-partnerships'
 OR $this->uri->segment(2) == 'corporate-social-responsibility'
-){?>
+OR $this->uri->segment(2) == 'community' OR $this->uri->segment(2) == 'career-opportunities'
+){ ?>
 	<!-- CSS -->
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/soytry.css" type="text/css" />

@@ -264,4 +264,76 @@ class Our_company_c extends CI_Controller {
 			$this->load->view('frontend/social_responsibility',$data);
 		}
 	}
+	
+	public function community(){
+		if($this->lang==1){
+			$data['title'] = "Community";
+			$data['active'] = "Community";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/community',$data);
+		}
+		if($this->lang==2){
+			$data['title'] = "Community";
+			$data['active'] = "Community";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/community_kh_v',$data);
+		}
+		if($this->lang==3){
+			$data['title'] = "Community";
+			$data['active'] = "Community";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/community_ch_v',$data);
+		}
+
+		if($this->lang== ""){
+			$data['title'] = "Community";
+			$data['active'] = "Community";
+			$lan = 1;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/community',$data);
+		}
+	}
+	
+	public function career_opport(){
+		if($this->lang==1){
+			$data['title'] = "Career Opportunities";
+			$data['active'] = "Career Opportunities";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/career_opport',$data);
+		}
+		if($this->lang==2){
+			$data['title'] = "Career Opportunities";
+			$data['active'] = "Career Opportunities";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/career_opport_kh_v',$data);
+		}
+		if($this->lang==3){
+			$data['title'] = "Career Opportunities";
+			$data['active'] = "Career Opportunities";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/career_opport_ch_v',$data);
+		}
+
+		if($this->lang== ""){
+			$data['title'] = "Career Opportunities";
+			$data['active'] = "Career Opportunities";
+			$lan = 1;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/career_opport',$data);
+		}
+	}
 }

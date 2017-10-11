@@ -336,4 +336,112 @@ class Our_company_c extends CI_Controller {
 			$this->load->view('frontend/career_opport',$data);
 		}
 	}
+	
+	public function good_partner(){
+		if($this->lang==1){
+			$data['title'] = "GoodWill Partners";
+			$data['active'] = "GoodWill Partners";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/good_partner',$data);
+		}
+		if($this->lang==2){
+			$data['title'] = "GoodWill Partners";
+			$data['active'] = "GoodWill Partners";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/good_partner_kh_v',$data);
+		}
+		if($this->lang==3){
+			$data['title'] = "GoodWill Partners";
+			$data['active'] = "GoodWill Partners";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/good_partner_ch_v',$data);
+		}
+
+		if($this->lang== ""){
+			$data['title'] = "GoodWill Partners";
+			$data['active'] = "GoodWill Partners";
+			$lan = 1;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/good_partner',$data);
+		}
+	}
+	
+	public function ezecampus(){
+		if($this->lang==1){
+			$data['title'] = "EzeCampus";
+			$data['active'] = "EzeCampus";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/ezecampus',$data);
+		}
+		if($this->lang==2){
+			$data['title'] = "EzeCampus";
+			$data['active'] = "EzeCampus";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/ezecampus_kh_v',$data);
+		}
+		if($this->lang==3){
+			$data['title'] = "EzeCampus";
+			$data['active'] = "EzeCampus";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/ezecampus_ch_v',$data);
+		}
+
+		if($this->lang== ""){
+			$data['title'] = "EzeCampus";
+			$data['active'] = "EzeCampus";
+			$lan = 1;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/ezecampus',$data);
+		}
+	}
+	
+	public function stu_discount(){
+		if($this->lang==1){
+			$data['title'] = "Student Discount";
+			$data['active'] = "Student Discount";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/stu_discount',$data);
+		}
+		if($this->lang==2){
+			$data['title'] = "Student Discount";
+			$data['active'] = "Student Discount";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/stu_discount_kh_v',$data);
+		}
+		if($this->lang==3){
+			$data['title'] = "Student Discount";
+			$data['active'] = "Student Discount";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/stu_discount_ch_v',$data);
+		}
+
+		if($this->lang== ""){
+			$data['title'] = "Student Discount";
+			$data['active'] = "Student Discount";
+			$lan = 1;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$data['career'] = $this->career_m->get_career();
+			$this->load->view('frontend/stu_discount',$data);
+		}
+	}
 }

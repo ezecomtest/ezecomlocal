@@ -27,9 +27,9 @@
 			<li class="partnerships_mobile">
 			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
 				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
-					<li><a href="#">Good Will Partners</a></li>
-					<li><a href="#">EzeCampus</a></li>
-					<li><a href="#">Student Discount</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=en">Good Will Partners</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=en">EzeCampus</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/student-discount?lang=en">Student Discount</a></li>
 				</ul>
 			</li>
 		</li>
@@ -90,9 +90,9 @@
 			<li class="partnerships">
 			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
 				<ul id="partnerships_id" class="dropdown-menu-partnerships">
-					<li><a href="#">Good Will Partners</a></li>
-					<li><a href="#">EzeCampus</a></li>
-					<li><a href="#">Student Discount</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=en">Good Will Partners</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=en">EzeCampus</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/student-discount?lang=en">Student Discount</a></li>
 				</ul>
 			</li>
 		</li>
@@ -170,9 +170,9 @@
 			<li class="partnerships_mobile">
 			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=kh">Our Partnerships</a>
 				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
-					<li><a href="#">Good Will Partners</a></li>
-					<li><a href="#">EzeCampus</a></li>
-					<li><a href="#">Student Discount</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=kh">Good Will Partners</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=kh">EzeCampus</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/student-discount?lang=kh">Student Discount</a></li>
 				</ul>
 			</li>
 		</li>
@@ -234,9 +234,9 @@
 			<li class="partnerships">
 			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=kh">Our Partnerships</a>
 				<ul id="partnerships_id" class="dropdown-menu-partnerships">
-					<li><a href="#">Good Will Partners</a></li>
-					<li><a href="#">EzeCampus</a></li>
-					<li><a href="#">Student Discount</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=kh">Good Will Partners</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=kh">EzeCampus</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/student-discount?lang=kh">Student Discount</a></li>
 				</ul>
 			</li>
 		</li>
@@ -314,9 +314,9 @@
 			<li class="partnerships_mobile">
 			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=ch">Our Partnerships</a>
 				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
-					<li><a href="#">Good Will Partners</a></li>
-					<li><a href="#">EzeCampus</a></li>
-					<li><a href="#">Student Discount</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=ch">Good Will Partners</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=ch">EzeCampus</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/student-discount?lang=ch">Student Discount</a></li>
 				</ul>
 			</li>
 		</li>
@@ -377,9 +377,9 @@
 			<li class="partnerships">
 			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=ch">Our Partnerships</a>
 				<ul id="partnerships_id" class="dropdown-menu-partnerships">
-					<li><a href="#">Good Will Partners</a></li>
-					<li><a href="#">EzeCampus</a></li>
-					<li><a href="#">Student Discount</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=ch">Good Will Partners</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=ch">EzeCampus</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/student-discount?lang=ch">Student Discount</a></li>
 				</ul>
 			</li>
 		</li>
@@ -457,9 +457,9 @@
 			<li class="partnerships_mobile">
 			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
 				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
-					<li><a href="#">Good Will Partners</a></li>
-					<li><a href="#">EzeCampus</a></li>
-					<li><a href="#">Student Discount</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=en">Good Will Partners</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=en">EzeCampus</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/student-discount?lang=en">Student Discount</a></li>
 				</ul>
 			</li>
 		</li>
@@ -523,9 +523,9 @@
 			<li class="partnerships">
 			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
 				<ul id="partnerships_id" class="dropdown-menu-partnerships">
-					<li><a href="#">Good Will Partners</a></li>
-					<li><a href="#">EzeCampus</a></li>
-					<li><a href="#">Student Discount</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=en">Good Will Partners</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=en">EzeCampus</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/student-discount?lang=en">Student Discount</a></li>
 				</ul>
 			</li>
 		</li>
@@ -536,8 +536,27 @@
 </li>
 </li>
 <li class="<?=($active=='Our Services')?'current active':null?> mega-align-left sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
-<a class="" href="<?php echo base_url();?>ourservices?lang=en" data-target="#">Our Services </a>
-
+	<li class="dropdown1">
+	 <a href="<?php echo base_url();?>our-company?lang=en" data-target="#">Our Company </a>
+	  <ul class="dropdown-menu">
+		<li><a href="<?php echo base_url();?>our-company/company-profile?lang=en">Company Profile</a></li>
+		<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=en">Quality Management System</a></li>
+		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
+		<li>
+			<li class="partnerships">
+			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
+				<ul id="partnerships_id" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=en">Good Will Partners</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=en">EzeCampus</a></li>
+					<li><a href="<?php echo base_url()?>our-company/our-partnerships/student-discount?lang=en">Student Discount</a></li>
+				</ul>
+			</li>
+		</li>
+		<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=en">Corporate Social Responsibility</a></li>
+		<li><a href="<?php echo base_url();?>our-company/community?lang=en">Community</a></li>
+		<li><a href="<?php echo base_url();?>our-company/career-opportunities?lang=en">Career Opportunities</a></li>
+	  </ul>
+</li>
 </li>
 <li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
 	<li class="dropdown1">

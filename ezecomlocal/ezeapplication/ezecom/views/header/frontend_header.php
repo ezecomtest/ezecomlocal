@@ -381,7 +381,7 @@ OR $this->uri->segment(2) == 'community' OR $this->uri->segment(2) == 'career-op
 
 
 <!-- Start Our Services -->
-<?php if($this->uri->segment(1) == 'ourservices') {?>
+<?php if($this->uri->segment(1) == 'our-services') {?>
 	<!-- CSS -->
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/templates.t3_bs3_blank.less.bootstrap.less.css" type="text/css">
 	  <link rel="stylesheet" href="<?php echo base_url()?>assets/css/style.min.css" type="text/css">

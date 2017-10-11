@@ -156,6 +156,9 @@ $route['our-company/our-partnerships'] = 'frontend/our_company_c/partnerships';
 $route['our-company/corporate-social-responsibility'] = 'frontend/our_company_c/social_responsibility';
 $route['our-company/community'] = 'frontend/our_company_c/community';
 $route['our-company/career-opportunities'] = 'frontend/our_company_c/career_opport';
+$route['our-company/our-partnerships/goodwill-partners'] = 'frontend/our_company_c/good_partner'; 
+$route['our-company/our-partnerships/ezecampus'] = 'frontend/our_company_c/ezecampus';
+$route['our-company/our-partnerships/student-discount'] = 'frontend/our_company_c/stu_discount';
 
 // end our company
 
@@ -208,7 +211,7 @@ $route['contact-us'] = 'frontend/contact_us_c/contact_us';
 
 // start our services
 
-$route['ourservices'] = 'frontend/our_services_c/our_services';
+$route['our-services'] = 'frontend/our_services_c/our_services';
 
 // end our services
 

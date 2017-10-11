@@ -537,24 +537,68 @@
 </li>
 <li class="<?=($active=='Our Services')?'current active':null?> mega-align-left sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 	<li class="dropdown1">
-	 <a href="<?php echo base_url();?>our-company?lang=en" data-target="#">Our Company </a>
+	 <a href="<?php echo base_url();?>our-services?lang=en" data-target="#">Our Services</a>
 	  <ul class="dropdown-menu">
-		<li><a href="<?php echo base_url();?>our-company/company-profile?lang=en">Company Profile</a></li>
-		<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=en">Quality Management System</a></li>
-		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
 		<li>
 			<li class="partnerships">
-			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
-				<ul id="partnerships_id" class="dropdown-menu-partnerships">
-					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=en">Good Will Partners</a></li>
-					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=en">EzeCampus</a></li>
-					<li><a href="<?php echo base_url()?>our-company/our-partnerships/student-discount?lang=en">Student Discount</a></li>
+			<a style="cursor:pointer;">Internet Access</a>
+				<ul id="internet_access" class="dropdown-menu-partnerships">
+					<li><a href="">Dedicated Internet Access</a></li>
+					<li><a href="">EzeBiz</a></li>
+					<li><a href="">EzeSurf</a></li>
 				</ul>
 			</li>
 		</li>
-		<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=en">Corporate Social Responsibility</a></li>
-		<li><a href="<?php echo base_url();?>our-company/community?lang=en">Community</a></li>
-		<li><a href="<?php echo base_url();?>our-company/career-opportunities?lang=en">Career Opportunities</a></li>
+		<li>
+			<li class="partnerships">
+			<a href="<?php echo base_url();?>?lang=en">Enterprise Network</a>
+				<ul id="enterprise_network" class="dropdown-menu-partnerships">
+					<li><a href="">IPLC</a></li>
+					<li><a href="">DPLC</a></li>
+					<li><a href="">MPLS</a></li>
+					<li><a href="">VPLS</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a href="<?php echo base_url();?>?lang=en">Cloud Services</a>
+				<ul id="cloud_services" class="dropdown-menu-partnerships">
+					<li><a href="#">Microsoft Cloud Service</a></li>
+					<li><a href="#">Amazon Web Service</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a href="<?php echo base_url();?>?lang=en">Data Center & Hosting</a>
+				<ul id="data_center" class="dropdown-menu-partnerships">
+					<li><a href="#">Colocation</a></li>
+					<li><a href="#">DRC</a></li>
+					<li><a href="#">Web Hosting</a></li>
+					<li><a href="#">VPBX</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a href="<?php echo base_url();?>?lang=en">Cyber Security</a>
+				<ul id="cyber_security" class="dropdown-menu-partnerships">
+					<li><a href="#">DDoS Mitigation Service</a></li>
+					<li><a href="#">Web Application Firewall</a></li>
+					<li><a href="#">Managed Network Security</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a href="<?php echo base_url();?>?lang=en">Value Added Services</a>
+				<ul id="add_services" class="dropdown-menu-partnerships">
+					<li><a href="#">VoIP</a></li>
+					<li><a href="#">EzeTV</a></li>
+				</ul>
+			</li>
+		</li>
 	  </ul>
 </li>
 </li>
@@ -616,9 +660,16 @@ $(".dropdown1").hover(
 
 $(document).ready(function(){	
 document.getElementById('partnerships_id').style.display = 'none';
+document.getElementById('internet_access').style.display = 'none';
+document.getElementById('enterprise_network').style.display = 'none';
+document.getElementById('cloud_services').style.display = 'none';
+document.getElementById('data_center').style.display = 'none';
+document.getElementById('cyber_security').style.display = 'none';
+document.getElementById('add_services').style.display = 'none';
+
 /*document.getElementById('partnerships_mobile').style.display = 'none';*/
 
-$(".partnerships").hover(
+$(".partnerships").click(
         function() {
             $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideDown("2000");
             $(this).toggleClass('open');        
@@ -662,6 +713,92 @@ $(".partnerships").hover(
 	#partnerships_mobile li{
 		list-style-type:none;
 		color:#444;
-	}		
+	}
+
+  /* Our services internet_access */
+  
+	#internet_access{
+		list-style-type:none;
+		color:#444;
+	}
+	#internet_access li a{
+		color:#444;
+		font-size:15px;
+		cursor:pointer;
+	}
+	#internet_access li a:hover{
+		color:#7961a9;
+		cursor:pointer;
+	}
+	
+	/* Our services enterprise_network */
+	
+	#enterprise_network{
+		list-style-type:none;
+		color:#444;
+	}
+	#enterprise_network li a{
+		color:#444;
+		font-size:15px;
+	}
+	#enterprise_network li a:hover{
+		color:#7961a9;
+	}
+	
+	/* Our services clound_service */
+	
+	#cloud_services{
+		list-style-type:none;
+		color:#444;
+	}
+	#cloud_services li a{
+		color:#444;
+		font-size:15px;
+	}
+	#cloud_services li a:hover{
+		color:#7961a9;
+	}
+	
+	/* Our services data_center */
+	
+	#data_center{
+		list-style-type:none;
+		color:#444;
+	}
+	#data_center li a{
+		color:#444;
+		font-size:15px;
+	}
+	#data_center li a:hover{
+		color:#7961a9;
+	}
+	
+	/* Our services cyber_security */
+	
+	#cyber_security{
+		list-style-type:none;
+		color:#444;
+	}
+	#cyber_security li a{
+		color:#444;
+		font-size:15px;
+	}
+	#cyber_security li a:hover{
+		color:#7961a9;
+	}
+	
+	/* Our services add_services*/
+	
+	#add_services{
+		list-style-type:none;
+		color:#444;
+	}
+	#add_services li a{
+		color:#444;
+		font-size:15px;
+	}
+	#add_services li a:hover{
+		color:#7961a9;
+	}
 	
 </style>

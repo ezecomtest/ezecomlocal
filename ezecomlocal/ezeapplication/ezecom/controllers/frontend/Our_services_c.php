@@ -113,6 +113,131 @@ class Our_services_c extends CI_Controller {
 		$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
 		$this->load->view('frontend/beedoo_could_service_by_ezecom_v',$data);
 	}
+	
+	public function iplc(){
+		if($this->lang ==1){
+			$data['title'] = "IPLC";
+			$data['active'] = "IPLC";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/iplc',$data);
+		}
+		if($this->lang==2){
+			$data['title'] = "IPLC";
+			$data['active'] = "IPLC";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/iplc_kh_v',$data);
+		}
+		if($this->lang==3){
+			$data['title'] = "IPLC";
+			$data['active'] = "Our Services";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/iplc_ch_v',$data);
+		}
+		if($this->lang == ""){
+			$data['title'] = "IPLC";
+			$data['active'] = "IPLC";
+			$lan = 1;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/iplc',$data);
+		}
+
+	}
+	
+	public function dplc(){
+		if($this->lang ==1){
+			$data['title'] = "DPLC";
+			$data['active'] = "DPLC";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/dplc',$data);
+		}
+		if($this->lang==2){
+			$data['title'] = "DPLC";
+			$data['active'] = "DPLC";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/dplc_kh_v',$data);
+		}
+		if($this->lang==3){
+			$data['title'] = "DPLC";
+			$data['active'] = "DPLC";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/dplc_ch_v',$data);
+		}
+		if($this->lang == ""){
+			$data['title'] = "DPLC";
+			$data['active'] = "DPLC";
+			$lan = 1;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/dplc',$data);
+		}
+	}
+	
+	public function mpls(){
+		if($this->lang ==1){
+			$data['title'] = "MPLS";
+			$data['active'] = "MPLS";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/mpls',$data);
+		}
+		if($this->lang==2){
+			$data['title'] = "MPLS";
+			$data['active'] = "MPLS";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/mpls_kh_v',$data);
+		}
+		if($this->lang==3){
+			$data['title'] = "MPLS";
+			$data['active'] = "MPLS";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/mpls_ch_v',$data);
+		}
+		if($this->lang == ""){
+			$data['title'] = "MPLS";
+			$data['active'] = "MPLS";
+			$lan = 1;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/mpls',$data);
+		}
+	}
+	
+	public function vpls(){
+		if($this->lang ==1){
+			$data['title'] = "VPLS";
+			$data['active'] = "VPLS";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/vpls',$data);
+		}
+		if($this->lang==2){
+			$data['title'] = "VPLS";
+			$data['active'] = "VPLS";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/vpls_kh_v',$data);
+		}
+		if($this->lang==3){
+			$data['title'] = "VPLS";
+			$data['active'] = "VPLS";
+			$lan = $this->lang;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/vpls_ch_v',$data);
+		}
+		if($this->lang == ""){
+			$data['title'] = "VPLS";
+			$data['active'] = "VPLS";
+			$lan = 1;
+			$data['feature_content'] = $this->homepage_m->get_feature_content($lan);
+			$this->load->view('frontend/vpls',$data);
+		}
+	}
 
 	
 }

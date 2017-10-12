@@ -216,6 +216,21 @@ $route['our-services/enterprise-network/international-private-leased-circuit'] =
 $route['our-services/enterprise-network/domestic-private-leased-circuit'] = 'frontend/our_services_c/dplc';
 $route['our-services/enterprise-network/mpls'] = 'frontend/our_services_c/mpls';
 $route['our-services/enterprise-network/vpls'] = 'frontend/our_services_c/vpls';
+$route['our-services/internet-access/dedicated-internet-access'] = 'frontend/our_services_c/dedicate';
+$route['our-services/internet-access/EzeBiz'] = 'frontend/our_services_c/ezebiz';
+$route['our-services/internet-access/EzeSurf'] = 'frontend/our_services_c/ezesurf';
+$route['our-services/cloud-service/microsoft-cloud-service'] = 'frontend/our_services_c/microsoft_cloud_service';
+$route['our-services/cloud-service/amazon-web-service'] = 'frontend/our_services_c/amazon_web_service';
+$route['our-services/hosting/colocation'] = 'frontend/our_services_c/colocation';
+$route['our-services/hosting/disaster-recovery-center'] = 'frontend/our_services_c/drc';
+$route['our-services/hosting/cpanel-web-hosting'] = 'frontend/our_services_c/web_hosting';
+$route['our-services/hosting/virtual-pbx'] = 'frontend/our_services_c/vpbx';
+$route['our-services/value-added-service/voice-over-ip'] = 'frontend/our_services_c/voip';
+$route['our-services/value-added-service/EzeTV'] = 'frontend/our_services_c/ezetv';
+$route['our-services/cyber-security/managed-network-security'] = 'frontend/our_services_c/manage_network_security';
+$route['our-services/cyber-security/web-application-firewall'] = 'frontend/our_services_c/web_appl_firewall';
+
+
 // end our services
 
 // start customer service

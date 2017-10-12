@@ -669,7 +669,7 @@ document.getElementById('add_services').style.display = 'none';
 
 /*document.getElementById('partnerships_mobile').style.display = 'none';*/
 
-$(".partnerships").click(
+$(".partnerships").hover(
         function() {
             $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideDown("2000");
             $(this).toggleClass('open');        

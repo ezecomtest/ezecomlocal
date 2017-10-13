@@ -471,7 +471,72 @@
  
 </li>
 <li class="sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
-<a class="" href="<?php echo base_url();?>ourservices?lang=en" data-target="#">Our Services </a>
+	
+	<li class="dropdown1">
+		 <a href="<?php echo base_url();?>our-services?lang=en" data-target="#">Our Services</a>
+		  <ul class="dropdown-menu">
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer">Internet Access <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></a>
+					<ul id="internet_access_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/internet-access/dedicated-internet-access?lang=en">Dedicated Internet Access</a></li>
+						<li><a href="<?php echo base_url();?>our-services/internet-access/EzeBiz?lang=en">EzeBiz</a></li>
+						<li><a href="<?php echo base_url();?>our-services/internet-access/EzeSurf?lang=en">EzeSurf</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Enterprise Network<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="enterprise_network_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/international-private-leased-circuit?lang=en">IPLC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/domestic-private-leased-circuit?lang=en">DPLC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/mpls?lang=en">MPLS</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/vpls?lang=en">VPLS</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Cloud Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="cloud_services_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/cloud-service/microsoft-cloud-service?lang=en">Microsoft Cloud Service</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cloud-service/amazon-web-service?lang=en">Amazon Web Service</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Data Center & Hosting <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="data_center_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/hosting/colocation?lang=en">Colocation</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/disaster-recovery-center?lang=en">DRC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/cpanel-web-hosting?lang=en">Web Hosting</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/virtual-pbx?lang=en">VPBX</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Cyber Security<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="cyber_security_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>ddos-mitigation-service?lang=en">DDoS Mitigation Service</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cyber-security/web-application-firewall?lang=en">Web Application Firewall</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cyber-security/managed-network-security?lang=en">Managed Network Security</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Value Added Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="add_services_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/value-added-service/voice-over-ip?lang=en">VoIP</a></li>
+						<li><a href="<?php echo base_url();?>our-services/value-added-service/EzeTV?lang=en">EzeTV</a></li>
+					</ul>
+				</li>
+			</li>
+		  </ul>
+	</li>
 
 </li>
 <li class="current active">
@@ -541,61 +606,61 @@
 	  <ul class="dropdown-menu">
 		<li>
 			<li class="partnerships">
-			<a style="cursor:pointer;">Internet Access</a>
+			<a style="cursor:pointer">Internet Access <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></a>
 				<ul id="internet_access" class="dropdown-menu-partnerships">
-					<li><a href="">Dedicated Internet Access</a></li>
-					<li><a href="">EzeBiz</a></li>
-					<li><a href="">EzeSurf</a></li>
+					<li><a href="<?php echo base_url();?>our-services/internet-access/dedicated-internet-access?lang=en">Dedicated Internet Access</a></li>
+					<li><a href="<?php echo base_url();?>our-services/internet-access/EzeBiz?lang=en">EzeBiz</a></li>
+					<li><a href="<?php echo base_url();?>our-services/internet-access/EzeSurf?lang=en">EzeSurf</a></li>
 				</ul>
 			</li>
 		</li>
 		<li>
 			<li class="partnerships">
-			<a href="<?php echo base_url();?>?lang=en">Enterprise Network</a>
+			<a style="cursor:pointer;">Enterprise Network<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
 				<ul id="enterprise_network" class="dropdown-menu-partnerships">
-					<li><a href="">IPLC</a></li>
-					<li><a href="">DPLC</a></li>
-					<li><a href="">MPLS</a></li>
-					<li><a href="">VPLS</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/international-private-leased-circuit?lang=en">IPLC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/domestic-private-leased-circuit?lang=en">DPLC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/mpls?lang=en">MPLS</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/vpls?lang=en">VPLS</a></li>
 				</ul>
 			</li>
 		</li>
 		<li>
 			<li class="partnerships">
-			<a href="<?php echo base_url();?>?lang=en">Cloud Services</a>
+			<a style="cursor:pointer;">Cloud Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
 				<ul id="cloud_services" class="dropdown-menu-partnerships">
-					<li><a href="#">Microsoft Cloud Service</a></li>
-					<li><a href="#">Amazon Web Service</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cloud-service/microsoft-cloud-service?lang=en">Microsoft Cloud Service</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cloud-service/amazon-web-service?lang=en">Amazon Web Service</a></li>
 				</ul>
 			</li>
 		</li>
 		<li>
 			<li class="partnerships">
-			<a href="<?php echo base_url();?>?lang=en">Data Center & Hosting</a>
+			<a style="cursor:pointer;">Data Center & Hosting <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
 				<ul id="data_center" class="dropdown-menu-partnerships">
-					<li><a href="#">Colocation</a></li>
-					<li><a href="#">DRC</a></li>
-					<li><a href="#">Web Hosting</a></li>
-					<li><a href="#">VPBX</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/colocation?lang=en">Colocation</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/disaster-recovery-center?lang=en">DRC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/cpanel-web-hosting?lang=en">Web Hosting</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/virtual-pbx?lang=en">VPBX</a></li>
 				</ul>
 			</li>
 		</li>
 		<li>
 			<li class="partnerships">
-			<a href="<?php echo base_url();?>?lang=en">Cyber Security</a>
+			<a style="cursor:pointer;">Cyber Security<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
 				<ul id="cyber_security" class="dropdown-menu-partnerships">
-					<li><a href="#">DDoS Mitigation Service</a></li>
-					<li><a href="#">Web Application Firewall</a></li>
-					<li><a href="#">Managed Network Security</a></li>
+					<li><a href="<?php echo base_url();?>ddos-mitigation-service?lang=en">DDoS Mitigation Service</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cyber-security/web-application-firewall?lang=en">Web Application Firewall</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cyber-security/managed-network-security?lang=en">Managed Network Security</a></li>
 				</ul>
 			</li>
 		</li>
 		<li>
 			<li class="partnerships">
-			<a href="<?php echo base_url();?>?lang=en">Value Added Services</a>
+			<a style="cursor:pointer;">Value Added Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
 				<ul id="add_services" class="dropdown-menu-partnerships">
-					<li><a href="#">VoIP</a></li>
-					<li><a href="#">EzeTV</a></li>
+					<li><a href="<?php echo base_url();?>our-services/value-added-service/voice-over-ip?lang=en">VoIP</a></li>
+					<li><a href="<?php echo base_url();?>our-services/value-added-service/EzeTV?lang=en">EzeTV</a></li>
 				</ul>
 			</li>
 		</li>
@@ -638,8 +703,6 @@
 	</div>
 </nav>
 <!-- //MAIN NAVIGATION -->
-
-
 <?php } ?>
 
 <script type="text/javascript">
@@ -660,35 +723,34 @@ $(".dropdown1").hover(
 
 $(document).ready(function(){	
 document.getElementById('partnerships_id').style.display = 'none';
+
+// drop menu our services desktop
 document.getElementById('internet_access').style.display = 'none';
 document.getElementById('enterprise_network').style.display = 'none';
 document.getElementById('cloud_services').style.display = 'none';
 document.getElementById('data_center').style.display = 'none';
 document.getElementById('cyber_security').style.display = 'none';
 document.getElementById('add_services').style.display = 'none';
+// drop menu our services mobile 
+document.getElementById('internet_access_mobile').style.display = 'none';
+document.getElementById('enterprise_network_mobile').style.display = 'none';
+document.getElementById('cloud_services_mobile').style.display = 'none';
+document.getElementById('data_center_mobile').style.display = 'none';
+document.getElementById('cyber_security_mobile').style.display = 'none';
+document.getElementById('add_services_mobile').style.display = 'none'; 
 
 /*document.getElementById('partnerships_mobile').style.display = 'none';*/
 
-$(".partnerships").hover(
+$(".partnerships").click(
         function() {
-            $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideDown("2000");
-            $(this).toggleClass('open');        
-        },
+            $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideToggle("slow");
+            $(this).toggleClass('open'); 
+        }/* ,
 		function() {
             $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideUp("2000");
             $(this).toggleClass('open');       
-        }
+        } */
     );
-	
-	/* -------------------*/
-	$(".partnerships_mobile").click(
-        function() {
-			document.getElementById('partnerships_mobile').style.display = 'block';
-            $('.dropdown-menu-partnerships-mobile', this).not('.in .dropdown-menu-partnerships-mobile').stop(true,true).slideDown("2000");
-            $(this).toggleClass('open');        
-        }
-    );
-	
 	
 	
 });
@@ -801,4 +863,15 @@ $(".partnerships").hover(
 		color:#7961a9;
 	}
 	
+	/* span icon rowdown menu */
+	#spanicondown{
+		padding-top:8px;
+		position:absolute;
+		left:190px;
+		font-size:10px;
+	}
+	
+
+	
+
 </style>

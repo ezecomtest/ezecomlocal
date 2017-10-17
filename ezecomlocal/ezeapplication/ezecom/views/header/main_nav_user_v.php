@@ -1074,8 +1074,10 @@
 	</li>
 </li>
 <li class="<?=($active=='Contact Us')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>contact-us?lang=en" data-target="#">Contact Us </a>
-
+	<a class="" href="<?php echo base_url();?>contact-us?lang=en" data-target="#">Contact Us </a>
+</li>
+<li>
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Collection</a>
 </li>
 </ul>
 </div>
@@ -1084,6 +1086,9 @@
 
 	</div>
 </nav>
+<div id="hello" style="width:100%;height:200px;background-color:red">
+	<h1>Hello Cambodia</h1>
+</div>
 <!-- //MAIN NAVIGATION -->
 <?php } ?>
 
@@ -1132,6 +1137,21 @@ $(".partnerships").click(
 	
 	
 });
+
+
+
+/* menu collection */
+$(document).ready(function(){	
+	document.getElementById('hello').style.display = 'none';
+	$(".dropdown-toggle").click(
+        function() {
+			alert("ABC");
+            $('#hello').slideToggle("slow");
+            $(this).toggleClass('open'); 
+        }
+    );
+});
+
 </script>
 
 <style type="text/css">
@@ -1264,8 +1284,10 @@ $(".partnerships").click(
 		list-style-type:none;
 	}
 	
-	
 
-	
+</style>
 
+<style type="text/css">
+	/* collection menu */
+	
 </style>

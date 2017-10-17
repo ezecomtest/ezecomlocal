@@ -25,7 +25,7 @@
 		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
 		<li>
 			<li class="partnerships_mobile">
-			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
+			<a style="cursor:pointer">Our Partnerships<span class="fa fa-chevron-down" id="spanicondown_partnership" aria-hidden="true"></span></a>
 				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=en">Good Will Partners</a></li>
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=en">EzeCampus</a></li>
@@ -39,8 +39,71 @@
 	  </ul>
 </li>
 <li class="sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
-<a class="" href="<?php echo base_url();?>ourservices?lang=en" data-target="#">Our Services </a>
-
+	<li class="dropdown1">
+		 <a data-target="#">Our Services</a>
+		  <ul class="dropdown-menu">
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer">Internet Access <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></a>
+					<ul id="internet_access_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/internet-access/dedicated-internet-access?lang=en">Dedicated Internet Access</a></li>
+						<li><a href="<?php echo base_url();?>our-services/internet-access/EzeBiz?lang=en">EzeBiz</a></li>
+						<li><a href="<?php echo base_url();?>our-services/internet-access/EzeSurf?lang=en">EzeSurf</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Enterprise Network<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="enterprise_network_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/international-private-leased-circuit?lang=en">IPLC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/domestic-private-leased-circuit?lang=en">DPLC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/mpls?lang=en">MPLS</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/vpls?lang=en">VPLS</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Cloud Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="cloud_services_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/cloud-service/microsoft-cloud-service?lang=en">Microsoft Cloud Service</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cloud-service/amazon-web-service?lang=en">Amazon Web Service</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Data Center & Hosting <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="data_center_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/hosting/colocation?lang=en">Colocation</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/disaster-recovery-center?lang=en">DRC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/cpanel-web-hosting?lang=en">Web Hosting</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/virtual-pbx?lang=en">VPBX</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Cyber Security<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="cyber_security_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>ddos-mitigation-service?lang=en">DDoS Mitigation Service</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cyber-security/web-application-firewall?lang=en">Web Application Firewall</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cyber-security/managed-network-security?lang=en">Managed Network Security</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Value Added Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="add_services_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/value-added-service/voice-over-ip?lang=en">VoIP</a></li>
+						<li><a href="<?php echo base_url();?>our-services/value-added-service/EzeTV?lang=en">EzeTV</a></li>
+					</ul>
+				</li>
+			</li>
+		  </ul>
+	</li>
 </li>
 <li class="current active">
 <li class="dropdown1">
@@ -88,7 +151,7 @@
 		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
 		<li>
 			<li class="partnerships">
-			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
+			<a style="cursor:pointer">Our Partnerships<span class="fa fa-chevron-down" id="spanicondown_partnership" aria-hidden="true"></span></a>
 				<ul id="partnerships_id" class="dropdown-menu-partnerships">
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=en">Good Will Partners</a></li>
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=en">EzeCampus</a></li>
@@ -102,8 +165,72 @@
 	  </ul>
 </li>
 <li class="<?=($active=='Our Services')?'current active':null?> mega-align-left sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
-<a class="" href="<?php echo base_url();?>ourservices?lang=en" data-target="#">Our Services </a>
-
+	
+	<li class="dropdown1">
+	 <a href="<?php echo base_url();?>our-services?lang=en" data-target="#">Our Services</a>
+	  <ul class="dropdown-menu">
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer">Internet Access <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="internet_access" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/internet-access/dedicated-internet-access?lang=en">Dedicated Internet Access</a></li>
+					<li><a href="<?php echo base_url();?>our-services/internet-access/EzeBiz?lang=en">EzeBiz</a></li>
+					<li><a href="<?php echo base_url();?>our-services/internet-access/EzeSurf?lang=en">EzeSurf</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Enterprise Network<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="enterprise_network" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/international-private-leased-circuit?lang=en">IPLC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/domestic-private-leased-circuit?lang=en">DPLC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/mpls?lang=en">MPLS</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/vpls?lang=en">VPLS</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Cloud Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="cloud_services" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/cloud-service/microsoft-cloud-service?lang=en">Microsoft Cloud Service</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cloud-service/amazon-web-service?lang=en">Amazon Web Service</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Data Center & Hosting <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="data_center" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/hosting/colocation?lang=en">Colocation</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/disaster-recovery-center?lang=en">DRC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/cpanel-web-hosting?lang=en">Web Hosting</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/virtual-pbx?lang=en">VPBX</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Cyber Security<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="cyber_security" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>ddos-mitigation-service?lang=en">DDoS Mitigation Service</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cyber-security/web-application-firewall?lang=en">Web Application Firewall</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cyber-security/managed-network-security?lang=en">Managed Network Security</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Value Added Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="add_services" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/value-added-service/voice-over-ip?lang=en">VoIP</a></li>
+					<li><a href="<?php echo base_url();?>our-services/value-added-service/EzeTV?lang=en">EzeTV</a></li>
+				</ul>
+			</li>
+		</li>
+	  </ul>
+	</li>
 </li>
 <li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
 <li class="dropdown1">
@@ -168,7 +295,7 @@
 		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=kh">Childsafe Certification</a></li>
 		<li>
 			<li class="partnerships_mobile">
-			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=kh">Our Partnerships</a>
+			<a style="cursor:pointer">Our Partnerships<span class="fa fa-chevron-down" id="spanicondown_partnership" aria-hidden="true"></span></a>
 				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=kh">Good Will Partners</a></li>
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=kh">EzeCampus</a></li>
@@ -183,8 +310,71 @@
 </li>
 
 <li class="sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
-<a class="" href="<?php echo base_url();?>ourservices?lang=kh" data-target="#">អាជីវកម្ម  </a>
-
+	<li class="dropdown1">
+		 <a data-target="#">អាជីវកម្ម</a>
+		  <ul class="dropdown-menu">
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer">Internet Access <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></a>
+					<ul id="internet_access_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/internet-access/dedicated-internet-access?lang=kh">Dedicated Internet Access</a></li>
+						<li><a href="<?php echo base_url();?>our-services/internet-access/EzeBiz?lang=kh">EzeBiz</a></li>
+						<li><a href="<?php echo base_url();?>our-services/internet-access/EzeSurf?lang=kh">EzeSurf</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Enterprise Network<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="enterprise_network_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/international-private-leased-circuit?lang=kh">IPLC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/domestic-private-leased-circuit?lang=kh">DPLC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/mpls?lang=kh">MPLS</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/vpls?lang=kh">VPLS</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Cloud Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="cloud_services_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/cloud-service/microsoft-cloud-service?lang=kh">Microsoft Cloud Service</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cloud-service/amazon-web-service?lang=kh">Amazon Web Service</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Data Center & Hosting <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="data_center_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/hosting/colocation?lang=kh">Colocation</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/disaster-recovery-center?lang=kh">DRC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/cpanel-web-hosting?lang=kh">Web Hosting</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/virtual-pbx?lang=kh">VPBX</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Cyber Security<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="cyber_security_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>ddos-mitigation-service?lang=kh">DDoS Mitigation Service</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cyber-security/web-application-firewall?lang=kh">Web Application Firewall</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cyber-security/managed-network-security?lang=kh">Managed Network Security</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Value Added Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="add_services_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/value-added-service/voice-over-ip?lang=kh">VoIP</a></li>
+						<li><a href="<?php echo base_url();?>our-services/value-added-service/EzeTV?lang=kh">EzeTV</a></li>
+					</ul>
+				</li>
+			</li>
+		  </ul>
+	</li>
 </li>
 <li class="current active">
 <li class="dropdown1">
@@ -232,7 +422,7 @@
 		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=kh">Childsafe Certification</a></li>
 		<li>
 			<li class="partnerships">
-			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=kh">Our Partnerships</a>
+			<a style="cursor:pointer">Our Partnerships<span class="fa fa-chevron-down" id="spanicondown_partnership" aria-hidden="true"></span></a>
 				<ul id="partnerships_id" class="dropdown-menu-partnerships">
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=kh">Good Will Partners</a></li>
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=kh">EzeCampus</a></li>
@@ -247,8 +437,71 @@
 </li>
 
 <li class="<?=($active=='Our Services')?'current active':null?> mega-align-left sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
-<a class="" href="<?php echo base_url();?>ourservices?lang=kh" data-target="#">អាជីវកម្ម </a>
-
+	<li class="dropdown1">
+	 <a href="<?php echo base_url();?>our-services?lang=kh" data-target="#">អាជីវកម្ម</a>
+	  <ul class="dropdown-menu">
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer">Internet Access <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="internet_access" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/internet-access/dedicated-internet-access?lang=kh">Dedicated Internet Access</a></li>
+					<li><a href="<?php echo base_url();?>our-services/internet-access/EzeBiz?lang=kh">EzeBiz</a></li>
+					<li><a href="<?php echo base_url();?>our-services/internet-access/EzeSurf?lang=kh">EzeSurf</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Enterprise Network<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="enterprise_network" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/international-private-leased-circuit?lang=kh">IPLC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/domestic-private-leased-circuit?lang=kh">DPLC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/mpls?lang=kh">MPLS</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/vpls?lang=kh">VPLS</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Cloud Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="cloud_services" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/cloud-service/microsoft-cloud-service?lang=kh">Microsoft Cloud Service</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cloud-service/amazon-web-service?lang=kh">Amazon Web Service</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Data Center & Hosting <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="data_center" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/hosting/colocation?lang=kh">Colocation</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/disaster-recovery-center?lang=kh">DRC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/cpanel-web-hosting?lang=kh">Web Hosting</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/virtual-pbx?lang=kh">VPBX</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Cyber Security<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="cyber_security" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>ddos-mitigation-service?lang=kh">DDoS Mitigation Service</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cyber-security/web-application-firewall?lang=kh">Web Application Firewall</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cyber-security/managed-network-security?lang=kh">Managed Network Security</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Value Added Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="add_services" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/value-added-service/voice-over-ip?lang=kh">VoIP</a></li>
+					<li><a href="<?php echo base_url();?>our-services/value-added-service/EzeTV?lang=kh">EzeTV</a></li>
+				</ul>
+			</li>
+		</li>
+	  </ul>
+	</li>
 </li>
 <li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
 <li class="dropdown1">
@@ -312,7 +565,7 @@
 		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=ch">Childsafe Certification</a></li>
 		<li>
 			<li class="partnerships_mobile">
-			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=ch">Our Partnerships</a>
+			<a style="cursor:pointer">Our Partnerships<span class="fa fa-chevron-down" id="spanicondown_partnership" aria-hidden="true"></span></a>
 				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=ch">Good Will Partners</a></li>
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=ch">EzeCampus</a></li>
@@ -326,7 +579,71 @@
 	  </ul>
 </li>
 <li class="sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
-<a class="" href="<?php echo base_url();?>ourservices?lang=ch" data-target="#">Our Services </a>
+	<li class="dropdown1">
+		 <a data-target="#">Our Services</a>
+		  <ul class="dropdown-menu">
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer">Internet Access <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></a>
+					<ul id="internet_access_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/internet-access/dedicated-internet-access?lang=ch">Dedicated Internet Access</a></li>
+						<li><a href="<?php echo base_url();?>our-services/internet-access/EzeBiz?lang=ch">EzeBiz</a></li>
+						<li><a href="<?php echo base_url();?>our-services/internet-access/EzeSurf?lang=ch">EzeSurf</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Enterprise Network<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="enterprise_network_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/international-private-leased-circuit?lang=ch">IPLC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/domestic-private-leased-circuit?lang=ch">DPLC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/mpls?lang=ch">MPLS</a></li>
+						<li><a href="<?php echo base_url();?>our-services/enterprise-network/vpls?lang=ch">VPLS</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Cloud Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="cloud_services_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/cloud-service/microsoft-cloud-service?lang=ch">Microsoft Cloud Service</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cloud-service/amazon-web-service?lang=ch">Amazon Web Service</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Data Center & Hosting <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="data_center_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/hosting/colocation?lang=ch">Colocation</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/disaster-recovery-center?lang=ch">DRC</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/cpanel-web-hosting?lang=ch">Web Hosting</a></li>
+						<li><a href="<?php echo base_url();?>our-services/hosting/virtual-pbx?lang=ch">VPBX</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Cyber Security<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="cyber_security_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>ddos-mitigation-service?lang=ch">DDoS Mitigation Service</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cyber-security/web-application-firewall?lang=ch">Web Application Firewall</a></li>
+						<li><a href="<?php echo base_url();?>our-services/cyber-security/managed-network-security?lang=ch">Managed Network Security</a></li>
+					</ul>
+				</li>
+			</li>
+			<li>
+				<li class="partnerships">
+				<a style="cursor:pointer;">Value Added Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+					<ul id="add_services_mobile" class="dropdown-menu-partnerships">
+						<li><a href="<?php echo base_url();?>our-services/value-added-service/voice-over-ip?lang=ch">VoIP</a></li>
+						<li><a href="<?php echo base_url();?>our-services/value-added-service/EzeTV?lang=ch">EzeTV</a></li>
+					</ul>
+				</li>
+			</li>
+		  </ul>
+	</li>
 
 </li>
 <li class="current active">
@@ -375,7 +692,7 @@
 		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=ch">Childsafe Certification</a></li>
 		<li>
 			<li class="partnerships">
-			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=ch">Our Partnerships</a>
+			<a style="cursor:pointer">Our Partnerships<span class="fa fa-chevron-down" id="spanicondown_partnership" aria-hidden="true"></span></a>
 				<ul id="partnerships_id" class="dropdown-menu-partnerships">
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=ch">Good Will Partners</a></li>
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=ch">EzeCampus</a></li>
@@ -389,8 +706,73 @@
 	  </ul>
 </li>
 <li class="<?=($active=='Our Services')?'current active':null?> mega-align-left sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
-<a class="" href="<?php echo base_url();?>ourservices?lang=ch" data-target="#">Our Services </a>
-
+	
+	<li class="dropdown1">
+	 <a href="<?php echo base_url();?>our-services?lang=ch" data-target="#">Our Services</a>
+	  <ul class="dropdown-menu">
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer">Internet Access <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="internet_access" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/internet-access/dedicated-internet-access?lang=ch">Dedicated Internet Access</a></li>
+					<li><a href="<?php echo base_url();?>our-services/internet-access/EzeBiz?lang=ch">EzeBiz</a></li>
+					<li><a href="<?php echo base_url();?>our-services/internet-access/EzeSurf?lang=ch">EzeSurf</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Enterprise Network<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="enterprise_network" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/international-private-leased-circuit?lang=ch">IPLC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/domestic-private-leased-circuit?lang=ch">DPLC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/mpls?lang=ch">MPLS</a></li>
+					<li><a href="<?php echo base_url();?>our-services/enterprise-network/vpls?lang=ch">VPLS</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Cloud Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="cloud_services" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/cloud-service/microsoft-cloud-service?lang=ch">Microsoft Cloud Service</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cloud-service/amazon-web-service?lang=ch">Amazon Web Service</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Data Center & Hosting <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="data_center" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/hosting/colocation?lang=ch">Colocation</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/disaster-recovery-center?lang=ch">DRC</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/cpanel-web-hosting?lang=ch">Web Hosting</a></li>
+					<li><a href="<?php echo base_url();?>our-services/hosting/virtual-pbx?lang=ch">VPBX</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Cyber Security<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="cyber_security" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>ddos-mitigation-service?lang=en">DDoS Mitigation Service</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cyber-security/web-application-firewall?lang=ch">Web Application Firewall</a></li>
+					<li><a href="<?php echo base_url();?>our-services/cyber-security/managed-network-security?lang=ch">Managed Network Security</a></li>
+				</ul>
+			</li>
+		</li>
+		<li>
+			<li class="partnerships">
+			<a style="cursor:pointer;">Value Added Services<span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
+				<ul id="add_services" class="dropdown-menu-partnerships">
+					<li><a href="<?php echo base_url();?>our-services/value-added-service/voice-over-ip?lang=ch">VoIP</a></li>
+					<li><a href="<?php echo base_url();?>our-services/value-added-service/EzeTV?lang=ch">EzeTV</a></li>
+				</ul>
+			</li>
+		</li>
+	  </ul>
+	</li>
+	
 </li>
 <li class="<?=($active=='Support')?'current active':null?>" data-id="533" data-level="1" data-hidesub="1">
 <li class="dropdown1">
@@ -455,7 +837,7 @@
 		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
 		<li>
 			<li class="partnerships_mobile">
-			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
+			<a style="cursor:pointer">Our Partnerships<span class="fa fa-chevron-down" id="spanicondown_partnership" aria-hidden="true"></span></a>
 				<ul id="partnerships_mobile" class="dropdown-menu-partnerships-mobile">
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=en">Good Will Partners</a></li>
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=en">EzeCampus</a></li>
@@ -473,7 +855,7 @@
 <li class="sub-hidden-collapse" data-id="545" data-level="1" data-alignsub="left" data-hidesub="1" data-hidewcol="1">
 	
 	<li class="dropdown1">
-		 <a href="<?php echo base_url();?>our-services?lang=en" data-target="#">Our Services</a>
+		 <a data-target="#">Our Services</a>
 		  <ul class="dropdown-menu">
 			<li>
 				<li class="partnerships">
@@ -586,7 +968,7 @@
 		<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
 		<li>
 			<li class="partnerships">
-			<a href="<?php echo base_url();?>our-company/our-partnerships?lang=en">Our Partnerships</a>
+			<a style="cursor:pointer">Our Partnerships<span class="fa fa-chevron-down" id="spanicondown_partnership" aria-hidden="true"></span></a>
 				<ul id="partnerships_id" class="dropdown-menu-partnerships">
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=en">Good Will Partners</a></li>
 					<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=en">EzeCampus</a></li>
@@ -606,7 +988,7 @@
 	  <ul class="dropdown-menu">
 		<li>
 			<li class="partnerships">
-			<a style="cursor:pointer">Internet Access <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></a>
+			<a style="cursor:pointer">Internet Access <span class="fa fa-chevron-down" id="spanicondown" aria-hidden="true"></span></a>
 				<ul id="internet_access" class="dropdown-menu-partnerships">
 					<li><a href="<?php echo base_url();?>our-services/internet-access/dedicated-internet-access?lang=en">Dedicated Internet Access</a></li>
 					<li><a href="<?php echo base_url();?>our-services/internet-access/EzeBiz?lang=en">EzeBiz</a></li>
@@ -732,12 +1114,12 @@ document.getElementById('data_center').style.display = 'none';
 document.getElementById('cyber_security').style.display = 'none';
 document.getElementById('add_services').style.display = 'none';
 // drop menu our services mobile 
-document.getElementById('internet_access_mobile').style.display = 'none';
+/* document.getElementById('internet_access_mobile').style.display = 'none';
 document.getElementById('enterprise_network_mobile').style.display = 'none';
 document.getElementById('cloud_services_mobile').style.display = 'none';
 document.getElementById('data_center_mobile').style.display = 'none';
 document.getElementById('cyber_security_mobile').style.display = 'none';
-document.getElementById('add_services_mobile').style.display = 'none'; 
+document.getElementById('add_services_mobile').style.display = 'none'; */ 
 
 /*document.getElementById('partnerships_mobile').style.display = 'none';*/
 
@@ -745,11 +1127,7 @@ $(".partnerships").click(
         function() {
             $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideToggle("slow");
             $(this).toggleClass('open'); 
-        }/* ,
-		function() {
-            $('.dropdown-menu-partnerships', this).not('.in .dropdown-menu-partnerships').stop(true,true).slideUp("2000");
-            $(this).toggleClass('open');       
-        } */
+        }
     );
 	
 	
@@ -870,6 +1248,22 @@ $(".partnerships").click(
 		left:190px;
 		font-size:10px;
 	}
+	
+	#spanicondown_partnership{
+		padding-top:8px;
+		position:absolute;
+		left:250px;
+		font-size:10px;
+	}
+	
+	/* internet_access_mobile */
+	
+	#internet_access_mobile,#enterprise_network_mobile,#cloud_services_mobile,
+	#cloud_services_mobile,#data_center_mobile,#cyber_security_mobile,#add_services_mobile
+	li{
+		list-style-type:none;
+	}
+	
 	
 
 	

@@ -1086,9 +1086,108 @@
 
 	</div>
 </nav>
-<div id="hello" style="width:100%;height:200px;background-color:red">
-	<h1>Hello Cambodia</h1>
-</div>
+<div id="menu-collection" style="display:none">
+	<ul>
+					
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Our Company</li>
+							<li><a href="<?php echo base_url();?>our-company/company-profile?lang=en">Company Profile</a></li>
+							<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=en">Quality Management System</a></li>
+							<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
+							<li class="partnerships">
+								<a style="cursor:pointer">Our Partnerships<span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
+									<li><a href="">Good Will Partners</a></li>
+									<li><a href="">EzeCampus</a></li>
+									<li><a href="">Student Discount</a></li>
+								</ul>
+							</li>
+							<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=en">Corporate Social Responsibility</a></li>
+							<li><a href="<?php echo base_url();?>our-company/community?lang=en">Community</a></li>
+							<li><a href="<?php echo base_url();?>our-company/career-opportunities?lang=en">Career Opportunities</a></li>
+							<li class="divider"></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Our Services</li>
+							<li class="partnerships">
+								<a style="cursor:pointer">Internet Access<span class="fa fa-chevron-down" id="colle_row_down" aria-hidden="true"></span></a>
+								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
+									<li><a href="<?php echo base_url();?>our-services/internet-access/dedicated-internet-access?lang=en">Dedicated Internet Access</a></li>
+									<li><a href="<?php echo base_url();?>our-services/internet-access/EzeBiz?lang=en">EzeBiz</a></li>
+									<li><a href="<?php echo base_url();?>our-services/internet-access/EzeSurf?lang=en">EzeSurf</a></li>
+								</ul>
+							</li>
+							<li class="partnerships">
+								<a  style="cursor:pointer">Enterprise Network<span class="fa fa-chevron-down" id="colle_row_down" aria-hidden="true"></span></a>
+								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
+									<li><a href="<?php echo base_url();?>our-services/enterprise-network/international-private-leased-circuit?lang=en">IPLC</a></li>
+									<li><a href="<?php echo base_url();?>our-services/enterprise-network/domestic-private-leased-circuit?lang=en">DPLC</a></li>
+									<li><a href="<?php echo base_url();?>our-services/enterprise-network/mpls?lang=en">MPLS</a></li>
+									<li><a href="<?php echo base_url();?>our-services/enterprise-network/vpls?lang=en">VPLS</a></li>
+								</ul>
+							</li>
+							<li class="partnerships">
+								<a style="cursor:pointer">Cloud Services<span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
+									<li><a href="<?php echo base_url();?>our-services/cloud-service/microsoft-cloud-service?lang=en">Microsoft Cloud Service</a></li>
+									<li><a href="<?php echo base_url();?>our-services/cloud-service/amazon-web-service?lang=en">Amazon Web Service</a></li>
+								</ul>
+							</li>
+							<li class="partnerships">
+								<a style="cursor:pointer">Data Center & Hosting<span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
+									<li><a href="<?php echo base_url();?>our-services/hosting/colocation?lang=en">Colocation</a></li>
+									<li><a href="<?php echo base_url();?>our-services/hosting/disaster-recovery-center?lang=en">DRC</a></li>
+									<li><a href="<?php echo base_url();?>our-services/hosting/cpanel-web-hosting?lang=en">Web Hosting</a></li>
+									<li><a href="<?php echo base_url();?>our-services/hosting/virtual-pbx?lang=en">VPBX</a></li>
+								</ul>
+							</li>
+							<li class="partnerships">
+								<a style="cursor:pointer">Cyber Security<span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
+									<li><a href="<?php echo base_url();?>ddos-mitigation-service?lang=en">DDoS Mitigation Service</a></li>
+									<li><a href="<?php echo base_url();?>our-services/cyber-security/web-application-firewall?lang=en">Web Application Firewall</a></li>
+									<li><a href="<?php echo base_url();?>our-services/cyber-security/managed-network-security?lang=en">Managed Network Security</a></li>
+								</ul>
+							</li>
+							<li class="partnerships">
+								<a style="cursor:pointer">Value Added Services<span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
+									<li><a href="<?php echo base_url();?>our-services/value-added-service/voice-over-ip?lang=en">VoIP</a></li>
+									<li><a href="<?php echo base_url();?>our-services/value-added-service/EzeTV?lang=en">EzeTV</a></li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Support</li>
+							<li><a href="<?php echo base_url();?>support/faq?lang=en">FAQ'S</a></li>
+							<li><a href="<?php echo base_url();?>support/customer-service?lang=en">Customer Service</a></li>
+							<li><a href="<?php echo base_url();?>support/payment?lang=en">Payment Options</a></li>
+							<li><a href="<?php echo base_url();?>setup-email?lang=en">EzeMail Setup</a></li>
+							<li><a href="https://webmail.ezecom.com.kh/">EzeMail</a></li>
+							<li><a href="http://ezecom.speedtest.net/">Speed Test</a></li>	
+							<li><a href="https://csm.ezecom.com.kh/uam/">User Account Management</a></li>
+							<li class="divider"></li>                                                     
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Media Center</li>
+							<li><a href="<?php echo base_url();?>media-center/news-events?lang=en">News and Events</a></li>
+							<li><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=en">Radio Live Stream</a></li>
+							<li><a href="<?php echo base_url();?>media-center/live-traffic-camera?lang=en">Traffic Live Camera</a></li>							
+							<li class="divider"></li>                                                     
+						</ul>
+					</li>
+				</ul>
+</div> <!-- end of menu collection -->
+
 <!-- //MAIN NAVIGATION -->
 <?php } ?>
 
@@ -1142,11 +1241,10 @@ $(".partnerships").click(
 
 /* menu collection */
 $(document).ready(function(){	
-	document.getElementById('hello').style.display = 'none';
+	document.getElementById('menu-collection').style.display = 'none';
 	$(".dropdown-toggle").click(
         function() {
-			alert("ABC");
-            $('#hello').slideToggle("slow");
+            $('#menu-collection').slideToggle("slow");
             $(this).toggleClass('open'); 
         }
     );
@@ -1289,5 +1387,35 @@ $(document).ready(function(){
 
 <style type="text/css">
 	/* collection menu */
+	#menu-collection{
+		width:100%;
+		height:auto;
+		background-color:#ffffff;
+	}
+	
+	#menu-collection ul li{
+		list-style-type:none;
+		padding:5px 0px;
+	}
+	
+	#menu-collection ul li .dropdown-header{
+		font-weight:bold;
+		color:#7961a9;
+	}
+	
+	#colle_menu_main{
+		display:none;
+	}
+	
+	#colle_row_down{
+		position:absolute;
+		left:200px;
+		top:48px;
+		font-size:14px;
+	}
+	
+	
+	
+	
 	
 </style>

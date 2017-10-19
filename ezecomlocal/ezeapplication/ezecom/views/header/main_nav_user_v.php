@@ -132,8 +132,10 @@
 
 </li>
 <li>
-<a href="<?php echo base_url();?>contact-us?lang=en">Contact Us </a>
-
+	<a href="<?php echo base_url();?>contact-us?lang=en">Contact Us </a>
+</li>
+<li>
+	<a class="collection" style="cursor:pointer">Collection</a>
 </li>
 </ul></div>
 		
@@ -259,8 +261,10 @@
 
 </li>
 <li class="<?=($active=='Contact Us')?'current active':null?>">
-<a class="" href="<?php echo base_url();?>contact-us?lang=en" data-target="#">Contact Us </a>
-
+	<a class="" href="<?php echo base_url();?>contact-us?lang=en" data-target="#">Contact Us </a>
+</li>
+<li>
+	<a class="collection" style="cursor:pointer">Collection</a>
 </li>
 </ul>
 </div>
@@ -949,7 +953,9 @@
 </li>
 <li>
 <a href="<?php echo base_url();?>contact-us?lang=en">Contact Us </a>
-
+</li>
+<li>
+	<a class="dropdown-toggle" style="cursor:pointer" data-toggle="dropdown">Collection</a>
 </li>
 </ul></div>
 		
@@ -1077,7 +1083,7 @@
 	<a class="" href="<?php echo base_url();?>contact-us?lang=en" data-target="#">Contact Us </a>
 </li>
 <li>
-	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Collection</a>
+	<a class="collection" style="cursor:pointer">Collection</a>
 </li>
 </ul>
 </div>
@@ -1086,6 +1092,10 @@
 
 	</div>
 </nav>
+<!-- //MAIN NAVIGATION -->
+<?php } ?>
+
+<!-- menu collection -->
 <div id="menu-collection" style="display:none">
 	<ul>
 					
@@ -1096,11 +1106,11 @@
 							<li><a href="<?php echo base_url();?>our-company/quality-management-system?lang=en">Quality Management System</a></li>
 							<li><a href="<?php echo base_url();?>our-company/childsafe-certification?lang=en">Childsafe Certification</a></li>
 							<li class="partnerships">
-								<a style="cursor:pointer">Our Partnerships<span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+								<a style="cursor:pointer">Our Partnerships<span class="fa fa-chevron-down" id="collection_partnershipt" aria-hidden="true"></span></a>
 								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
-									<li><a href="">Good Will Partners</a></li>
-									<li><a href="">EzeCampus</a></li>
-									<li><a href="">Student Discount</a></li>
+									<li><a href="<?php echo base_url()?>our-company/our-partnerships/goodwill-partners?lang=en">Good Will Partners</a></li>
+									<li><a href="<?php echo base_url()?>our-company/our-partnerships/ezecampus?lang=en">EzeCampus</a></li>
+									<li><a href="<?php echo base_url()?>our-company/our-partnerships/student-discount?lang=en">Student Discount</a></li>
 								</ul>
 							</li>
 							<li><a href="<?php echo base_url();?>our-company/corporate-social-responsibility?lang=en">Corporate Social Responsibility</a></li>
@@ -1113,7 +1123,7 @@
 						<ul>
 							<li class="dropdown-header">Our Services</li>
 							<li class="partnerships">
-								<a style="cursor:pointer">Internet Access<span class="fa fa-chevron-down" id="colle_row_down" aria-hidden="true"></span></a>
+								<a style="cursor:pointer">Internet Access<span class="fa fa-chevron-down" id="collection_internet_acc" aria-hidden="true"></span></a>
 								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
 									<li><a href="<?php echo base_url();?>our-services/internet-access/dedicated-internet-access?lang=en">Dedicated Internet Access</a></li>
 									<li><a href="<?php echo base_url();?>our-services/internet-access/EzeBiz?lang=en">EzeBiz</a></li>
@@ -1121,7 +1131,7 @@
 								</ul>
 							</li>
 							<li class="partnerships">
-								<a  style="cursor:pointer">Enterprise Network<span class="fa fa-chevron-down" id="colle_row_down" aria-hidden="true"></span></a>
+								<a  style="cursor:pointer">Enterprise Network<span class="fa fa-chevron-down" id="collection_enter_net" aria-hidden="true"></span></a>
 								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
 									<li><a href="<?php echo base_url();?>our-services/enterprise-network/international-private-leased-circuit?lang=en">IPLC</a></li>
 									<li><a href="<?php echo base_url();?>our-services/enterprise-network/domestic-private-leased-circuit?lang=en">DPLC</a></li>
@@ -1130,14 +1140,14 @@
 								</ul>
 							</li>
 							<li class="partnerships">
-								<a style="cursor:pointer">Cloud Services<span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+								<a style="cursor:pointer">Cloud Services<span class="fa fa-chevron-down" id="collection_cloud_ser" aria-hidden="true"></span></a>
 								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
 									<li><a href="<?php echo base_url();?>our-services/cloud-service/microsoft-cloud-service?lang=en">Microsoft Cloud Service</a></li>
 									<li><a href="<?php echo base_url();?>our-services/cloud-service/amazon-web-service?lang=en">Amazon Web Service</a></li>
 								</ul>
 							</li>
 							<li class="partnerships">
-								<a style="cursor:pointer">Data Center & Hosting<span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+								<a style="cursor:pointer">Data Center & Hosting<span class="fa fa-chevron-down" id="collection_data_cent" aria-hidden="true"></span></a>
 								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
 									<li><a href="<?php echo base_url();?>our-services/hosting/colocation?lang=en">Colocation</a></li>
 									<li><a href="<?php echo base_url();?>our-services/hosting/disaster-recovery-center?lang=en">DRC</a></li>
@@ -1146,7 +1156,7 @@
 								</ul>
 							</li>
 							<li class="partnerships">
-								<a style="cursor:pointer">Cyber Security<span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+								<a style="cursor:pointer">Cyber Security<span class="fa fa-chevron-down" id="collection_cyber" aria-hidden="true"></span></a>
 								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
 									<li><a href="<?php echo base_url();?>ddos-mitigation-service?lang=en">DDoS Mitigation Service</a></li>
 									<li><a href="<?php echo base_url();?>our-services/cyber-security/web-application-firewall?lang=en">Web Application Firewall</a></li>
@@ -1154,7 +1164,7 @@
 								</ul>
 							</li>
 							<li class="partnerships">
-								<a style="cursor:pointer">Value Added Services<span class="fa fa-chevron-down" aria-hidden="true"></span></a>
+								<a style="cursor:pointer">Value Added Services<span class="fa fa-chevron-down" id="collection_value_add" aria-hidden="true"></span></a>
 								<ul class="dropdown-menu-partnerships" id="colle_menu_main">
 									<li><a href="<?php echo base_url();?>our-services/value-added-service/voice-over-ip?lang=en">VoIP</a></li>
 									<li><a href="<?php echo base_url();?>our-services/value-added-service/EzeTV?lang=en">EzeTV</a></li>
@@ -1187,9 +1197,6 @@
 					</li>
 				</ul>
 </div> <!-- end of menu collection -->
-
-<!-- //MAIN NAVIGATION -->
-<?php } ?>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -1241,8 +1248,7 @@ $(".partnerships").click(
 
 /* menu collection */
 $(document).ready(function(){	
-	document.getElementById('menu-collection').style.display = 'none';
-	$(".dropdown-toggle").click(
+	$(".collection").click(
         function() {
             $('#menu-collection').slideToggle("slow");
             $(this).toggleClass('open'); 
@@ -1405,14 +1411,52 @@ $(document).ready(function(){
 	
 	#colle_menu_main{
 		display:none;
+		margin-left:-21px;
+		font-size:15px;
 	}
 	
-	#colle_row_down{
-		position:absolute;
-		left:200px;
-		top:48px;
-		font-size:14px;
+	#collection_internet_acc{
+		position:relative;
+		left:60px;
+		font-size:13px;
 	}
+	
+	#collection_enter_net{
+		position:relative;
+		left:31px;
+		font-size:13px;
+	}
+	
+	#collection_cloud_ser{
+		position:relative;
+		left:63px;
+		font-size:13px;
+	}
+	
+	#collection_data_cent{
+		position:relative;
+		left:10px;
+		font-size:13px;
+	}
+	
+	#collection_cyber{
+		position:relative;
+		left:65px;
+		font-size:13px;
+	}
+	
+	#collection_value_add{
+		position:relative;
+		left:10px;
+		font-size:13px;
+	}
+	
+	#collection_partnershipt{
+		position:relative;
+		left:10px;
+		font-size:13px;
+	}
+	
 	
 	
 	

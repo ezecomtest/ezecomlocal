@@ -1095,6 +1095,31 @@
 <!-- //MAIN NAVIGATION -->
 <?php } ?>
 
+<div id="show_theway">
+	<div id="block_theway">
+		<?php 
+			if($this->uri->segment(1)=="homepage" OR $this->uri->segment(1)==""){
+				echo "<a href='".base_url()."homepage?lang=en' >Home</a>";
+			}elseif($this->uri->segment(1)=="our-company"){
+				$our_company = "<a href='".base_url()."our-company?lang=en'>Our Company </a>";
+				
+				if($this->uri->segment(2)=="company-profile"){
+					$company_profile = "<a href='".base_url()."our-company/company-profile?lang=en'> Company Profile </a>";
+					echo $our_company.'> '.$company_profile;
+				}elseif($this->uri->segment(2)=="quality-management-system"){
+					$quality_management_system = "<a href='".base_url()."our-company/quality-management-system?lang=en' > Quality Management System</a>";
+					echo $our_company.'> '.$quality_management_system;
+				}elseif($this->uri->segment(2)=="childsafe-certification"){
+					$childsafe_certification = "<a href='".base_url()."our-company/childsafe-certification?lang=en' >Childsafe Certification</a>";
+					echo $our_company.'> '.$childsafe_certification;
+				}else{
+					echo "<a href='".base_url()."our-company?lang=en'>Our Company </a>";
+				}
+			}
+		?>
+	</div>
+</div>
+
 <!-- menu collection -->
 <div id="menu-collection" style="display:none">
 	<ul>
@@ -1457,7 +1482,26 @@ $(document).ready(function(){
 		font-size:13px;
 	}
 	
+  /* -------------------------------- */
+	#show_theway{
+		width:100%;
+		height:30px;
+		background-color:#7961a9;
+		position:fix;
+	}
 	
+	#show_theway #block_theway{
+		max-width:980px;
+		max-height:30px;
+		margin:0 auto;
+		background-color:#7961a9;
+		color:white;
+	}		
+	
+	#show_theway #block_theway a {
+		color:white;
+		font-size:12px;
+	}
 	
 	
 	

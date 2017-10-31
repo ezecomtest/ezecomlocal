@@ -135,7 +135,7 @@
 	<a href="<?php echo base_url();?>contact-us?lang=en">Contact Us </a>
 </li>
 <li>
-	<a class="collection" style="cursor:pointer">Collection</a>
+	<a class="collection" style="cursor:pointer"><img src="<?php echo base_url()?>images/toogle.png"/></a>
 </li>
 </ul></div>
 		
@@ -264,7 +264,7 @@
 	<a class="" href="<?php echo base_url();?>contact-us?lang=en" data-target="#">Contact Us </a>
 </li>
 <li>
-	<a class="collection" style="cursor:pointer">Collection</a>
+	<a class="collection" style="cursor:pointer"><img src="<?php echo base_url()?>images/toogle.png"/></a>
 </li>
 </ul>
 </div>
@@ -955,7 +955,7 @@
 <a href="<?php echo base_url();?>contact-us?lang=en">Contact Us </a>
 </li>
 <li>
-	<a class="dropdown-toggle" style="cursor:pointer" data-toggle="dropdown">Collection</a>
+	<a class="dropdown-toggle" style="cursor:pointer" data-toggle="dropdown"><img src="<?php echo base_url()?>images/toogle.png"/></a>
 </li>
 </ul></div>
 		
@@ -1083,7 +1083,7 @@
 	<a class="" href="<?php echo base_url();?>contact-us?lang=en" data-target="#">Contact Us </a>
 </li>
 <li>
-	<a class="collection" style="cursor:pointer">Collection</a>
+	<a class="collection" style="cursor:pointer"><img src="<?php echo base_url()?>images/toogle.png"/></a>
 </li>
 </ul>
 </div>
@@ -1095,10 +1095,10 @@
 <!-- //MAIN NAVIGATION -->
 <?php } ?>
 
-<div id="show_theway">
+<!--<div id="show_theway">
 	<div id="block_theway">
 		<?php 
-			if($this->uri->segment(1)=="homepage" OR $this->uri->segment(1)==""){
+			/* if($this->uri->segment(1)=="homepage" OR $this->uri->segment(1)==""){
 				echo "<a href='".base_url()."homepage?lang=en' >Home</a>";
 			}elseif($this->uri->segment(1)=="our-company"){
 				$our_company = "<a href='".base_url()."our-company?lang=en'>Our Company </a>";
@@ -1115,10 +1115,10 @@
 				}else{
 					echo "<a href='".base_url()."our-company?lang=en'>Our Company </a>";
 				}
-			}
+			} */
 		?>
 	</div>
-</div>
+</div>-->
 
 <!-- menu collection -->
 <div id="menu-collection" style="display:none">

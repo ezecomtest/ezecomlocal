@@ -2,9 +2,18 @@
 
 <header id="t3-header" class="container t3-header">
 	<div class="row">
-     <div class="col-xs-12 col-sm-4">
-                    
-         <!-- LANGUAGE SWITCHER -->
+     <div class="col-xs-12 col-sm-4">       
+			<div class="logo-image">
+			  <a href="<?php echo base_url(); ?>" title="EZECOM Cambodia Premuim Internet Service Provider">
+			  <img class="logo-img" src="<?php echo base_url()?>images/ezecom-logo.png" alt="EZECOM Cambodia Premuim Internet Service Provider">
+			  <span>EZECOM Cambodia Premuim Internet Service Provider</span></a>
+			  <small class="site-slogan"></small>
+			</div>
+      </div>
+                        
+ <!-- LOGO -->
+  <div class="col-xs-12 col-sm-8 logo">
+	  <!-- LANGUAGE SWITCHER -->
       <div class="languageswitcherload">
         <div class="mod-languages">
 
@@ -22,16 +31,6 @@
         </div>
      </div>
       <!-- //LANGUAGE SWITCHER -->
-      </div>
-                        
- <!-- LOGO -->
-  <div class="col-xs-12 col-sm-8 logo">
-    <div class="logo-image">
-      <a href="<?php echo base_url(); ?>" title="EZECOM Cambodia Premuim Internet Service Provider">
-        <img class="logo-img" src="<?php echo base_url()?>images/ezecom-logo.png" alt="EZECOM Cambodia Premuim Internet Service Provider">
-        <span>EZECOM Cambodia Premuim Internet Service Provider</span></a>
-            <small class="site-slogan"></small>
-    </div>
   </div>
   <!-- //LOGO -->
 	</div>

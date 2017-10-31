@@ -221,10 +221,11 @@ class Media_center_c extends CI_Controller {
 
     public function news_detail_c(){
         /*  replace (-) from url  */
-        $uri_orig = explode("/",$_SERVER['REQUEST_URI']);
+       /*  $uri_orig = explode("/",$_SERVER['REQUEST_URI']);
         $str_url  = (end($uri_orig));
-		$str_expl = explode("?",$str_url);
-		$short_url = $str_expl[0];
+		$str_expl = explode("?",$str_url); */
+		$short_url = $this->uri->segment(2);
+		
 		
         //echo urldecode($title)."<br/>";
         

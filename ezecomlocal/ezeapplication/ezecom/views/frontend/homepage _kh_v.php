@@ -646,17 +646,17 @@
 <div class="custom"  >
 	<div style="height: 20px; width: 100%;"> </div>
 <div class="container-fluid">
-<div class="col-xs-12 col-sm-6 col-md-4"><a href="<?php echo base_url();?>mediacenter?lang=<?php echo $this->get_lang ?>">
+<div class="col-xs-12 col-sm-6 col-md-4"><a href="<?php echo base_url();?>media-center/news-events?lang=<?php echo $this->get_lang ?>">
 <div class="newandeventhover"> </div>
 <h3 style="font-family: 'Bayon', cursive; padding-bottom: 11px;">ព័ត៌មាន និង កម្មវិធីនានា</h3>
 <p style="font-size: 14px; color: #444;">ចូលមកកាន់ផ្នែកនេះ ដើម្បីទទួលបានព័ត៌មានថ្មីៗ ស្តីពីកម្មវិធី ការឧបត្ថម្ភ និងភាពជាដៃគូ របស់ក្រុមហ៊ុនអ៊ីហ្ស៊ីខម</p></a>
 </div>
-<div class="col-xs-12 col-sm-6 col-md-4"><a href="<?php echo base_url();?>cameralive?lang=<?php echo $this->get_lang ?>">
+<div class="col-xs-12 col-sm-6 col-md-4"><a href="<?php echo base_url();?>media-center/live-traffic-camera?lang=<?php echo $this->get_lang ?>">
 <div class="livecamerahover"> </div>
 <h3 style="font-family: 'Bayon', cursive; padding-bottom: 11px;">កាំមេរ៉ាចរាចរណ៍</h3>
 <p style="font-size: 14px; color: #444;">ដឹងពីអ្វីដែលកំពុងកើតឡើងជុំវិញខ្លួនអ្នក ជាមួយកាំមេរ៉ាចរាចរណ៍របស់ក្រុមហ៊ុនអ៊ីហ្ស៊ីខម ទូទាំងរាជធានីភ្នំពេញ។</p></a>
 </div>
-<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>liveradio?lang=<?php echo $this->get_lang ?>">
+<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>media-center/live-cambodia-radio?lang=<?php echo $this->get_lang ?>">
 <div class="liveradiohover"> </div>
 <h3 style="font-family: 'Bayon', cursive; padding-bottom: 11px;">ស្ថានីយ៍វិទ្យុ</h3>
 <p style="font-size: 14px; color: #444;">សូមចុចទីនេះ ដើម្បីស្តាប់វិទ្យុរបស់ស្ថានីយ៍ជាទីពេញចិត្តរបស់លោកអ្នក ដោយផ្ទាល់នៅក្នុងប្រទេសកម្ពុជា។</p></a>
@@ -684,12 +684,12 @@
 <br />
 <div class="col-xs-12 col-sm-12 col-md-12"> 
 <div class="col-xs-12 col-sm-12 col-md-2"> </div>
-<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>ourservices?lang=<?php echo $this->get_lang ?>">
+<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>our-services?lang=<?php echo $this->get_lang ?>">
 <div class="ourinternethover"></div>
 <h3 style="font-family: 'Kantumruy', sans-serif;">អុីនធឺណិត</a></h3>
 <p style="font-size: 14px; color: #444444;"> </p></a>
 </div>
-<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>enterprise_solution?lang=<?php echo $this->get_lang ?>">
+<div class="col-xs-12 col-sm-12 col-md-4"><a href="<?php echo base_url();?>enterprise-solution?lang=<?php echo $this->get_lang ?>">
 <div class="enterprisesolutions"> </div>
 <h3 style="font-family: 'Kantumruy', sans-serif;">ដំណោះស្រាយសហគ្រាស</h3>
 <p style="font-size: 14px; color: #444444;"> </p></a>
